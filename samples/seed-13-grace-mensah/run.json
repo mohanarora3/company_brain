@@ -1,0 +1,3500 @@
+{
+ "run_id": "ec24fc83ab",
+ "target": {
+  "employee_id": "E1014",
+  "full_name": "Grace Mensah",
+  "title": "Account Manager",
+  "team": "Customer Success",
+  "last_day": "2026-11-25",
+  "status": "leaving"
+ },
+ "as_of": "2026-10-22",
+ "round": 4,
+ "engine": "local",
+ "areas": [
+  {
+   "system": "bluebird-airlines",
+   "name": "Bluebird Airlines account",
+   "kind": "customer",
+   "tier": 2,
+   "team": "Customer Success",
+   "label": "critical",
+   "provisional_label": "critical",
+   "share": 0.744,
+   "backup": 0.256,
+   "backups": [
+    {
+     "person": "E1001",
+     "name": "Priya Raman",
+     "share": 0.256,
+     "last_at": "2026-09-28T13:38:41Z",
+     "stale": false,
+     "sources": [
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "by_source": {
+    "jira": {
+     "target": 45.38,
+     "others": 8.8,
+     "unattributed": 0.0
+    },
+    "slack": {
+     "target": 27.43,
+     "others": 16.25,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "jira",
+    "slack"
+   ],
+   "footprint": {
+    "jira": 45.37857308239581,
+    "slack": 27.428234737693394
+   },
+   "doc_coverage": 0.5,
+   "docs": [
+    {
+     "page_id": "4020",
+     "title": "Bluebird account notes",
+     "kind": "overview",
+     "updated_at": "2026-07-06T18:00:00Z",
+     "age_days": 107,
+     "author": "Grace Mensah",
+     "author_id": "E1014",
+     "editor_id": "E1015",
+     "author_status": "leaving",
+     "score": 0.5,
+     "body": "# Bluebird account notes\n\nSystem: Bluebird Airlines account\n\nBluebird wants a daily refund status file at 07:00.\n",
+     "query_id": "q041"
+    }
+   ],
+   "exclusive_access": [
+    {
+     "resource": "bluebird-airlines-escalation-line",
+     "level": "owner",
+     "system": "bluebird-airlines",
+     "mapped_by": "keyword",
+     "other_holders": [],
+     "exclusive": true,
+     "query_id": "q028"
+    }
+   ],
+   "chores": [],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "docs:doc:4020",
+    "hr_pg:access:bluebird-airlines-escalation-line",
+    "jira:issue_done:18165f08578305d08edcf284@bluebird-airlines:Done",
+    "jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:In Progress",
+    "jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:To Do",
+    "slack:slack_answer:cs-escalations/1765012334.000000",
+    "slack:slack_answer:cs-escalations/1765613500.000000",
+    "slack:slack_answer:cs-escalations/1765638651.000000",
+    "slack:slack_answer:cs-escalations/1765803140.000000",
+    "slack:slack_answer:cs-escalations/1766296975.000000",
+    "slack:slack_answer:cs-escalations/1766484199.000000",
+    "slack:slack_answer:cs-escalations/1766842404.000000",
+    "slack:slack_answer:cs-escalations/1767763107.000000",
+    "slack:slack_answer:cs-escalations/1768031649.000000",
+    "slack:slack_answer:cs-escalations/1768824451.000000",
+    "slack:slack_answer:cs-escalations/1769691307.000000",
+    "slack:slack_answer:cs-escalations/1770699459.000000",
+    "slack:slack_answer:cs-escalations/1771756312.000000",
+    "slack:slack_answer:cs-escalations/1773746896.000000",
+    "slack:slack_answer:cs-escalations/1776055560.000000",
+    "slack:slack_answer:cs-escalations/1776836771.000000",
+    "slack:slack_answer:cs-escalations/1777628526.000000",
+    "slack:slack_answer:cs-escalations/1777965585.000000",
+    "slack:slack_answer:cs-escalations/1782282151.000000",
+    "slack:slack_answer:cs-escalations/1782483581.000000",
+    "slack:slack_answer:cs-escalations/1789967723.000000",
+    "slack:slack_answer:cs-escalations/1790246163.000000",
+    "slack:slack_answer:cs-escalations/1790250455.000000",
+    "slack:slack_answer:cs-escalations/1791193397.000000"
+   ],
+   "confidence": 0.75,
+   "status": "verified",
+   "history": [
+    {
+     "round": 1,
+     "stage": "init",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.0,
+     "sources": []
+    },
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "critical",
+     "share": 0.838,
+     "backup": 0.162,
+     "sources": [
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "needs corroboration: critical on commits and tickets alone"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "critical",
+     "share": 0.744,
+     "backup": 0.256,
+     "sources": [
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "critic:final",
+     "notes": [
+      "label holds across 2 sources: jira, slack"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "critical",
+     "share": 0.744,
+     "backup": 0.256,
+     "sources": [
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "priority": 0.604,
+   "escalated": false,
+   "successors": [
+    {
+     "person": "E1001",
+     "name": "Priya Raman",
+     "title": "Senior Engineer",
+     "score": 0.523,
+     "reasons": [
+      "26% of the Bluebird Airlines account activity",
+      "Grace answered their Bluebird Airlines account questions 2 times",
+      "1 open ticket"
+     ]
+    },
+    {
+     "person": "E1015",
+     "name": "Fatima Zahra",
+     "title": "Support Lead",
+     "score": 0.32,
+     "reasons": [
+      "Grace answered their Bluebird Airlines account questions 2 times",
+      "on the owning team (Customer Success)",
+      "0 open tickets"
+     ]
+    },
+    {
+     "person": "E1002",
+     "name": "Rahul Verma",
+     "title": "Staff Engineer",
+     "score": 0.308,
+     "reasons": [
+      "Grace answered their Bluebird Airlines account questions 1 time",
+      "works on neighbouring systems",
+      "0 open tickets"
+     ]
+    }
+   ],
+   "reason": ""
+  },
+  {
+   "system": "zenith-retail",
+   "name": "Zenith Retail account",
+   "kind": "customer",
+   "tier": 1,
+   "team": "Customer Success",
+   "label": "covered",
+   "provisional_label": "covered",
+   "share": 0.18,
+   "backup": 0.371,
+   "backups": [
+    {
+     "person": "E1002",
+     "name": "Rahul Verma",
+     "share": 0.371,
+     "last_at": "2026-10-16T09:48:12Z",
+     "stale": false,
+     "sources": [
+      "slack"
+     ]
+    },
+    {
+     "person": "E1015",
+     "name": "Fatima Zahra",
+     "share": 0.074,
+     "last_at": "2026-08-21T05:36:08Z",
+     "stale": false,
+     "sources": [
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "by_source": {
+    "jira": {
+     "target": 1.04,
+     "others": 0.89,
+     "unattributed": 33.59
+    },
+    "slack": {
+     "target": 15.13,
+     "others": 39.05,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "jira",
+    "slack"
+   ],
+   "footprint": {
+    "jira": 1.044660675955349,
+    "slack": 14.177352887358325
+   },
+   "doc_coverage": 0.0,
+   "docs": [],
+   "exclusive_access": [],
+   "chores": [
+    {
+     "summary": "Weekly recon extract for Zenith treasury",
+     "issue_key": "CS-205",
+     "owner": "?",
+     "owner_id": "?",
+     "status": "Done",
+     "state": "owned by someone else",
+     "last_created": "2026-09-23T18:00:00Z",
+     "query_id": "q034"
+    }
+   ],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "jira:issue_done:18165f08578305d08edcf284@zenith-retail:Done",
+    "slack:slack_answer:cs-escalations/1763542734.000000",
+    "slack:slack_answer:cs-escalations/1765797348.000000",
+    "slack:slack_answer:cs-escalations/1771068903.000000",
+    "slack:slack_answer:cs-escalations/1773757471.000000",
+    "slack:slack_answer:cs-escalations/1775734925.000000",
+    "slack:slack_answer:cs-escalations/1775981122.000000",
+    "slack:slack_answer:cs-escalations/1778916471.000000",
+    "slack:slack_answer:cs-escalations/1782117526.000000",
+    "slack:slack_answer:cs-escalations/1787211716.000000",
+    "slack:slack_answer:cs-escalations/1791901219.000000",
+    "slack:slack_answer:cs-escalations/1792144152.000000"
+   ],
+   "confidence": 0.6,
+   "status": "verified",
+   "history": [
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "covered",
+     "share": 0.029,
+     "backup": 0.013,
+     "sources": [
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "needs corroboration: 93% of their footprint here is conversation, which this pass did not count"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.18,
+     "backup": 0.371,
+     "sources": [
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "critic:final",
+     "notes": [
+      "label holds across 2 sources: jira, slack"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.18,
+     "backup": 0.371,
+     "sources": [
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "priority": 0.084,
+   "escalated": false,
+   "successors": [],
+   "reason": ""
+  },
+  {
+   "system": "refunds-service",
+   "name": "Refunds Service",
+   "kind": "system",
+   "tier": 2,
+   "team": "Payments",
+   "label": "covered",
+   "provisional_label": "covered",
+   "share": 0.119,
+   "backup": 0.286,
+   "backups": [
+    {
+     "person": "E1010",
+     "name": "Sara Novak",
+     "share": 0.286,
+     "last_at": "2026-10-21T10:23:42Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1016",
+     "name": "Nisha Kapoor",
+     "share": 0.279,
+     "last_at": "2026-10-21T10:23:42Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1001",
+     "name": "Priya Raman",
+     "share": 0.196,
+     "last_at": "2026-10-18T04:54:49Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1002",
+     "name": "Rahul Verma",
+     "share": 0.074,
+     "last_at": "2026-10-21T10:23:42Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1015",
+     "name": "Fatima Zahra",
+     "share": 0.032,
+     "last_at": "2026-09-30T11:02:55Z",
+     "stale": false,
+     "sources": [
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "by_source": {
+    "github": {
+     "target": 0.0,
+     "others": 130.22,
+     "unattributed": 0.0
+    },
+    "jira": {
+     "target": 0.0,
+     "others": 40.45,
+     "unattributed": 4.5
+    },
+    "slack": {
+     "target": 37.99,
+     "others": 105.66,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "github",
+    "jira",
+    "slack"
+   ],
+   "footprint": {
+    "slack": 25.326684518102685
+   },
+   "doc_coverage": 1.0,
+   "docs": [
+    {
+     "page_id": "4005",
+     "title": "Refunds runbook",
+     "kind": "runbook",
+     "updated_at": "2026-05-22T18:00:00Z",
+     "age_days": 152,
+     "author": "Nisha Kapoor",
+     "author_id": "E1016",
+     "editor_id": "E1016",
+     "author_status": "active",
+     "score": 1.0,
+     "body": "# Refunds runbook\n\nSystem: Refunds Service\n\nRequeue stuck refunds with refunds requeue --ref. Bluebird bulk refunds must be throttled to 50 per second.\n",
+     "query_id": "q041"
+    }
+   ],
+   "exclusive_access": [],
+   "chores": [],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "slack:slack_answer:cs-escalations/1762836935.000000",
+    "slack:slack_answer:cs-escalations/1763724256.000000",
+    "slack:slack_answer:cs-escalations/1763797787.000000",
+    "slack:slack_answer:cs-escalations/1764926515.000000",
+    "slack:slack_answer:cs-escalations/1765173807.000000",
+    "slack:slack_answer:cs-escalations/1765623823.000000",
+    "slack:slack_answer:cs-escalations/1765880014.000000",
+    "slack:slack_answer:cs-escalations/1767710531.000000",
+    "slack:slack_answer:cs-escalations/1771592276.000000",
+    "slack:slack_answer:cs-escalations/1772883636.000000",
+    "slack:slack_answer:cs-escalations/1775370890.000000",
+    "slack:slack_answer:cs-escalations/1778995335.000000",
+    "slack:slack_answer:cs-escalations/1779953214.000000",
+    "slack:slack_answer:cs-escalations/1780035495.000000",
+    "slack:slack_answer:cs-escalations/1781252654.000000",
+    "slack:slack_answer:cs-escalations/1782720236.000000",
+    "slack:slack_answer:cs-escalations/1784875542.000000",
+    "slack:slack_answer:cs-escalations/1790599301.000000",
+    "slack:slack_answer:cs-escalations/1790918577.000000",
+    "slack:slack_answer:cs-escalations/1790924940.000000",
+    "slack:slack_answer:cs-escalations/1791020646.000000"
+   ],
+   "confidence": 0.6,
+   "status": "verified",
+   "history": [
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.342,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "needs corroboration: 100% of their footprint here is conversation, which this pass did not count"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.119,
+     "backup": 0.286,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "critic:final",
+     "notes": [
+      "label holds across 3 sources: github, jira, slack"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.119,
+     "backup": 0.286,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "priority": -0.04,
+   "escalated": false,
+   "successors": [],
+   "reason": ""
+  },
+  {
+   "system": "merchant-dashboard",
+   "name": "Merchant Dashboard",
+   "kind": "system",
+   "tier": 2,
+   "team": "Payments",
+   "label": "covered",
+   "provisional_label": "covered",
+   "share": 0.064,
+   "backup": 0.47,
+   "backups": [
+    {
+     "person": "E1017",
+     "name": "Meera Iyer",
+     "share": 0.47,
+     "last_at": "2026-10-22T10:19:04Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1015",
+     "name": "Fatima Zahra",
+     "share": 0.292,
+     "last_at": "2026-10-17T08:23:26Z",
+     "stale": false,
+     "sources": [
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1013",
+     "name": "Rahul Varma",
+     "share": 0.095,
+     "last_at": "2026-10-18T13:51:57Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1001",
+     "name": "Priya Raman",
+     "share": 0.078,
+     "last_at": "2026-10-14T10:46:03Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "by_source": {
+    "github": {
+     "target": 8.54,
+     "others": 108.75,
+     "unattributed": 0.0
+    },
+    "jira": {
+     "target": 1.45,
+     "others": 44.07,
+     "unattributed": 0.0
+    },
+    "slack": {
+     "target": 3.74,
+     "others": 46.44,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "github",
+    "jira",
+    "slack"
+   ],
+   "footprint": {
+    "github": 5.0,
+    "jira": 1.4519929070631512,
+    "slack": 3.7388384874907556
+   },
+   "doc_coverage": 1.0,
+   "docs": [
+    {
+     "page_id": "4006",
+     "title": "Merchant Dashboard support guide",
+     "kind": "runbook",
+     "updated_at": "2026-08-15T18:00:00Z",
+     "age_days": 67,
+     "author": "Fatima Zahra",
+     "author_id": "E1015",
+     "editor_id": "E1015",
+     "author_status": "active",
+     "score": 1.0,
+     "body": "# Merchant Dashboard support guide\n\nSystem: Merchant Dashboard\n\nPayout widget lags a day (finance-reporting). Login loops are auth-service sessions. Big CSV exports use the async toggle.\n",
+     "query_id": "q041"
+    }
+   ],
+   "exclusive_access": [],
+   "chores": [],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "github:commit:grace-m-acme@merchant-dashboard",
+    "github:review:pr1242:grace-m-acme",
+    "github:review:pr1245:grace-m-acme",
+    "github:review:pr1246:grace-m-acme",
+    "github:review:pr1248:grace-m-acme",
+    "github:review:pr1253:grace-m-acme",
+    "github:review:pr1258:grace-m-acme",
+    "github:review:pr1259:grace-m-acme",
+    "github:review:pr1607:grace-m-acme",
+    "github:review:pr1608:grace-m-acme",
+    "jira:issue_done:18165f08578305d08edcf284@merchant-dashboard:Done",
+    "slack:slack_answer:payments/1761458139.000000",
+    "slack:slack_answer:payments/1764941077.000000",
+    "slack:slack_answer:payments/1767618098.000000",
+    "slack:slack_answer:payments/1781244476.000000"
+   ],
+   "confidence": 0.9,
+   "status": "verified",
+   "history": [
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "covered",
+     "share": 0.061,
+     "backup": 0.558,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "needs corroboration: 37% of their footprint here is conversation, which this pass did not count"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.064,
+     "backup": 0.47,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "critic:final",
+     "notes": [
+      "label holds across 3 sources: github, jira, slack"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.064,
+     "backup": 0.47,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "priority": -0.04,
+   "escalated": false,
+   "successors": [],
+   "reason": ""
+  }
+ ],
+ "requests": [
+  {
+   "id": "r01",
+   "by": "Critic",
+   "kind": "corroborate",
+   "system": "bluebird-airlines",
+   "detail": "critical on commits and tickets alone",
+   "payload": {},
+   "status": "done"
+  },
+  {
+   "id": "r02",
+   "by": "Critic",
+   "kind": "corroborate",
+   "system": "merchant-dashboard",
+   "detail": "37% of their footprint here is conversation, which this pass did not count",
+   "payload": {},
+   "status": "done"
+  },
+  {
+   "id": "r03",
+   "by": "Critic",
+   "kind": "corroborate",
+   "system": "refunds-service",
+   "detail": "100% of their footprint here is conversation, which this pass did not count",
+   "payload": {},
+   "status": "done"
+  },
+  {
+   "id": "r04",
+   "by": "Critic",
+   "kind": "corroborate",
+   "system": "zenith-retail",
+   "detail": "93% of their footprint here is conversation, which this pass did not count",
+   "payload": {},
+   "status": "done"
+  },
+  {
+   "id": "r05",
+   "by": "Critic",
+   "kind": "tacit",
+   "system": "bluebird-airlines",
+   "detail": "customer relationship knowledge lives in conversation",
+   "payload": {},
+   "status": "done"
+  }
+ ],
+ "escalations": [],
+ "queries": [
+  {
+   "id": "q001",
+   "agent": "Cartographer",
+   "purpose": "Load the service catalog",
+   "sql": "SELECT system_id, name, kind, owner_team, tier, repo_path, slack_channel, jira_component, pagerduty_service, aliases, description FROM github.service_catalog",
+   "engine": "local",
+   "rows": 20,
+   "ms": 0.2,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q002",
+   "agent": "Cartographer",
+   "purpose": "Profile docs.pages",
+   "sql": "SELECT COUNT(*) AS n, MIN(created_at) AS first_at, MAX(created_at) AS last_at FROM docs.pages",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q003",
+   "agent": "Cartographer",
+   "purpose": "Profile github.commit_files",
+   "sql": "SELECT COUNT(*) AS n FROM github.commit_files",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q004",
+   "agent": "Cartographer",
+   "purpose": "Profile github.commits",
+   "sql": "SELECT COUNT(*) AS n, MIN(committed_at) AS first_at, MAX(committed_at) AS last_at FROM github.commits",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.4,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q005",
+   "agent": "Cartographer",
+   "purpose": "Profile github.pull_requests",
+   "sql": "SELECT COUNT(*) AS n, MIN(created_at) AS first_at, MAX(created_at) AS last_at FROM github.pull_requests",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q006",
+   "agent": "Cartographer",
+   "purpose": "Profile github.service_catalog",
+   "sql": "SELECT COUNT(*) AS n FROM github.service_catalog",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q007",
+   "agent": "Cartographer",
+   "purpose": "Profile github.users",
+   "sql": "SELECT COUNT(*) AS n FROM github.users",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q008",
+   "agent": "Cartographer",
+   "purpose": "Profile hr_pg.access_grants",
+   "sql": "SELECT COUNT(*) AS n, MIN(granted_at) AS first_at, MAX(granted_at) AS last_at FROM hr_pg.access_grants",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q009",
+   "agent": "Cartographer",
+   "purpose": "Profile hr_pg.departures",
+   "sql": "SELECT COUNT(*) AS n FROM hr_pg.departures",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q010",
+   "agent": "Cartographer",
+   "purpose": "Profile hr_pg.employees_directory",
+   "sql": "SELECT COUNT(*) AS n FROM hr_pg.employees_directory",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q011",
+   "agent": "Cartographer",
+   "purpose": "Profile jira.issues",
+   "sql": "SELECT COUNT(*) AS n, MIN(created) AS first_at, MAX(created) AS last_at FROM jira.issues",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.2,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q012",
+   "agent": "Cartographer",
+   "purpose": "Profile jira.users",
+   "sql": "SELECT COUNT(*) AS n FROM jira.users",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q013",
+   "agent": "Cartographer",
+   "purpose": "Profile slack.channels",
+   "sql": "SELECT COUNT(*) AS n FROM slack.channels",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q014",
+   "agent": "Cartographer",
+   "purpose": "Profile slack.messages",
+   "sql": "SELECT COUNT(*) AS n, MIN(created_at) AS first_at, MAX(created_at) AS last_at FROM slack.messages",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.6,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q015",
+   "agent": "Cartographer",
+   "purpose": "Profile slack.users",
+   "sql": "SELECT COUNT(*) AS n FROM slack.users",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q016",
+   "agent": "Resolver",
+   "purpose": "Load the governed HR directory",
+   "sql": "SELECT employee_id, full_name, preferred_name, work_email, title, team, team_id, manager_id, employment_type, status, last_day FROM hr_pg.employees_directory",
+   "engine": "local",
+   "rows": 18,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q017",
+   "agent": "Resolver",
+   "purpose": "Who is leaving (HR departures)",
+   "sql": "SELECT d.employee_id AS employee_id, d.last_day AS last_day, e.full_name AS full_name, e.status AS status FROM hr_pg.departures d JOIN hr_pg.employees_directory e ON e.employee_id = d.employee_id",
+   "engine": "local",
+   "rows": 3,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q018",
+   "agent": "Resolver",
+   "purpose": "Load github accounts",
+   "sql": "SELECT login, name, account_type FROM github.users",
+   "engine": "local",
+   "rows": 19,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q019",
+   "agent": "Resolver",
+   "purpose": "Load jira accounts",
+   "sql": "SELECT account_id, display_name, email, active FROM jira.users",
+   "engine": "local",
+   "rows": 18,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q020",
+   "agent": "Resolver",
+   "purpose": "Load slack accounts",
+   "sql": "SELECT user_id, name, real_name, display_name, email, deleted FROM slack.users",
+   "engine": "local",
+   "rows": 18,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q021",
+   "agent": "Resolver",
+   "purpose": "Federated join HR x jira on email",
+   "sql": "SELECT e.employee_id AS employee_id, u.account_id AS account FROM hr_pg.employees_directory e JOIN jira.users u ON lower(e.work_email) = lower(u.email)",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q022",
+   "agent": "Resolver",
+   "purpose": "Federated join HR x slack on email",
+   "sql": "SELECT e.employee_id AS employee_id, u.user_id AS account FROM hr_pg.employees_directory e JOIN slack.users u ON lower(e.work_email) = lower(u.email)",
+   "engine": "local",
+   "rows": 16,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q023",
+   "agent": "Resolver",
+   "purpose": "Federated join HR x GitHub commit authors on email",
+   "sql": "SELECT e.employee_id AS employee_id, c.author_login AS account, COUNT(*) AS n FROM github.commits c JOIN hr_pg.employees_directory e ON lower(c.author_email) = lower(e.work_email) GROUP BY e.employee_id, c.author_login",
+   "engine": "local",
+   "rows": 17,
+   "ms": 9.6,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q024",
+   "agent": "Resolver",
+   "purpose": "Commit author names per login",
+   "sql": "SELECT author_login AS login, author_name AS name, COUNT(*) AS n FROM github.commits GROUP BY author_login, author_name",
+   "engine": "local",
+   "rows": 33,
+   "ms": 0.7,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q025",
+   "agent": "Resolver",
+   "purpose": "Which identity namespace does docs.pages.author_id use?",
+   "sql": "SELECT DISTINCT author_id AS v FROM docs.pages",
+   "engine": "local",
+   "rows": 15,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q026",
+   "agent": "Resolver",
+   "purpose": "Which identity namespace does hr_pg.access_grants.employee_id use?",
+   "sql": "SELECT DISTINCT employee_id AS v FROM hr_pg.access_grants",
+   "engine": "local",
+   "rows": 14,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q027",
+   "agent": "Resolver",
+   "purpose": "Which identity namespace does hr_pg.departures.employee_id use?",
+   "sql": "SELECT DISTINCT employee_id AS v FROM hr_pg.departures",
+   "engine": "local",
+   "rows": 3,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q028",
+   "agent": "Investigator",
+   "purpose": "Grace Mensah's commits by system (12 months)",
+   "sql": "SELECT sc.system_id AS system, COUNT(DISTINCT c.sha) AS n, MAX(c.committed_at) AS last_at FROM github.commits c JOIN github.commit_files f ON f.sha = c.sha JOIN github.service_catalog sc ON substr(f.path, 1, length(sc.repo_path)) = sc.repo_path WHERE c.author_login IN ('grace-m-acme') AND c.committed_at >= '2025-10-22' GROUP BY sc.system_id",
+   "engine": "local",
+   "rows": 1,
+   "ms": 13.8,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q029",
+   "agent": "Investigator",
+   "purpose": "Grace Mensah's Jira work by component",
+   "sql": "SELECT component AS system, status, COUNT(*) AS n, MAX(updated) AS last_at FROM jira.issues WHERE assignee_id IN ('18165f08578305d08edcf284') AND created >= '2025-10-22' GROUP BY component, status",
+   "engine": "local",
+   "rows": 5,
+   "ms": 2.3,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q028",
+   "agent": "Investigator",
+   "purpose": "Privileged access held by Grace Mensah",
+   "sql": "SELECT resource, level, granted_at FROM hr_pg.access_grants WHERE employee_id = 'E1014'",
+   "engine": "local",
+   "rows": 1,
+   "ms": 5.2,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q031",
+   "agent": "Investigator",
+   "purpose": "Who else holds the same access (federated: grants x directory)",
+   "sql": "SELECT g.resource AS resource, g.level AS level, g.employee_id AS employee_id, e.full_name AS full_name, e.status AS status FROM hr_pg.access_grants g JOIN hr_pg.employees_directory e ON e.employee_id = g.employee_id WHERE g.resource IN ('bluebird-airlines-escalation-line') AND g.employee_id <> 'E1014'",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.1,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q030",
+   "agent": "Investigator",
+   "purpose": "Grace Mensah's Slack thread answers",
+   "sql": "SELECT ts, thread_ts, channel_name, text, created_at FROM slack.messages WHERE is_reply = 1 AND user_id IN ('U0IWOSFQII') AND created_at >= '2025-10-22'",
+   "engine": "local",
+   "rows": 61,
+   "ms": 1.2,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q033",
+   "agent": "Investigator",
+   "purpose": "Thread questions for 61 answers",
+   "sql": "SELECT ts, user_id, text FROM slack.messages WHERE is_reply = 0 AND ts IN ('1761454119.000000', '1762834535.000000', '1763538534.000000', '1763722276.000000', '1763795387.000000', '1764924655.000000', '1764936277.000000', '1765010174.000000', '1765170687.000000', '1765608520.000000', '1765618423.000000', '1765634271.000000', '1765791348.000000', '1765801460.000000', '1765878814.000000', '1766291875.000000', '1766479999.000000', '1766838744.000000', '1767614858.000000', '1767705251.000000', '1767760827.000000', '1768027629.000000', '1768824211.000000', '1769689267.000000', '1770697299.000000', '1771063623.000000', '1771589876.000000', '1771753972.000000', '1772882856.000000', '1773741676.000000', '1773751051.000000', '1775367410.000000', '1775732045.000000', '1775975782.000000', '1776055080.000000', '1776831851.000000', '1777624926.000000', '1777962945.000000', '1778911911.000000', '1778992755.000000', '1779952794.000000', '1780032555.000000', '1781237036.000000', '1781247254.000000', '1782110866.000000', '1782280771.000000', '1782481961.000000', '1782714956.000000', '1783933735.000000', '1784870322.000000', '1787209676.000000', '1789967603.000000', '1790244363.000000', '1790246195.000000', '1790593901.000000', '1790916417.000000', '1790924340.000000', '1791016686.000000', '1791190157.000000', '1791898879.000000', '1792139712.000000')",
+   "engine": "local",
+   "rows": 61,
+   "ms": 0.7,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q034",
+   "agent": "Investigator",
+   "purpose": "Recurring chores in the last 4 months",
+   "sql": "SELECT issue_key, component, summary, assignee_id, status, created FROM jira.issues WHERE labels LIKE '%recurring%' AND created >= '2026-06-24'",
+   "engine": "local",
+   "rows": 20,
+   "ms": 0.3,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q035",
+   "agent": "Investigator",
+   "purpose": "Commit authorship for 4 systems (everyone)",
+   "sql": "SELECT sc.system_id AS system, c.author_login AS login, COUNT(DISTINCT c.sha) AS n, MAX(c.committed_at) AS last_at FROM github.commits c JOIN github.commit_files f ON f.sha = c.sha JOIN github.service_catalog sc ON substr(f.path, 1, length(sc.repo_path)) = sc.repo_path WHERE sc.system_id IN ('bluebird-airlines', 'refunds-service', 'zenith-retail', 'merchant-dashboard') AND c.committed_at >= '2025-10-22' GROUP BY sc.system_id, c.author_login",
+   "engine": "local",
+   "rows": 8,
+   "ms": 8.2,
+   "round": 2,
+   "error": ""
+  },
+  {
+   "id": "q035",
+   "agent": "Investigator",
+   "purpose": "Pull-request reviewers on those systems",
+   "sql": "SELECT number, author_login, reviewers, base_path, merged_at FROM github.pull_requests WHERE base_path IN ('services/refunds-service/', 'services/merchant-dashboard/') AND merged_at >= '2025-10-22'",
+   "engine": "local",
+   "rows": 75,
+   "ms": 8.2,
+   "round": 2,
+   "error": ""
+  },
+  {
+   "id": "q035",
+   "agent": "Investigator",
+   "purpose": "Jira work per component and assignee (4 systems)",
+   "sql": "SELECT component AS system, assignee_id AS account, status, COUNT(*) AS n, MAX(updated) AS last_at FROM jira.issues WHERE component IN ('bluebird-airlines', 'refunds-service', 'zenith-retail', 'merchant-dashboard') AND created >= '2025-10-22' AND assignee_id IS NOT NULL GROUP BY component, assignee_id, status",
+   "engine": "local",
+   "rows": 18,
+   "ms": 6.5,
+   "round": 2,
+   "error": ""
+  },
+  {
+   "id": "q038",
+   "agent": "Investigator",
+   "purpose": "Slack thread answers in #cs-escalations, #payments",
+   "sql": "SELECT ts, thread_ts, channel_name, user_id, text, created_at FROM slack.messages WHERE is_reply = 1 AND channel_name IN ('cs-escalations', 'payments') AND created_at >= '2025-10-22'",
+   "engine": "local",
+   "rows": 507,
+   "ms": 3.8,
+   "round": 3,
+   "error": ""
+  },
+  {
+   "id": "q039",
+   "agent": "Investigator",
+   "purpose": "Thread questions for 300 answers",
+   "sql": "SELECT ts, user_id, text FROM slack.messages WHERE is_reply = 0 AND ts IN ('1761139883.000000', '1761197425.000000', '1761279755.000000', '1761297599.000000', '1761302580.000000', '1761371569.000000', '1761381413.000000', '1761397066.000000', '1761452287.000000', '1761454119.000000', '1761476845.000000', '1761555546.000000', '1761647908.000000', '1761729526.000000', '1761740844.000000', '1761832321.000000', '1761886082.000000', '1761894399.000000', '1761899536.000000', '1762075642.000000', '1762235317.000000', '1762236624.000000', '1762348246.000000', '1762498065.000000', '1762502871.000000', '1762515199.000000', '1762520895.000000', '1762595339.000000', '1762834535.000000', '1762929515.000000', '1762937645.000000', '1763359982.000000', '1763364869.000000', '1763538534.000000', '1763719487.000000', '1763722276.000000', '1763795387.000000', '1763815021.000000', '1763896572.000000', '1763957327.000000', '1763979625.000000', '1764061200.000000', '1764071996.000000', '1764076130.000000', '1764143293.000000', '1764159556.000000', '1764228517.000000', '1764330113.000000', '1764485346.000000', '1764574128.000000', '1764664368.000000', '1764667628.000000', '1764839139.000000', '1764846582.000000', '1764919475.000000', '1764924655.000000', '1764936277.000000', '1765010174.000000', '1765014269.000000', '1765017822.000000', '1765092334.000000', '1765096678.000000', '1765170687.000000', '1765172777.000000', '1765201145.000000', '1765277099.000000', '1765440452.000000', '1765446989.000000', '1765524873.000000', '1765533390.000000', '1765608520.000000', '1765618423.000000', '1765634271.000000', '1765771208.000000', '1765791348.000000', '1765793376.000000', '1765801460.000000', '1765862488.000000', '1765875004.000000', '1765878814.000000', '1765966658.000000', '1765972303.000000', '1766291875.000000', '1766317950.000000', '1766466237.000000', '1766479999.000000', '1766491826.000000', '1766561467.000000', '1766574333.000000', '1766646810.000000', '1766729164.000000', '1766838744.000000', '1766924651.000000', '1766983182.000000', '1766984450.000000', '1766994552.000000', '1767073672.000000', '1767167588.000000', '1767181008.000000', '1767181136.000000', '1767528697.000000', '1767590519.000000', '1767591342.000000', '1767606472.000000', '1767614858.000000', '1767705251.000000', '1767760827.000000', '1767771057.000000', '1767773977.000000', '1767786968.000000', '1767874904.000000', '1767940425.000000', '1768027629.000000', '1768193336.000000', '1768204504.000000', '1768277476.000000', '1768287290.000000', '1768396328.000000', '1768625105.000000', '1768627596.000000', '1768628229.000000', '1768648404.000000', '1768649475.000000', '1768716969.000000', '1768824211.000000', '1769001079.000000', '1769086778.000000', '1769314576.000000', '1769338037.000000', '1769498329.000000', '1769499994.000000', '1769501628.000000', '1769576234.000000', '1769599793.000000', '1769602358.000000', '1769682075.000000', '1769689267.000000', '1769751978.000000', '1769768325.000000', '1769845774.000000', '1769864475.000000', '1769945245.000000', '1770268346.000000', '1770446638.000000', '1770618190.000000', '1770697299.000000', '1770786199.000000', '1770878281.000000', '1770879749.000000', '1770904479.000000', '1770972194.000000', '1771053333.000000', '1771063623.000000', '1771221455.000000', '1771313550.000000', '1771329995.000000', '1771414957.000000', '1771415274.000000', '1771589876.000000', '1771676141.000000', '1771744731.000000', '1771748771.000000', '1771752644.000000', '1771753972.000000', '1771850395.000000', '1771999023.000000', '1772271907.000000', '1772772774.000000', '1772882856.000000', '1772891306.000000', '1773126909.000000', '1773131966.000000', '1773206910.000000', '1773209030.000000', '1773308348.000000', '1773320132.000000', '1773471890.000000', '1773479273.000000', '1773547773.000000', '1773568254.000000', '1773570767.000000', '1773580939.000000', '1773658726.000000', '1773729609.000000', '1773741676.000000', '1773751051.000000', '1773751084.000000', '1773818128.000000', '1773924511.000000', '1774084293.000000', '1774354860.000000', '1774422980.000000', '1774530816.000000', '1774699785.000000', '1774850198.000000', '1774860480.000000', '1775050965.000000', '1775124918.000000', '1775283357.000000', '1775367410.000000', '1775379826.000000', '1775453073.000000', '1775469004.000000', '1775560364.000000', '1775562886.000000', '1775633782.000000', '1775654744.000000', '1775730765.000000', '1775732045.000000', '1775796777.000000', '1775804351.000000', '1775807199.000000', '1775808935.000000', '1775826328.000000', '1775887715.000000', '1775975782.000000', '1775984744.000000', '1775999603.000000', '1776055080.000000', '1776083581.000000', '1776320648.000000', '1776498288.000000', '1776576797.000000', '1776659351.000000', '1776831851.000000', '1776945562.000000', '1777016249.000000', '1777017316.000000', '1777199522.000000', '1777456017.000000', '1777556405.000000', '1777624926.000000', '1777706643.000000', '1777711938.000000', '1777799163.000000', '1777803247.000000', '1777874893.000000', '1777884416.000000', '1777962945.000000', '1777971883.000000', '1777977348.000000', '1777986017.000000', '1778485162.000000', '1778488152.000000', '1778498303.000000', '1778500653.000000', '1778581492.000000', '1778646473.000000', '1778746478.000000', '1778753333.000000', '1778762389.000000', '1778829100.000000', '1778911911.000000', '1778911988.000000', '1778924515.000000', '1778929321.000000', '1778992755.000000', '1779025526.000000', '1779167931.000000', '1779169771.000000', '1779172054.000000', '1779172779.000000', '1779183952.000000', '1779187789.000000', '1779265144.000000', '1779275447.000000', '1779365488.000000', '1779423098.000000', '1779447242.000000', '1779513877.000000', '1779518888.000000', '1779525230.000000', '1779618126.000000', '1779684458.000000', '1779952794.000000', '1780032555.000000', '1780037105.000000', '1780048374.000000', '1780135228.000000', '1780392774.000000', '1780460463.000000', '1780466748.000000', '1780470979.000000', '1780816433.000000', '1780902407.000000', '1780998418.000000', '1781012204.000000', '1781069561.000000', '1781071255.000000', '1781089180.000000', '1781179246.000000', '1781237036.000000', '1781247254.000000', '1781352200.000000', '1781355319.000000', '1781501751.000000', '1781614361.000000', '1781615460.000000', '1781677881.000000', '1781681372.000000')",
+   "engine": "local",
+   "rows": 300,
+   "ms": 1.2,
+   "round": 3,
+   "error": ""
+  },
+  {
+   "id": "q040",
+   "agent": "Investigator",
+   "purpose": "Thread questions for 130 answers",
+   "sql": "SELECT ts, user_id, text FROM slack.messages WHERE is_reply = 0 AND ts IN ('1781871580.000000', '1781949931.000000', '1781960417.000000', '1782044795.000000', '1782110866.000000', '1782200652.000000', '1782214267.000000', '1782280771.000000', '1782304269.000000', '1782481961.000000', '1782551245.000000', '1782553021.000000', '1782565335.000000', '1782629916.000000', '1782714956.000000', '1782802705.000000', '1782898898.000000', '1783077434.000000', '1783148125.000000', '1783243142.000000', '1783320517.000000', '1783333071.000000', '1783340614.000000', '1783774169.000000', '1783922788.000000', '1783933735.000000', '1784282760.000000', '1784368323.000000', '1784458738.000000', '1784463753.000000', '1784544864.000000', '1784614302.000000', '1784794917.000000', '1784870322.000000', '1785125860.000000', '1785243951.000000', '1785412096.000000', '1785479119.000000', '1785576437.000000', '1785730315.000000', '1785817158.000000', '1785830928.000000', '1785913434.000000', '1786000641.000000', '1786003403.000000', '1786173855.000000', '1786176154.000000', '1786265618.000000', '1786344980.000000', '1786421354.000000', '1786423965.000000', '1786520377.000000', '1786600975.000000', '1786612010.000000', '1786623084.000000', '1786628373.000000', '1786801592.000000', '1786862027.000000', '1786871202.000000', '1787115702.000000', '1787131237.000000', '1787144539.000000', '1787209676.000000', '1787289548.000000', '1787297908.000000', '1787300336.000000', '1787372355.000000', '1787372904.000000', '1787561519.000000', '1787643568.000000', '1787644824.000000', '1787661831.000000', '1787740687.000000', '1787828597.000000', '1787837350.000000', '1787890041.000000', '1787890047.000000', '1787989825.000000', '1787995739.000000', '1788075241.000000', '1788088300.000000', '1788239450.000000', '1788580944.000000', '1788758321.000000', '1788771590.000000', '1789018383.000000', '1789217273.000000', '1789378962.000000', '1789384956.000000', '1789449129.000000', '1789547785.000000', '1789885280.000000', '1789967603.000000', '1789976130.000000', '1789994683.000000', '1790055500.000000', '1790225632.000000', '1790238227.000000', '1790244363.000000', '1790246195.000000', '1790425959.000000', '1790500820.000000', '1790593901.000000', '1790762635.000000', '1790916417.000000', '1790924340.000000', '1791016686.000000', '1791025155.000000', '1791174141.000000', '1791180830.000000', '1791190157.000000', '1791293006.000000', '1791436631.000000', '1791454200.000000', '1791461657.000000', '1791779491.000000', '1791898879.000000', '1792071541.000000', '1792139712.000000', '1792146719.000000', '1792210016.000000', '1792228884.000000', '1792234513.000000', '1792299400.000000', '1792312485.000000', '1792328709.000000', '1792409688.000000', '1792409970.000000', '1792414360.000000', '1792587811.000000')",
+   "engine": "local",
+   "rows": 130,
+   "ms": 0.9,
+   "round": 3,
+   "error": ""
+  },
+  {
+   "id": "q041",
+   "agent": "Investigator",
+   "purpose": "Wiki pages: titles, authors, freshness",
+   "sql": "SELECT page_id, title, labels, author_id, last_editor_id, updated_at, body FROM docs.pages",
+   "engine": "local",
+   "rows": 22,
+   "ms": 0.2,
+   "round": 3,
+   "error": ""
+  },
+  {
+   "id": "q042",
+   "agent": "Successor scout",
+   "purpose": "Current open tickets per person (load)",
+   "sql": "SELECT assignee_id AS account, COUNT(*) AS n FROM jira.issues WHERE status <> 'Done' AND assignee_id IS NOT NULL AND created >= '2025-10-22' GROUP BY assignee_id",
+   "engine": "local",
+   "rows": 10,
+   "ms": 0.3,
+   "round": 4,
+   "error": ""
+  }
+ ],
+ "failed_sources": {},
+ "identities": {
+  "E1016": {
+   "jira": [
+    {
+     "account": "cfafc5f010f1cdad355fd9fe",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "nishak",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "slack": [
+    {
+     "account": "U0MX7IP5NC",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1001": {
+   "slack": [
+    {
+     "account": "U0IE13YA1C",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "praman-acme",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "fc51464f7e704d1cc7e1c3d1",
+     "method": "name/handle match",
+     "confidence": 0.78
+    }
+   ]
+  },
+  "E1010": {
+   "slack": [
+    {
+     "account": "U0198C2VF7",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "sara-n-acme",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "a65685ce16197a5fb1425561",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1011": {
+   "slack": [
+    {
+     "account": "U0XCAUVJ59",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "chloe-codes",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "560ad23e44526e057199afca",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1017": {
+   "slack": [
+    {
+     "account": "U0JQ1NQ1PW",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "meera-i",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "4a76986a6220e55824f1026c",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1012": {
+   "slack": [
+    {
+     "account": "U0ATM249YV",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "sofialq",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "b6691fee4b30fc9819203af5",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1007": {
+   "slack": [
+    {
+     "account": "U0TTYSCWIG",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "dokafor",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "2c23c8bcfac2db6171e99cd8",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1018": {
+   "slack": [
+    {
+     "account": "U0K8IAPJF4",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "hassan-ali",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "4237a6dcaf1dbcf26aa17908",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1008": {
+   "slack": [
+    {
+     "account": "U0MZD9DHI8",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "lmoreau",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "51586a844bddbf9471b293b0",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1004": {
+   "slack": [
+    {
+     "account": "U0G7RFV1KS",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "aishab",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "15a2a956be28a0208efa244e",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1006": {
+   "slack": [
+    {
+     "account": "U0TA7B8QRV",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "kwatanabe",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "64850d10fbca834e8667a0d8",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1005": {
+   "slack": [
+    {
+     "account": "U03MY4MBC4",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "mrossi",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "5dbb33287933d436e9e26432",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1013": {
+   "slack": [
+    {
+     "account": "U0DN1B8BJT",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "rahulvarma-dev",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "dffefe2fca6830760a5b9193",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1003": {
+   "slack": [
+    {
+     "account": "U0U76A2VOD",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "kavya-acme",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "8449fcd84e71ccb9bb2c842f",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1014": {
+   "slack": [
+    {
+     "account": "U0IWOSFQII",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "grace-m-acme",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "18165f08578305d08edcf284",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1015": {
+   "slack": [
+    {
+     "account": "U0560E27RV",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "jira": [
+    {
+     "account": "0d1ab7eed4727f59594beb62",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1009": {
+   "slack": [
+    {
+     "account": "U02Y04DFQN",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "vnair",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "2889c4e5191c9bdbea1e326c",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1002": {
+   "github": [
+    {
+     "account": "rverma",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "slack": [
+    {
+     "account": "U028LSML7W",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  }
+ },
+ "source_map": {
+  "docs.pages": {
+   "table": "docs.pages",
+   "source": "docs",
+   "kind": "rest",
+   "columns": [
+    "page_id",
+    "space",
+    "title",
+    "labels",
+    "author_id",
+    "last_editor_id",
+    "created_at",
+    "updated_at",
+    "body"
+   ],
+   "roles": {
+    "person": [
+     "author_id",
+     "last_editor_id"
+    ],
+    "time": [
+     "created_at",
+     "updated_at"
+    ],
+    "link": [],
+    "text": [
+     "title",
+     "body"
+    ],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Wiki pages: runbooks, ADRs, how-tos. Authors are Atlassian account ids.",
+   "discovered_via": "sqlite_master",
+   "rows": 22,
+   "first_at": "2024-09-21T18:00:00Z",
+   "last_at": "2026-07-15T18:00:00Z"
+  },
+  "github.commit_files": {
+   "table": "github.commit_files",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "sha",
+    "path",
+    "additions",
+    "deletions"
+   ],
+   "roles": {
+    "person": [],
+    "time": [],
+    "link": [
+     "path"
+    ],
+    "text": [],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Files touched by each commit.",
+   "discovered_via": "sqlite_master",
+   "rows": 3168,
+   "first_at": null,
+   "last_at": null
+  },
+  "github.commits": {
+   "table": "github.commits",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "sha",
+    "author_login",
+    "author_name",
+    "author_email",
+    "committed_at",
+    "message",
+    "pr_number"
+   ],
+   "roles": {
+    "person": [
+     "author_login"
+    ],
+    "time": [
+     "committed_at"
+    ],
+    "link": [],
+    "text": [
+     "message"
+    ],
+    "name": [
+     "author_name"
+    ],
+    "email": [
+     "author_email"
+    ]
+   },
+   "identity": false,
+   "detail": "Commits on the main branch of the platform monorepo.",
+   "discovered_via": "sqlite_master",
+   "rows": 1905,
+   "first_at": "2025-04-30T05:12:43Z",
+   "last_at": "2026-10-22T08:18:39Z"
+  },
+  "github.pull_requests": {
+   "table": "github.pull_requests",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "title",
+    "author_login",
+    "created_at",
+    "merged_at",
+    "state",
+    "reviewers",
+    "base_path",
+    "number"
+   ],
+   "roles": {
+    "person": [
+     "author_login"
+    ],
+    "time": [
+     "created_at",
+     "merged_at"
+    ],
+    "link": [
+     "base_path"
+    ],
+    "text": [
+     "title"
+    ],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Merged pull requests with reviewers.",
+   "discovered_via": "sqlite_master",
+   "rows": 654,
+   "first_at": "2025-04-30T05:12:43Z",
+   "last_at": "2026-10-22T08:18:39Z"
+  },
+  "github.service_catalog": {
+   "table": "github.service_catalog",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "system_id",
+    "name",
+    "kind",
+    "owner_team",
+    "repo_path",
+    "slack_channel",
+    "jira_component",
+    "pagerduty_service",
+    "aliases",
+    "description",
+    "tier"
+   ],
+   "roles": {
+    "person": [],
+    "time": [],
+    "link": [
+     "system_id",
+     "repo_path",
+     "jira_component",
+     "pagerduty_service"
+    ],
+    "text": [
+     "description"
+    ],
+    "name": [
+     "name"
+    ],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Backstage-style service catalog (catalog-info.yaml) linking each system to its repo path, channel and component.",
+   "discovered_via": "sqlite_master",
+   "rows": 20,
+   "first_at": null,
+   "last_at": null
+  },
+  "github.users": {
+   "table": "github.users",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "login",
+    "name",
+    "account_type"
+   ],
+   "roles": {
+    "person": [
+     "login"
+    ],
+    "time": [],
+    "link": [],
+    "text": [],
+    "name": [
+     "name"
+    ],
+    "email": []
+   },
+   "identity": true,
+   "detail": "GitHub org members and bots.",
+   "discovered_via": "sqlite_master",
+   "rows": 19,
+   "first_at": null,
+   "last_at": null
+  },
+  "hr_pg.access_grants": {
+   "table": "hr_pg.access_grants",
+   "source": "hr_pg",
+   "kind": "jdbc",
+   "columns": [
+    "employee_id",
+    "resource",
+    "level",
+    "granted_at"
+   ],
+   "roles": {
+    "person": [
+     "employee_id"
+    ],
+    "time": [
+     "granted_at"
+    ],
+    "link": [
+     "resource"
+    ],
+    "text": [],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Privileged access by employee (admin consoles, keys, escalation lines).",
+   "discovered_via": "sqlite_master",
+   "rows": 19,
+   "first_at": "2023-12-17",
+   "last_at": "2025-04-08"
+  },
+  "hr_pg.departures": {
+   "table": "hr_pg.departures",
+   "source": "hr_pg",
+   "kind": "jdbc",
+   "columns": [
+    "employee_id",
+    "notice_date",
+    "last_day",
+    "reason_category",
+    "backfill_status"
+   ],
+   "roles": {
+    "person": [
+     "employee_id"
+    ],
+    "time": [],
+    "link": [],
+    "text": [],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Notice periods and last days.",
+   "discovered_via": "sqlite_master",
+   "rows": 3,
+   "first_at": null,
+   "last_at": null
+  },
+  "hr_pg.employees_directory": {
+   "table": "hr_pg.employees_directory",
+   "source": "hr_pg",
+   "kind": "jdbc",
+   "columns": [
+    "employee_id",
+    "full_name",
+    "preferred_name",
+    "work_email",
+    "title",
+    "team",
+    "team_id",
+    "manager_id",
+    "employment_type",
+    "status",
+    "start_date",
+    "last_day",
+    "location"
+   ],
+   "roles": {
+    "person": [
+     "employee_id"
+    ],
+    "time": [],
+    "link": [],
+    "text": [
+     "title"
+    ],
+    "name": [
+     "full_name",
+     "preferred_name"
+    ],
+    "email": [
+     "work_email"
+    ]
+   },
+   "identity": true,
+   "detail": "Governed employee directory (no compensation or personal data).",
+   "discovered_via": "sqlite_master",
+   "rows": 18,
+   "first_at": null,
+   "last_at": null
+  },
+  "jira.issues": {
+   "table": "jira.issues",
+   "source": "jira",
+   "kind": "rest",
+   "columns": [
+    "issue_key",
+    "project",
+    "component",
+    "issue_type",
+    "summary",
+    "description",
+    "status",
+    "labels",
+    "assignee_id",
+    "reporter_id",
+    "created",
+    "updated",
+    "resolved"
+   ],
+   "roles": {
+    "person": [
+     "assignee_id"
+    ],
+    "time": [
+     "created"
+    ],
+    "link": [
+     "component"
+    ],
+    "text": [
+     "summary",
+     "description"
+    ],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Jira issues across all projects.",
+   "discovered_via": "sqlite_master",
+   "rows": 1101,
+   "first_at": "2025-05-01T10:41:04Z",
+   "last_at": "2026-10-22T12:27:08Z"
+  },
+  "jira.users": {
+   "table": "jira.users",
+   "source": "jira",
+   "kind": "rest",
+   "columns": [
+    "account_id",
+    "display_name",
+    "email",
+    "time_zone",
+    "active"
+   ],
+   "roles": {
+    "person": [
+     "account_id"
+    ],
+    "time": [],
+    "link": [],
+    "text": [],
+    "name": [
+     "display_name"
+    ],
+    "email": [
+     "email"
+    ]
+   },
+   "identity": true,
+   "detail": "Atlassian accounts.",
+   "discovered_via": "sqlite_master",
+   "rows": 18,
+   "first_at": null,
+   "last_at": null
+  },
+  "slack.channels": {
+   "table": "slack.channels",
+   "source": "slack",
+   "kind": "rest",
+   "columns": [
+    "channel_id",
+    "name",
+    "is_archived"
+   ],
+   "roles": {
+    "person": [],
+    "time": [],
+    "link": [],
+    "text": [],
+    "name": [
+     "name"
+    ],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Slack channels.",
+   "discovered_via": "sqlite_master",
+   "rows": 7,
+   "first_at": null,
+   "last_at": null
+  },
+  "slack.messages": {
+   "table": "slack.messages",
+   "source": "slack",
+   "kind": "rest",
+   "columns": [
+    "ts",
+    "thread_ts",
+    "channel",
+    "channel_name",
+    "text",
+    "created_at",
+    "parent_user",
+    "is_reply",
+    "reply_count",
+    "user_id"
+   ],
+   "roles": {
+    "person": [
+     "user_id"
+    ],
+    "time": [
+     "created_at",
+     "ts",
+     "thread_ts"
+    ],
+    "link": [
+     "channel_name"
+    ],
+    "text": [
+     "text"
+    ],
+    "name": [
+     "channel_name"
+    ],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Messages and thread replies across public channels.",
+   "discovered_via": "sqlite_master",
+   "rows": 3352,
+   "first_at": "2025-04-30T09:53:16Z",
+   "last_at": "2026-10-22T14:39:39Z"
+  },
+  "slack.users": {
+   "table": "slack.users",
+   "source": "slack",
+   "kind": "rest",
+   "columns": [
+    "user_id",
+    "name",
+    "real_name",
+    "display_name",
+    "email",
+    "title",
+    "deleted"
+   ],
+   "roles": {
+    "person": [
+     "user_id"
+    ],
+    "time": [],
+    "link": [],
+    "text": [
+     "title"
+    ],
+    "name": [
+     "name",
+     "real_name",
+     "display_name"
+    ],
+    "email": [
+     "email"
+    ]
+   },
+   "identity": true,
+   "detail": "Slack workspace members.",
+   "discovered_via": "sqlite_master",
+   "rows": 18,
+   "first_at": null,
+   "last_at": null
+  },
+  "_namespaces": {
+   "docs": "jira"
+  }
+ },
+ "memory_log": [
+  {
+   "id": "mem-1",
+   "content": "Bluebird Airlines account: Bluebird account notes -> Bluebird wants a daily refund status file at 07:00.",
+   "source": "docs:4020",
+   "tags": [
+    "system:bluebird-airlines",
+    "kind:doc"
+   ]
+  },
+  {
+   "id": "mem-2",
+   "content": "Bluebird Airlines account claim: bluebird wants a every 1 days",
+   "source": "docs:4020",
+   "tags": [
+    "system:bluebird-airlines",
+    "kind:doc"
+   ]
+  },
+  {
+   "id": "mem-3",
+   "content": "Verified finding: if Grace Mensah leaves, Bluebird Airlines account is critical. Strongest remaining backup: Priya Raman. Critic status: verified.",
+   "source": "lastday:run:ec24fc83ab",
+   "tags": [
+    "system:bluebird-airlines",
+    "person:E1014",
+    "kind:verdict"
+   ]
+  }
+ ],
+ "outputs": {
+  "prior": {},
+  "plan": [
+   "Footprint: find every system Grace Mensah shows up in across 7 probes",
+   "Ownership: who else works on those systems, from systems of record (commits, reviews, tickets)",
+   "Critique: the Critic decides which labels need corroboration before anyone acts on them",
+   "Corroboration: conversation, incidents and docs only where the Critic asked",
+   "Risk and successors, then the handover plan and exit interview"
+  ],
+  "footprint": {
+   "merchant-dashboard": {
+    "github": 5.0,
+    "jira": 1.4519929070631512,
+    "slack": 3.7388384874907556
+   },
+   "bluebird-airlines": {
+    "jira": 45.37857308239581,
+    "slack": 27.428234737693394
+   },
+   "zenith-retail": {
+    "jira": 1.044660675955349,
+    "slack": 14.177352887358325
+   },
+   "refunds-service": {
+    "slack": 25.326684518102685
+   }
+  },
+  "handover": {
+   "title": "Handover plan: Grace Mensah",
+   "headline": "Grace Mensah leaves in 34 days (25 Nov 2026). 1 critical and 0 at-risk areas need a handover; 3 areas are already covered by others.",
+   "days_left": 34,
+   "last_day": "2026-11-25",
+   "areas": [
+    {
+     "system": "bluebird-airlines",
+     "name": "Bluebird Airlines account",
+     "label": "critical",
+     "tier": 2,
+     "share": 0.744,
+     "backup": 0.256,
+     "status": "verified",
+     "confidence": 0.75,
+     "priority": 0.604,
+     "why": "Grace holds 74% of the evidence-weighted knowledge of Bluebird Airlines account (tier 2); the strongest remaining person holds 26%. Backups: Priya Raman 26%. Sources: jira, slack.",
+     "knows": [],
+     "chores": [],
+     "access": [
+      {
+       "resource": "bluebird-airlines-escalation-line",
+       "level": "owner",
+       "system": "bluebird-airlines",
+       "mapped_by": "keyword",
+       "other_holders": [],
+       "exclusive": true,
+       "query_id": "q028"
+      }
+     ],
+     "docs_to_fix": [
+      {
+       "page_id": "4020",
+       "title": "Bluebird account notes",
+       "issue": "last updated 3 months ago; author Grace Mensah has notice"
+      }
+     ],
+     "successor": {
+      "person": "E1001",
+      "name": "Priya Raman",
+      "title": "Senior Engineer",
+      "score": 0.523,
+      "reasons": [
+       "26% of the Bluebird Airlines account activity",
+       "Grace answered their Bluebird Airlines account questions 2 times",
+       "1 open ticket"
+      ]
+     },
+     "other_candidates": [
+      {
+       "person": "E1015",
+       "name": "Fatima Zahra",
+       "title": "Support Lead",
+       "score": 0.32,
+       "reasons": [
+        "Grace answered their Bluebird Airlines account questions 2 times",
+        "on the owning team (Customer Success)",
+        "0 open tickets"
+       ]
+      },
+      {
+       "person": "E1002",
+       "name": "Rahul Verma",
+       "title": "Staff Engineer",
+       "score": 0.308,
+       "reasons": [
+        "Grace answered their Bluebird Airlines account questions 1 time",
+        "works on neighbouring systems",
+        "0 open tickets"
+       ]
+      }
+     ],
+     "checklist": [
+      "Pair Priya Raman with Grace on Bluebird Airlines account for the next 10 working days",
+      "Transfer bluebird-airlines-escalation-line (owner) to Priya Raman; nobody else holds it",
+      "Fix wiki page 'Bluebird account notes': last updated 3 months ago; author Grace Mensah has notice",
+      "Introduce Priya Raman to the Bluebird Airlines contacts before the last day",
+      "Answer the exit-interview questions for this area"
+     ],
+     "citations": [
+      "docs:doc:4020",
+      "hr_pg:access:bluebird-airlines-escalation-line",
+      "jira:issue_done:18165f08578305d08edcf284@bluebird-airlines:Done",
+      "jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:In Progress",
+      "jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:To Do",
+      "slack:slack_answer:cs-escalations/1765012334.000000",
+      "slack:slack_answer:cs-escalations/1765613500.000000",
+      "slack:slack_answer:cs-escalations/1765638651.000000",
+      "slack:slack_answer:cs-escalations/1765803140.000000",
+      "slack:slack_answer:cs-escalations/1766296975.000000",
+      "slack:slack_answer:cs-escalations/1766484199.000000",
+      "slack:slack_answer:cs-escalations/1766842404.000000"
+     ],
+     "history": [
+      {
+       "round": 1,
+       "stage": "init",
+       "label": "covered",
+       "share": 0.0,
+       "backup": 0.0,
+       "sources": []
+      },
+      {
+       "round": 2,
+       "stage": "provisional",
+       "label": "critical",
+       "share": 0.838,
+       "backup": 0.162,
+       "sources": [
+        "jira"
+       ]
+      },
+      {
+       "round": 2,
+       "stage": "critic:provisional",
+       "notes": [
+        "needs corroboration: critical on commits and tickets alone"
+       ]
+      },
+      {
+       "round": 3,
+       "stage": "corroborated",
+       "label": "critical",
+       "share": 0.744,
+       "backup": 0.256,
+       "sources": [
+        "jira",
+        "slack"
+       ]
+      },
+      {
+       "round": 3,
+       "stage": "critic:final",
+       "notes": [
+        "label holds across 2 sources: jira, slack"
+       ]
+      },
+      {
+       "round": 4,
+       "stage": "corroborated",
+       "label": "critical",
+       "share": 0.744,
+       "backup": 0.256,
+       "sources": [
+        "jira",
+        "slack"
+       ]
+      }
+     ],
+     "escalated": false
+    }
+   ],
+   "covered": [
+    {
+     "system": "refunds-service",
+     "name": "Refunds Service",
+     "share": 0.119,
+     "backup": 0.286,
+     "backups": [
+      "Sara Novak",
+      "Nisha Kapoor"
+     ],
+     "status": "verified"
+    },
+    {
+     "system": "zenith-retail",
+     "name": "Zenith Retail account",
+     "share": 0.18,
+     "backup": 0.371,
+     "backups": [
+      "Rahul Verma",
+      "Fatima Zahra"
+     ],
+     "status": "verified"
+    },
+    {
+     "system": "merchant-dashboard",
+     "name": "Merchant Dashboard",
+     "share": 0.064,
+     "backup": 0.47,
+     "backups": [
+      "Meera Iyer",
+      "Fatima Zahra"
+     ],
+     "status": "verified"
+    }
+   ],
+   "escalations": [],
+   "llm": "offline templates (no LLM key)",
+   "markdown": "# Handover plan: Grace Mensah\n\nGrace Mensah leaves in 34 days (25 Nov 2026). 1 critical and 0 at-risk areas need a handover; 3 areas are already covered by others.\n\n## Bluebird Airlines account: critical\n\nGrace holds 74% of the evidence-weighted knowledge of Bluebird Airlines account (tier 2); the strongest remaining person holds 26%. Backups: Priya Raman 26%. Sources: jira, slack.\n\n**Recommended successor:** Priya Raman: 26% of the Bluebird Airlines account activity; Grace answered their Bluebird Airlines account questions 2 times; 1 open ticket\n\n**Checklist**\n\n- [ ] Pair Priya Raman with Grace on Bluebird Airlines account for the next 10 working days\n- [ ] Transfer bluebird-airlines-escalation-line (owner) to Priya Raman; nobody else holds it\n- [ ] Fix wiki page 'Bluebird account notes': last updated 3 months ago; author Grace Mensah has notice\n- [ ] Introduce Priya Raman to the Bluebird Airlines contacts before the last day\n- [ ] Answer the exit-interview questions for this area\n\n<sub>Evidence: docs:doc:4020, hr_pg:access:bluebird-airlines-escalation-line, jira:issue_done:18165f08578305d08edcf284@bluebird-airlines:Done, jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:In Progress, jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:To Do, slack:slack_answer:cs-escalations/1765012334.000000, slack:slack_answer:cs-escalations/1765613500.000000, slack:slack_answer:cs-escalations/1765638651.000000 ... \u00b7 confidence 75% \u00b7 Critic: verified</sub>\n\n## Already covered\n\n- Refunds Service: backups Sara Novak, Nisha Kapoor\n- Zenith Retail account: backups Rahul Verma, Fatima Zahra\n- Merchant Dashboard: backups Meera Iyer, Fatima Zahra\n"
+  },
+  "interview": {
+   "person": "Grace Mensah",
+   "questions": [
+    {
+     "id": "bluebird-airlines:1",
+     "system": "bluebird-airlines",
+     "area": "Bluebird Airlines account",
+     "label": "critical",
+     "text": "You answered 24 questions about Bluebird Airlines account in #cs-escalations this year; everyone else combined answered 15. What are the three things people keep asking, and where should the answers live?",
+     "cites": [
+      "slack:slack_answer:cs-escalations/1765012334.000000",
+      "slack:slack_answer:cs-escalations/1765613500.000000",
+      "slack:slack_answer:cs-escalations/1765638651.000000",
+      "slack:slack_answer:cs-escalations/1765803140.000000",
+      "slack:slack_answer:cs-escalations/1766296975.000000"
+     ]
+    },
+    {
+     "id": "bluebird-airlines:2",
+     "system": "bluebird-airlines",
+     "area": "Bluebird Airlines account",
+     "label": "critical",
+     "text": "You are the only one holding bluebird-airlines-escalation-line (owner). Is anything tied to your personal accounts or devices, and who should hold it next?",
+     "cites": [
+      "hr_pg:access:bluebird-airlines-escalation-line"
+     ]
+    },
+    {
+     "id": "bluebird-airlines:3",
+     "system": "bluebird-airlines",
+     "area": "Bluebird Airlines account",
+     "label": "critical",
+     "text": "Who are the people at Bluebird Airlines you call when something goes wrong, and what do they expect from us that isn't in the CRM?",
+     "cites": []
+    }
+   ]
+  },
+  "citation_problems": [],
+  "handed_over": {}
+ },
+ "evidence_count": 80,
+ "evidence": {
+  "hr_pg:access:bluebird-airlines-escalation-line": {
+   "id": "hr_pg:access:bluebird-airlines-escalation-line",
+   "source": "hr_pg",
+   "kind": "access",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "bluebird-airlines-escalation-line",
+   "title": "owner on bluebird-airlines-escalation-line",
+   "at": "2024-06-01",
+   "weight": 1.0,
+   "query_id": "q028",
+   "url": ""
+  },
+  "jira:chore:PAY-532": {
+   "id": "jira:chore:PAY-532",
+   "source": "jira",
+   "kind": "chore",
+   "system": "bank-sftp",
+   "person": null,
+   "ref": "PAY-532",
+   "title": "[Recurring] Rotate Unity Bank SFTP key",
+   "at": "2026-09-23T18:00:00Z",
+   "weight": 1.5,
+   "query_id": "q034",
+   "url": ""
+  },
+  "github:commit:grace-m-acme@merchant-dashboard": {
+   "id": "github:commit:grace-m-acme@merchant-dashboard",
+   "source": "github",
+   "kind": "commit",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "grace-m-acme@merchant-dashboard",
+   "title": "5 commits to merchant-dashboard by grace-m-acme",
+   "at": "2026-10-21T09:49:42Z",
+   "weight": 5.0,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1242:grace-m-acme": {
+   "id": "github:review:pr1242:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1242:grace-m-acme",
+   "title": "Reviewed PR #1242",
+   "at": "2026-02-14T04:08:12Z",
+   "weight": 0.292,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1245:grace-m-acme": {
+   "id": "github:review:pr1245:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1245:grace-m-acme",
+   "title": "Reviewed PR #1245",
+   "at": "2026-03-21T11:48:19Z",
+   "weight": 0.323,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1246:grace-m-acme": {
+   "id": "github:review:pr1246:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1246:grace-m-acme",
+   "title": "Reviewed PR #1246",
+   "at": "2026-04-13T05:33:34Z",
+   "weight": 0.346,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1248:grace-m-acme": {
+   "id": "github:review:pr1248:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1248:grace-m-acme",
+   "title": "Reviewed PR #1248",
+   "at": "2026-05-09T11:17:10Z",
+   "weight": 0.373,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1253:grace-m-acme": {
+   "id": "github:review:pr1253:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1253:grace-m-acme",
+   "title": "Reviewed PR #1253",
+   "at": "2026-07-12T13:44:24Z",
+   "weight": 0.448,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1258:grace-m-acme": {
+   "id": "github:review:pr1258:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1258:grace-m-acme",
+   "title": "Reviewed PR #1258",
+   "at": "2026-09-02T13:42:03Z",
+   "weight": 0.521,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1259:grace-m-acme": {
+   "id": "github:review:pr1259:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1259:grace-m-acme",
+   "title": "Reviewed PR #1259",
+   "at": "2026-09-17T09:51:57Z",
+   "weight": 0.544,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1607:grace-m-acme": {
+   "id": "github:review:pr1607:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1607:grace-m-acme",
+   "title": "Reviewed PR #1607",
+   "at": "2026-02-27T05:15:28Z",
+   "weight": 0.303,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1608:grace-m-acme": {
+   "id": "github:review:pr1608:grace-m-acme",
+   "source": "github",
+   "kind": "review",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "pr1608:grace-m-acme",
+   "title": "Reviewed PR #1608",
+   "at": "2026-05-22T12:19:21Z",
+   "weight": 0.387,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_done:18165f08578305d08edcf284@bluebird-airlines:Done": {
+   "id": "jira:issue_done:18165f08578305d08edcf284@bluebird-airlines:Done",
+   "source": "jira",
+   "kind": "issue_done",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "18165f08578305d08edcf284@bluebird-airlines:Done",
+   "title": "37 Done issues on bluebird-airlines",
+   "at": "2026-10-21T07:35:37Z",
+   "weight": 44.4,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:In Progress": {
+   "id": "jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:In Progress",
+   "source": "jira",
+   "kind": "issue_open",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "18165f08578305d08edcf284@bluebird-airlines:In Progress",
+   "title": "1 In Progress issues on bluebird-airlines",
+   "at": "2026-10-13T07:06:38Z",
+   "weight": 0.489,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:To Do": {
+   "id": "jira:issue_open:18165f08578305d08edcf284@bluebird-airlines:To Do",
+   "source": "jira",
+   "kind": "issue_open",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "18165f08578305d08edcf284@bluebird-airlines:To Do",
+   "title": "1 To Do issues on bluebird-airlines",
+   "at": "2026-10-14T04:10:06Z",
+   "weight": 0.49,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_done:18165f08578305d08edcf284@merchant-dashboard:Done": {
+   "id": "jira:issue_done:18165f08578305d08edcf284@merchant-dashboard:Done",
+   "source": "jira",
+   "kind": "issue_done",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "18165f08578305d08edcf284@merchant-dashboard:Done",
+   "title": "2 Done issues on merchant-dashboard",
+   "at": "2026-04-30T07:17:05Z",
+   "weight": 1.452,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_done:18165f08578305d08edcf284@zenith-retail:Done": {
+   "id": "jira:issue_done:18165f08578305d08edcf284@zenith-retail:Done",
+   "source": "jira",
+   "kind": "issue_done",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "18165f08578305d08edcf284@zenith-retail:Done",
+   "title": "1 Done issues on zenith-retail",
+   "at": "2026-09-03T13:21:20Z",
+   "weight": 1.045,
+   "query_id": "q035",
+   "url": ""
+  },
+  "slack:slack_answer:payments/1761458139.000000": {
+   "id": "slack:slack_answer:payments/1761458139.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "payments/1761458139.000000",
+   "title": "Is Merchant Dashboard deploying today?",
+   "at": "2025-10-26T05:55:39Z",
+   "weight": 0.707,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1762836935.000000": {
+   "id": "slack:slack_answer:cs-escalations/1762836935.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1762836935.000000",
+   "title": "<@U0IWOSFQII> Bluebird asking for refund status",
+   "at": "2025-11-11T04:55:35Z",
+   "weight": 1.111,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1763542734.000000": {
+   "id": "slack:slack_answer:cs-escalations/1763542734.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1763542734.000000",
+   "title": "Zenith says settlement is short again",
+   "at": "2025-11-19T08:58:54Z",
+   "weight": 1.137,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1763724256.000000": {
+   "id": "slack:slack_answer:cs-escalations/1763724256.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1763724256.000000",
+   "title": "<@U0IWOSFQII> Bluebird asking for refund status",
+   "at": "2025-11-21T11:24:16Z",
+   "weight": 1.143,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1763797787.000000": {
+   "id": "slack:slack_answer:cs-escalations/1763797787.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1763797787.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2025-11-22T07:49:47Z",
+   "weight": 1.147,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1764926515.000000": {
+   "id": "slack:slack_answer:cs-escalations/1764926515.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1764926515.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2025-12-05T09:21:55Z",
+   "weight": 1.191,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:payments/1764941077.000000": {
+   "id": "slack:slack_answer:payments/1764941077.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "payments/1764941077.000000",
+   "title": "Dashboard login loop for a merchant",
+   "at": "2025-12-05T13:24:37Z",
+   "weight": 0.794,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1765012334.000000": {
+   "id": "slack:slack_answer:cs-escalations/1765012334.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1765012334.000000",
+   "title": "Anyone know why bluebird is slow today?",
+   "at": "2025-12-06T09:12:14Z",
+   "weight": 0.796,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1765173807.000000": {
+   "id": "slack:slack_answer:cs-escalations/1765173807.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1765173807.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2025-12-08T06:03:27Z",
+   "weight": 1.201,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1765613500.000000": {
+   "id": "slack:slack_answer:cs-escalations/1765613500.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1765613500.000000",
+   "title": "Seeing errors in Bluebird Airlines account logs, known issue?",
+   "at": "2025-12-13T08:11:40Z",
+   "weight": 0.812,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1765623823.000000": {
+   "id": "slack:slack_answer:cs-escalations/1765623823.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1765623823.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2025-12-13T11:03:43Z",
+   "weight": 1.218,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1765638651.000000": {
+   "id": "slack:slack_answer:cs-escalations/1765638651.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1765638651.000000",
+   "title": "<@U0IWOSFQII> How do I test Bluebird Airlines account locally?",
+   "at": "2025-12-13T15:10:51Z",
+   "weight": 0.812,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1765797348.000000": {
+   "id": "slack:slack_answer:cs-escalations/1765797348.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1765797348.000000",
+   "title": "Who can review my Zenith Retail account PR?",
+   "at": "2025-12-15T11:15:48Z",
+   "weight": 0.817,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1765803140.000000": {
+   "id": "slack:slack_answer:cs-escalations/1765803140.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1765803140.000000",
+   "title": "Anyone know why Bluebird Airlines account is slow today?",
+   "at": "2025-12-15T12:52:20Z",
+   "weight": 0.817,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1765880014.000000": {
+   "id": "slack:slack_answer:cs-escalations/1765880014.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1765880014.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2025-12-16T10:13:34Z",
+   "weight": 1.229,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1766296975.000000": {
+   "id": "slack:slack_answer:cs-escalations/1766296975.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1766296975.000000",
+   "title": "Quick one about bluebird: is there a runbook?",
+   "at": "2025-12-21T06:02:55Z",
+   "weight": 0.831,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1766484199.000000": {
+   "id": "slack:slack_answer:cs-escalations/1766484199.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1766484199.000000",
+   "title": "<@U0IE13YA1C> Seeing errors in bluebird logs, known issue?",
+   "at": "2025-12-23T10:03:19Z",
+   "weight": 0.836,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1766842404.000000": {
+   "id": "slack:slack_answer:cs-escalations/1766842404.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1766842404.000000",
+   "title": "<@U0IWOSFQII> Anyone know why bluebird is slow today?",
+   "at": "2025-12-27T13:33:24Z",
+   "weight": 0.846,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:payments/1767618098.000000": {
+   "id": "slack:slack_answer:payments/1767618098.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "payments/1767618098.000000",
+   "title": "Seeing errors in dashboard logs, known issue?",
+   "at": "2026-01-05T13:01:38Z",
+   "weight": 0.868,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1767710531.000000": {
+   "id": "slack:slack_answer:cs-escalations/1767710531.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1767710531.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-01-06T14:42:11Z",
+   "weight": 1.306,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1767763107.000000": {
+   "id": "slack:slack_answer:cs-escalations/1767763107.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1767763107.000000",
+   "title": "Is Bluebird Airlines account deploying today?",
+   "at": "2026-01-07T05:18:27Z",
+   "weight": 0.873,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1768031649.000000": {
+   "id": "slack:slack_answer:cs-escalations/1768031649.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1768031649.000000",
+   "title": "Is bluebird deploying today?",
+   "at": "2026-01-10T07:54:09Z",
+   "weight": 0.881,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1768824451.000000": {
+   "id": "slack:slack_answer:cs-escalations/1768824451.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1768824451.000000",
+   "title": "Seeing errors in bluebird logs, known issue?",
+   "at": "2026-01-19T12:07:31Z",
+   "weight": 0.904,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1769691307.000000": {
+   "id": "slack:slack_answer:cs-escalations/1769691307.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1769691307.000000",
+   "title": "Anyone know why Bluebird Airlines account is slow today?",
+   "at": "2026-01-29T12:55:07Z",
+   "weight": 0.93,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1770699459.000000": {
+   "id": "slack:slack_answer:cs-escalations/1770699459.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1770699459.000000",
+   "title": "<@U0IE13YA1C> Bluebird asking for refund status",
+   "at": "2026-02-10T04:57:39Z",
+   "weight": 0.963,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1771068903.000000": {
+   "id": "slack:slack_answer:cs-escalations/1771068903.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1771068903.000000",
+   "title": "<@U0IWOSFQII> Quick one about zenith: is there a runbook?",
+   "at": "2026-02-14T11:35:03Z",
+   "weight": 0.974,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1771592276.000000": {
+   "id": "slack:slack_answer:cs-escalations/1771592276.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1771592276.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-02-20T12:57:56Z",
+   "weight": 1.487,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1771756312.000000": {
+   "id": "slack:slack_answer:cs-escalations/1771756312.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1771756312.000000",
+   "title": "<@U0IWOSFQII> Is Bluebird Airlines account deploying today?",
+   "at": "2026-02-22T10:31:52Z",
+   "weight": 0.997,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1772883636.000000": {
+   "id": "slack:slack_answer:cs-escalations/1772883636.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1772883636.000000",
+   "title": "<@U0IWOSFQII> Bluebird asking for refund status",
+   "at": "2026-03-07T11:40:36Z",
+   "weight": 1.553,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1773746896.000000": {
+   "id": "slack:slack_answer:cs-escalations/1773746896.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1773746896.000000",
+   "title": "Is bluebird deploying today?",
+   "at": "2026-03-17T11:28:16Z",
+   "weight": 1.066,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1773757471.000000": {
+   "id": "slack:slack_answer:cs-escalations/1773757471.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1773757471.000000",
+   "title": "Quick one about zenith: is there a runbook?",
+   "at": "2026-03-17T14:24:31Z",
+   "weight": 1.066,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1775370890.000000": {
+   "id": "slack:slack_answer:cs-escalations/1775370890.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1775370890.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-04-05T06:34:50Z",
+   "weight": 1.689,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1775734925.000000": {
+   "id": "slack:slack_answer:cs-escalations/1775734925.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1775734925.000000",
+   "title": "<@U0IWOSFQII> Anyone know why Zenith Retail account is slow today?",
+   "at": "2026-04-09T11:42:05Z",
+   "weight": 1.139,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1775981122.000000": {
+   "id": "slack:slack_answer:cs-escalations/1775981122.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1775981122.000000",
+   "title": "<@U0IWOSFQII> Who do we call at Zenith for an outage?",
+   "at": "2026-04-12T08:05:22Z",
+   "weight": 1.723,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1776055560.000000": {
+   "id": "slack:slack_answer:cs-escalations/1776055560.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1776055560.000000",
+   "title": "Quick one about Bluebird Airlines account: is there a runbook?",
+   "at": "2026-04-13T04:46:00Z",
+   "weight": 1.152,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1776836771.000000": {
+   "id": "slack:slack_answer:cs-escalations/1776836771.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1776836771.000000",
+   "title": "How do I test bluebird locally?",
+   "at": "2026-04-22T05:46:11Z",
+   "weight": 1.182,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1777628526.000000": {
+   "id": "slack:slack_answer:cs-escalations/1777628526.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1777628526.000000",
+   "title": "Is bluebird deploying today?",
+   "at": "2026-05-01T09:42:06Z",
+   "weight": 1.213,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1777965585.000000": {
+   "id": "slack:slack_answer:cs-escalations/1777965585.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1777965585.000000",
+   "title": "Anyone know why bluebird is slow today?",
+   "at": "2026-05-05T07:19:45Z",
+   "weight": 1.228,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1778916471.000000": {
+   "id": "slack:slack_answer:cs-escalations/1778916471.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1778916471.000000",
+   "title": "Quick one about zenith: is there a runbook?",
+   "at": "2026-05-16T07:27:51Z",
+   "weight": 1.267,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1778995335.000000": {
+   "id": "slack:slack_answer:cs-escalations/1778995335.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1778995335.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-05-17T05:22:15Z",
+   "weight": 1.906,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1779953214.000000": {
+   "id": "slack:slack_answer:cs-escalations/1779953214.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1779953214.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-05-28T07:26:54Z",
+   "weight": 1.968,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1780035495.000000": {
+   "id": "slack:slack_answer:cs-escalations/1780035495.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1780035495.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-05-29T06:18:15Z",
+   "weight": 1.974,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:payments/1781244476.000000": {
+   "id": "slack:slack_answer:payments/1781244476.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "merchant-dashboard",
+   "person": "E1014",
+   "ref": "payments/1781244476.000000",
+   "title": "How do I test Merchant Dashboard locally?",
+   "at": "2026-06-12T06:07:56Z",
+   "weight": 1.37,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1781252654.000000": {
+   "id": "slack:slack_answer:cs-escalations/1781252654.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1781252654.000000",
+   "title": "<@U0IWOSFQII> Bluebird asking for refund status",
+   "at": "2026-06-12T08:24:14Z",
+   "weight": 2.055,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1782117526.000000": {
+   "id": "slack:slack_answer:cs-escalations/1782117526.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1782117526.000000",
+   "title": "Is zenith deploying today?",
+   "at": "2026-06-22T08:38:46Z",
+   "weight": 1.41,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1782282151.000000": {
+   "id": "slack:slack_answer:cs-escalations/1782282151.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1782282151.000000",
+   "title": "<@U0IWOSFQII> Is Bluebird Airlines account deploying today?",
+   "at": "2026-06-24T06:22:31Z",
+   "weight": 1.418,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1782483581.000000": {
+   "id": "slack:slack_answer:cs-escalations/1782483581.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1782483581.000000",
+   "title": "Anyone know why Bluebird Airlines account is slow today?",
+   "at": "2026-06-26T14:19:41Z",
+   "weight": 1.427,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1782720236.000000": {
+   "id": "slack:slack_answer:cs-escalations/1782720236.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1782720236.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-06-29T08:03:56Z",
+   "weight": 2.158,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1784875542.000000": {
+   "id": "slack:slack_answer:cs-escalations/1784875542.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1784875542.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-07-24T06:45:42Z",
+   "weight": 2.32,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1787211716.000000": {
+   "id": "slack:slack_answer:cs-escalations/1787211716.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1787211716.000000",
+   "title": "Who can review my zenith PR?",
+   "at": "2026-08-20T07:41:56Z",
+   "weight": 1.672,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1789967723.000000": {
+   "id": "slack:slack_answer:cs-escalations/1789967723.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1789967723.000000",
+   "title": "<@U0IWOSFQII> Who can review my Bluebird Airlines account PR?",
+   "at": "2026-09-21T05:15:23Z",
+   "weight": 1.834,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1790246163.000000": {
+   "id": "slack:slack_answer:cs-escalations/1790246163.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1790246163.000000",
+   "title": "<@U0IWOSFQII> Who can review my Bluebird Airlines account PR?",
+   "at": "2026-09-24T10:36:03Z",
+   "weight": 1.85,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1790250455.000000": {
+   "id": "slack:slack_answer:cs-escalations/1790250455.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1790250455.000000",
+   "title": "Quick one about Bluebird Airlines account: is there a runbook?",
+   "at": "2026-09-24T11:47:35Z",
+   "weight": 1.85,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1790599301.000000": {
+   "id": "slack:slack_answer:cs-escalations/1790599301.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1790599301.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-09-28T12:41:41Z",
+   "weight": 2.807,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1790918577.000000": {
+   "id": "slack:slack_answer:cs-escalations/1790918577.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1790918577.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-10-02T05:22:57Z",
+   "weight": 2.84,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1790924940.000000": {
+   "id": "slack:slack_answer:cs-escalations/1790924940.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1790924940.000000",
+   "title": "Bluebird asking for refund status",
+   "at": "2026-10-02T07:09:00Z",
+   "weight": 2.84,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1791020646.000000": {
+   "id": "slack:slack_answer:cs-escalations/1791020646.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "refunds-service",
+   "person": "E1014",
+   "ref": "cs-escalations/1791020646.000000",
+   "title": "<@U0IWOSFQII> Bluebird asking for refund status",
+   "at": "2026-10-03T09:44:06Z",
+   "weight": 2.848,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1791193397.000000": {
+   "id": "slack:slack_answer:cs-escalations/1791193397.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "cs-escalations/1791193397.000000",
+   "title": "Who can review my Bluebird Airlines account PR?",
+   "at": "2026-10-05T09:43:17Z",
+   "weight": 1.91,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1791901219.000000": {
+   "id": "slack:slack_answer:cs-escalations/1791901219.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1791901219.000000",
+   "title": "<@U0IWOSFQII> Is zenith deploying today?",
+   "at": "2026-10-13T14:20:19Z",
+   "weight": 1.954,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:cs-escalations/1792144152.000000": {
+   "id": "slack:slack_answer:cs-escalations/1792144152.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "zenith-retail",
+   "person": "E1014",
+   "ref": "cs-escalations/1792144152.000000",
+   "title": "Who do we call at Zenith for an outage?",
+   "at": "2026-10-16T09:49:12Z",
+   "weight": 1.971,
+   "query_id": "q038",
+   "url": ""
+  },
+  "docs:doc:4005": {
+   "id": "docs:doc:4005",
+   "source": "docs",
+   "kind": "doc",
+   "system": "refunds-service",
+   "person": "E1016",
+   "ref": "4005",
+   "title": "Refunds runbook",
+   "at": "2026-05-22T18:00:00Z",
+   "weight": 1.0,
+   "query_id": "q041",
+   "url": ""
+  },
+  "docs:doc:4006": {
+   "id": "docs:doc:4006",
+   "source": "docs",
+   "kind": "doc",
+   "system": "merchant-dashboard",
+   "person": "E1015",
+   "ref": "4006",
+   "title": "Merchant Dashboard support guide",
+   "at": "2026-08-15T18:00:00Z",
+   "weight": 1.0,
+   "query_id": "q041",
+   "url": ""
+  },
+  "docs:doc:4020": {
+   "id": "docs:doc:4020",
+   "source": "docs",
+   "kind": "doc",
+   "system": "bluebird-airlines",
+   "person": "E1014",
+   "ref": "4020",
+   "title": "Bluebird account notes",
+   "at": "2026-07-06T18:00:00Z",
+   "weight": 0.5,
+   "query_id": "q041",
+   "url": ""
+  }
+ },
+ "findings": [
+  {
+   "agent": "Resolver",
+   "kind": "identity_ambiguous",
+   "source": "jira",
+   "account": "c01378315624d41338540baf",
+   "candidates": [
+    "E1013",
+    "E1002"
+   ],
+   "names": [
+    "Rahul V",
+    "c01378315624d41338540baf"
+   ]
+  }
+ ],
+ "duration_s": 0.65,
+ "status": "done"
+}

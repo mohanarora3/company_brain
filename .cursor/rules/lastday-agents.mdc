@@ -1,0 +1,19 @@
+---
+description: How Last Day's agents are built. Apply when editing lastday/agents/.
+globs: lastday/agents/**/*.py
+alwaysApply: false
+---
+
+- Agents read and write the shared `Blackboard` only. To get work done by another agent, post a
+  request with `bb.request(by, kind, system, detail, **payload)`; the Planner turns open requests into
+  tasks for the next round. Request kinds the Planner handles: `corroborate`, `identity`, `retry_source`,
+  `tacit`. Anything else is dropped with a reason.
+- Query with `bb.sql(agent, purpose, sql, numeric=(...))`. It returns `None` when a source is down;
+  handle that and carry on with lower confidence instead of raising.
+- Record every decision with `bb.emit(agent, kind, summary, **data)`. The summary is shown verbatim in the
+  UI trace, so write it as a plain sentence a manager can read.
+- Evidence ids look like `<source>:<kind>:<ref>` and must be added with `bb.add_evidence(Evidence(...))`
+  before anything cites them.
+- Label changes need a reason in `area.history` (`{"round", "stage", "notes": [...]}`).
+- After changing scoring or critique, run `python -m lastday eval --seeds 42 7 13 21` and compare with
+  `samples/eval.json`.

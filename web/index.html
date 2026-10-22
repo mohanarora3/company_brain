@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Last Day</title>
+<meta name="description" content="Know what your company forgets before someone leaves.">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Overpass:ital,wght@0,400;0,600;0,800;1,400&display=swap">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the investigation</a>
+<div class="app">
+  <aside class="board" aria-label="Departures">
+    <header class="board-head">
+      <h1 class="wordmark">Last Day</h1>
+      <p class="board-sub">Know what your company forgets before someone leaves.</p>
+    </header>
+    <section class="departures" aria-labelledby="dep-title">
+      <h2 id="dep-title" class="board-title">Departures</h2>
+      <p class="board-asof" id="asof"></p>
+      <ol class="dep-list" id="dep-list"><li class="dep-empty">Loading the HR system…</li></ol>
+    </section>
+    <section class="everyone" aria-labelledby="all-title">
+      <h2 id="all-title" class="board-title small">Everyone else</h2>
+      <label class="sr" for="people-search">Find a person</label>
+      <input id="people-search" class="board-search" type="search" placeholder="Find a person" autocomplete="off">
+      <ul class="people-list" id="people-list"></ul>
+    </section>
+    <footer class="board-foot" id="board-foot"></footer>
+  </aside>
+
+  <div class="work">
+    <header class="topbar">
+      <ul class="chips" id="chips" aria-label="Connected systems"></ul>
+      <button class="ghost" id="open-sources" type="button" aria-haspopup="dialog">Sources and outages</button>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="welcome" id="welcome">
+        <h2>Pick someone on the departures board.</h2>
+        <p>Last Day queries Slack, Jira, GitHub, the wiki and HR in place through Zetaris, finds what only that person knows,
+          argues about it until the evidence holds, and writes the handover plan and exit interview.</p>
+        <p class="muted">Every claim links to the federated query that found it. Exit-interview answers go into Meterless memory,
+          so the next run counts them as written down.</p>
+      </section>
+
+      <section class="person" id="person" hidden>
+        <div class="person-head">
+          <div>
+            <h2 id="p-name"></h2>
+            <p id="p-role" class="muted"></p>
+          </div>
+          <div class="countdown" id="p-countdown" aria-live="polite"></div>
+          <div class="person-actions">
+            <button class="primary" id="run-btn" type="button">Investigate</button>
+            <label class="toggle"><input type="checkbox" id="mem-toggle" checked> Use memory</label>
+          </div>
+        </div>
+        <p class="run-meta" id="run-meta"></p>
+        <nav class="tabs" role="tablist" aria-label="Run views" id="tabs">
+          <button role="tab" data-tab="trace" aria-selected="true">Investigation</button>
+          <button role="tab" data-tab="handover">Handover plan</button>
+          <button role="tab" data-tab="interview">Exit interview</button>
+          <button role="tab" data-tab="evidence">Evidence</button>
+          <button role="tab" data-tab="ask">Ask</button>
+        </nav>
+        <div class="panes">
+          <section role="tabpanel" data-pane="trace" id="pane-trace"></section>
+          <section role="tabpanel" data-pane="handover" id="pane-handover" hidden></section>
+          <section role="tabpanel" data-pane="interview" id="pane-interview" hidden></section>
+          <section role="tabpanel" data-pane="evidence" id="pane-evidence" hidden></section>
+          <section role="tabpanel" data-pane="ask" id="pane-ask" hidden></section>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<dialog id="sources" aria-labelledby="sources-title">
+  <form method="dialog" class="dialog-head">
+    <h2 id="sources-title">Sources</h2>
+    <button class="ghost" value="close" aria-label="Close">Close</button>
+  </form>
+  <div id="sources-body"></div>
+</dialog>
+
+<dialog id="drawer" class="drawer" aria-labelledby="drawer-title">
+  <form method="dialog" class="dialog-head">
+    <h2 id="drawer-title">Evidence</h2>
+    <button class="ghost" value="close" aria-label="Close">Close</button>
+  </form>
+  <div id="drawer-body"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

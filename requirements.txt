@@ -1,0 +1,3 @@
+# Runtime. Everything else (federation client, LLM and embedding clients, local engine) is standard library.
+starlette>=0.37,<2
+uvicorn>=0.29,<1

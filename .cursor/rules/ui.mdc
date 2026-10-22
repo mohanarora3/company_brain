@@ -1,0 +1,14 @@
+---
+description: The web UI in web/. Vanilla JS, no build step.
+globs: web/**
+alwaysApply: false
+---
+
+- No frameworks and no build step: `index.html`, `styles.css`, `app.js` are served as-is by
+  `lastday/server.py` under `/static`.
+- Colours and type come from the CSS custom properties at the top of `styles.css`. The departures board
+  (dark slate, sodium-yellow split-flap digits) is the one bold element; keep the rest quiet.
+- Labels are sentence case. Critical, at risk and covered always use `--critical`, `--atrisk` and
+  `--covered`, and every label is also written out in words (never colour alone).
+- Escape everything from the API with `esc()` before putting it in HTML.
+- Check the UI at 390 px wide and in dark mode before committing: `python scripts/screenshots.py`.

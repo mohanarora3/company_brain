@@ -1,0 +1,23 @@
+# Acme Pay's HR database, for registering in Zetaris as the JDBC datasource `hr_pg`.
+# Only needed when you run against Zetaris; the local demo needs nothing here.
+#
+#   python -m lastday generate          # writes data/seed-42/hr/hr.sql
+#   docker compose up -d hr-postgres    # Postgres on localhost:5433, loaded from that file
+#
+# The raw `employees` table holds salary band, personal email, home city and rating.
+# Zetaris only ever registers `departures`, `access_grants` and a view without those columns.
+services:
+  hr-postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: acme_hr
+      POSTGRES_USER: ${HR_PG_USER:-lastday}
+      POSTGRES_PASSWORD: ${HR_PG_PASSWORD:-lastday}
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./data/seed-${LASTDAY_SEED:-42}/hr/hr.sql:/docker-entrypoint-initdb.d/01_hr.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${HR_PG_USER:-lastday} -d acme_hr"]
+      interval: 5s
+      retries: 10

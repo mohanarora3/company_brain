@@ -1,0 +1,4644 @@
+{
+ "run_id": "7cf138f5d8",
+ "target": {
+  "employee_id": "E1016",
+  "full_name": "Kenji Watanabe",
+  "title": "Principal SRE",
+  "team": "Platform",
+  "last_day": "2026-11-28",
+  "status": "leaving"
+ },
+ "as_of": "2026-10-22",
+ "round": 4,
+ "engine": "local",
+ "areas": [
+  {
+   "system": "observability",
+   "name": "Observability",
+   "kind": "system",
+   "tier": 2,
+   "team": "Platform",
+   "label": "critical",
+   "provisional_label": "critical",
+   "share": 0.735,
+   "backup": 0.265,
+   "backups": [
+    {
+     "person": "E1002",
+     "name": "Lucas Moreau",
+     "share": 0.265,
+     "last_at": "2026-10-16T05:27:07Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "by_source": {
+    "github": {
+     "target": 52.83,
+     "others": 18.23,
+     "unattributed": 0.0
+    },
+    "jira": {
+     "target": 17.25,
+     "others": 5.21,
+     "unattributed": 0.0
+    },
+    "slack": {
+     "target": 31.78,
+     "others": 13.22,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "github",
+    "jira",
+    "slack"
+   ],
+   "footprint": {
+    "github": 51.11663052094938,
+    "jira": 17.25366064408155,
+    "slack": 27.451394818288783
+   },
+   "doc_coverage": 0.25,
+   "docs": [
+    {
+     "page_id": "4016",
+     "title": "Alerting policy",
+     "kind": "overview",
+     "updated_at": "2025-12-24T18:00:00Z",
+     "age_days": 301,
+     "author": "Kenji Watanabe",
+     "author_id": "E1016",
+     "editor_id": "E1016",
+     "author_status": "leaving",
+     "score": 0.25,
+     "body": "# Alerting policy\n\nSystem: Observability\n\nOnly tier 1 SLO burn alerts page at night.\n",
+     "query_id": "q041"
+    }
+   ],
+   "exclusive_access": [
+    {
+     "resource": "grafana-admin",
+     "level": "admin",
+     "system": "observability",
+     "mapped_by": "keyword",
+     "other_holders": [],
+     "exclusive": true,
+     "query_id": "q028"
+    }
+   ],
+   "chores": [],
+   "tacit": [
+    {
+     "text": "Only tier 1 SLO burn alerts page. Everything else goes to the morning digest.",
+     "question": "Which alerts page at night?",
+     "channel": "platform",
+     "ts": "1764666678.000000",
+     "at": "2025-12-02T09:11:18Z",
+     "asker": "Rahul Verma",
+     "evidence": "slack:slack_answer:platform/1764666678.000000",
+     "query_id": "q038",
+     "memory_id": "mem-37"
+    },
+    {
+     "text": "They're provisioned from the observability repo, re-run the provisioning job.",
+     "question": "Grafana dashboards missing after migration",
+     "channel": "platform",
+     "ts": "1761901381.000000",
+     "at": "2025-10-31T09:03:01Z",
+     "asker": "Aisha Bello",
+     "evidence": "slack:slack_answer:platform/1761901381.000000",
+     "query_id": "q038",
+     "memory_id": "mem-38"
+    }
+   ],
+   "conflicts": [],
+   "evidence_ids": [
+    "docs:doc:4016",
+    "github:commit:kwatanabe@observability",
+    "github:review:pr1465:kwatanabe",
+    "github:review:pr1466:kwatanabe",
+    "github:review:pr1467:kwatanabe",
+    "github:review:pr1468:kwatanabe",
+    "github:review:pr1469:kwatanabe",
+    "hr_pg:access:grafana-admin",
+    "jira:issue_done:3b5c94fd45cea2c1d92afa60@observability:Done",
+    "slack:slack_answer:platform/1761901381.000000",
+    "slack:slack_answer:platform/1763451020.000000",
+    "slack:slack_answer:platform/1764666678.000000",
+    "slack:slack_answer:platform/1770791967.000000",
+    "slack:slack_answer:platform/1772442484.000000",
+    "slack:slack_answer:platform/1773316581.000000",
+    "slack:slack_answer:platform/1773549382.000000",
+    "slack:slack_answer:platform/1775987381.000000",
+    "slack:slack_answer:platform/1776693744.000000",
+    "slack:slack_answer:platform/1777534605.000000",
+    "slack:slack_answer:platform/1780556285.000000",
+    "slack:slack_answer:platform/1780570872.000000",
+    "slack:slack_answer:platform/1781247299.000000",
+    "slack:slack_answer:platform/1781786640.000000",
+    "slack:slack_answer:platform/1783335047.000000",
+    "slack:slack_answer:platform/1783608271.000000",
+    "slack:slack_answer:platform/1784812820.000000",
+    "slack:slack_answer:platform/1790768290.000000",
+    "slack:slack_answer:platform/1791027976.000000",
+    "slack:slack_answer:platform/1791196898.000000",
+    "slack:slack_answer:platform/1791638278.000000"
+   ],
+   "confidence": 0.9,
+   "status": "verified",
+   "history": [
+    {
+     "round": 1,
+     "stage": "init",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.0,
+     "sources": []
+    },
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "critical",
+     "share": 0.749,
+     "backup": 0.251,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "needs corroboration: critical on commits and tickets alone"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "critical",
+     "share": 0.735,
+     "backup": 0.265,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "critic:final",
+     "notes": [
+      "label holds across 3 sources: github, jira, slack"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "critical",
+     "share": 0.735,
+     "backup": 0.265,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "priority": 0.604,
+   "escalated": false,
+   "successors": [
+    {
+     "person": "E1002",
+     "name": "Lucas Moreau",
+     "title": "Platform Engineer",
+     "score": 0.713,
+     "reasons": [
+      "26% of the Observability activity",
+      "Kenji answered their Observability questions 3 times",
+      "on the owning team (Platform)",
+      "works on neighbouring systems",
+      "2 open tickets"
+     ]
+    },
+    {
+     "person": "E1012",
+     "name": "Aisha Bello",
+     "title": "Security Engineer",
+     "score": 0.398,
+     "reasons": [
+      "Kenji answered their Observability questions 7 times",
+      "on the owning team (Platform)",
+      "works on neighbouring systems",
+      "4 open tickets"
+     ]
+    },
+    {
+     "person": "E1011",
+     "name": "Hassan Ali",
+     "title": "Engineer",
+     "score": 0.18,
+     "reasons": [
+      "Kenji answered their Observability questions 1 time",
+      "works on neighbouring systems",
+      "2 open tickets"
+     ]
+    }
+   ],
+   "reason": ""
+  },
+  {
+   "system": "kubernetes",
+   "name": "Kubernetes Platform",
+   "kind": "system",
+   "tier": 1,
+   "team": "Platform",
+   "label": "at_risk",
+   "provisional_label": "at_risk",
+   "share": 0.633,
+   "backup": 0.319,
+   "backups": [
+    {
+     "person": "E1002",
+     "name": "Lucas Moreau",
+     "share": 0.319,
+     "last_at": "2026-10-20T12:22:10Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1012",
+     "name": "Aisha Bello",
+     "share": 0.048,
+     "last_at": "2026-09-30T11:14:21Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "by_source": {
+    "github": {
+     "target": 81.13,
+     "others": 44.56,
+     "unattributed": 0.0
+    },
+    "jira": {
+     "target": 28.94,
+     "others": 23.55,
+     "unattributed": 0.0
+    },
+    "slack": {
+     "target": 41.74,
+     "others": 20.0,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "github",
+    "jira",
+    "slack"
+   ],
+   "footprint": {
+    "github": 76.77793610676336,
+    "jira": 28.942964448568855,
+    "slack": 38.56452889645551
+   },
+   "doc_coverage": 1.0,
+   "docs": [
+    {
+     "page_id": "4013",
+     "title": "Cluster upgrade runbook",
+     "kind": "runbook",
+     "updated_at": "2026-08-15T18:00:00Z",
+     "age_days": 67,
+     "author": "Lucas Moreau",
+     "author_id": "E1002",
+     "editor_id": "E1002",
+     "author_status": "active",
+     "score": 1.0,
+     "body": "# Cluster upgrade runbook\n\nSystem: Kubernetes Platform\n\nUpgrade order: system pool, payments, batch. Scale batch pool to 6 nodes before month-end.\n",
+     "query_id": "q041"
+    },
+    {
+     "page_id": "4014",
+     "title": "Break-glass access",
+     "kind": "runbook",
+     "updated_at": "2026-06-16T18:00:00Z",
+     "age_days": 127,
+     "author": "Lucas Moreau",
+     "author_id": "E1002",
+     "editor_id": "E1002",
+     "author_status": "active",
+     "score": 1.0,
+     "body": "# Break-glass access\n\nSystem: Kubernetes Platform\n\nUse the aws-prod-admin break-glass role; it pages platform on-call.\n",
+     "query_id": "q041"
+    }
+   ],
+   "exclusive_access": [
+    {
+     "resource": "aws-prod-admin",
+     "level": "admin",
+     "system": "kubernetes",
+     "mapped_by": "keyword",
+     "other_holders": [
+      "Lucas Moreau"
+     ],
+     "exclusive": false,
+     "query_id": "q028"
+    }
+   ],
+   "chores": [
+    {
+     "summary": "Scale batch node pool before month-end",
+     "issue_key": "PLAT-368",
+     "owner": "Kenji Watanabe",
+     "owner_id": "E1016",
+     "status": "Done",
+     "state": "stops when they leave",
+     "last_created": "2026-09-23T18:00:00Z",
+     "query_id": "q034"
+    }
+   ],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "github:commit:kwatanabe@kubernetes",
+    "github:review:pr1448:kwatanabe",
+    "github:review:pr1449:kwatanabe",
+    "github:review:pr1450:kwatanabe",
+    "github:review:pr1451:kwatanabe",
+    "github:review:pr1452:kwatanabe",
+    "github:review:pr1453:kwatanabe",
+    "github:review:pr1454:kwatanabe",
+    "github:review:pr1455:kwatanabe",
+    "github:review:pr1456:kwatanabe",
+    "github:review:pr1457:kwatanabe",
+    "github:review:pr1458:kwatanabe",
+    "github:review:pr1495:kwatanabe",
+    "hr_pg:access:aws-prod-admin",
+    "jira:chore:PLAT-368",
+    "jira:issue_done:3b5c94fd45cea2c1d92afa60@kubernetes:Done",
+    "slack:slack_answer:platform/1761393009.000000",
+    "slack:slack_answer:platform/1762245464.000000",
+    "slack:slack_answer:platform/1762940785.000000",
+    "slack:slack_answer:platform/1767244513.000000",
+    "slack:slack_answer:platform/1767937448.000000",
+    "slack:slack_answer:platform/1769925176.000000",
+    "slack:slack_answer:platform/1772862535.000000",
+    "slack:slack_answer:platform/1773045308.000000",
+    "slack:slack_answer:platform/1774962008.000000",
+    "slack:slack_answer:platform/1775994114.000000",
+    "slack:slack_answer:platform/1776165987.000000",
+    "slack:slack_answer:platform/1776434163.000000",
+    "slack:slack_answer:platform/1776599690.000000",
+    "slack:slack_answer:platform/1777117085.000000",
+    "slack:slack_answer:platform/1777276134.000000",
+    "slack:slack_answer:platform/1778304447.000000",
+    "slack:slack_answer:platform/1779339209.000000",
+    "slack:slack_answer:platform/1779782405.000000",
+    "slack:slack_answer:platform/1780468199.000000",
+    "slack:slack_answer:platform/1780808533.000000",
+    "slack:slack_answer:platform/1782104791.000000",
+    "slack:slack_answer:platform/1784038255.000000",
+    "slack:slack_answer:platform/1785239309.000000",
+    "slack:slack_answer:platform/1787223219.000000",
+    "slack:slack_answer:platform/1787475833.000000",
+    "slack:slack_answer:platform/1787478967.000000",
+    "slack:slack_answer:platform/1788176715.000000",
+    "slack:slack_answer:platform/1790240763.000000",
+    "slack:slack_answer:platform/1791557156.000000",
+    "slack:slack_answer:platform/1791798207.000000"
+   ],
+   "confidence": 0.9,
+   "status": "verified",
+   "history": [
+    {
+     "round": 1,
+     "stage": "init",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.0,
+     "sources": []
+    },
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "at_risk",
+     "share": 0.618,
+     "backup": 0.33,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "needs corroboration: at risk on commits and tickets alone"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "at_risk",
+     "share": 0.633,
+     "backup": 0.319,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "critic:final",
+     "notes": [
+      "label holds across 3 sources: github, jira, slack"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "at_risk",
+     "share": 0.633,
+     "backup": 0.319,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "priority": 0.47,
+   "escalated": false,
+   "successors": [
+    {
+     "person": "E1002",
+     "name": "Lucas Moreau",
+     "title": "Platform Engineer",
+     "score": 0.856,
+     "reasons": [
+      "32% of the Kubernetes Platform activity",
+      "Kenji answered their Kubernetes Platform questions 9 times",
+      "on the owning team (Platform)",
+      "works on neighbouring systems",
+      "2 open tickets"
+     ]
+    },
+    {
+     "person": "E1012",
+     "name": "Aisha Bello",
+     "title": "Security Engineer",
+     "score": 0.358,
+     "reasons": [
+      "5% of the Kubernetes Platform activity",
+      "Kenji answered their Kubernetes Platform questions 1 time",
+      "on the owning team (Platform)",
+      "works on neighbouring systems",
+      "4 open tickets"
+     ]
+    },
+    {
+     "person": "E1011",
+     "name": "Hassan Ali",
+     "title": "Engineer",
+     "score": 0.176,
+     "reasons": [
+      "Kenji answered their Kubernetes Platform questions 1 time",
+      "works on neighbouring systems",
+      "2 open tickets"
+     ]
+    }
+   ],
+   "reason": ""
+  },
+  {
+   "system": "auth-service",
+   "name": "Auth Service",
+   "kind": "system",
+   "tier": 1,
+   "team": "Platform",
+   "label": "covered",
+   "provisional_label": "covered",
+   "share": 0.0,
+   "backup": 0.689,
+   "backups": [
+    {
+     "person": "E1012",
+     "name": "Aisha Bello",
+     "share": 0.689,
+     "last_at": "2026-10-19T12:46:14Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "person": "E1011",
+     "name": "Hassan Ali",
+     "share": 0.164,
+     "last_at": "2026-10-19T07:53:24Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "person": "E1002",
+     "name": "Lucas Moreau",
+     "share": 0.147,
+     "last_at": "2026-10-19T12:46:14Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    }
+   ],
+   "by_source": {
+    "github": {
+     "target": 0.0,
+     "others": 85.1,
+     "unattributed": 0.0
+    },
+    "jira": {
+     "target": 0.0,
+     "others": 42.1,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "github",
+    "jira"
+   ],
+   "footprint": {},
+   "doc_coverage": 0.0,
+   "docs": [],
+   "exclusive_access": [
+    {
+     "resource": "vault-admin",
+     "level": "admin",
+     "system": "auth-service",
+     "mapped_by": "keyword",
+     "other_holders": [
+      "Aisha Bello"
+     ],
+     "exclusive": false,
+     "query_id": "q028"
+    }
+   ],
+   "chores": [
+    {
+     "summary": "Rotate SSO signing key (90 days)",
+     "issue_key": "PLAT-350",
+     "owner": "Aisha Bello",
+     "owner_id": "E1012",
+     "status": "Done",
+     "state": "owned by someone else",
+     "last_created": "2026-09-23T18:00:00Z",
+     "query_id": "q034"
+    }
+   ],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "hr_pg:access:vault-admin"
+   ],
+   "confidence": 0.45,
+   "status": "accepted",
+   "history": [
+    {
+     "round": 1,
+     "stage": "init",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.0,
+     "sources": []
+    },
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.689,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "covered on systems of record and no conversational footprint; accepted without further queries"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.689,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.689,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    }
+   ],
+   "priority": 0.084,
+   "escalated": false,
+   "successors": [],
+   "reason": ""
+  },
+  {
+   "system": "settlement-batch",
+   "name": "Settlement Batch",
+   "kind": "system",
+   "tier": 1,
+   "team": "Payments",
+   "label": "covered",
+   "provisional_label": "covered",
+   "share": 0.065,
+   "backup": 0.215,
+   "backups": [
+    {
+     "person": "E1010",
+     "name": "Rahul Verma",
+     "share": 0.215,
+     "last_at": "2026-10-16T13:04:35Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1002",
+     "name": "Lucas Moreau",
+     "share": 0.056,
+     "last_at": "2026-10-20T08:43:24Z",
+     "stale": false,
+     "sources": [
+      "slack"
+     ]
+    },
+    {
+     "person": "E1006",
+     "name": "Nisha Kapoor",
+     "share": 0.034,
+     "last_at": "2026-10-16T13:04:35Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "slack"
+     ]
+    }
+   ],
+   "by_source": {
+    "github": {
+     "target": 0.0,
+     "others": 56.51,
+     "unattributed": 0.0
+    },
+    "slack": {
+     "target": 9.98,
+     "others": 57.25,
+     "unattributed": 0.0
+    },
+    "jira": {
+     "target": 0.0,
+     "others": 19.47,
+     "unattributed": 10.45
+    }
+   },
+   "sources_used": [
+    "github",
+    "jira",
+    "slack"
+   ],
+   "footprint": {
+    "slack": 6.654935895040192
+   },
+   "doc_coverage": 0.3,
+   "docs": [
+    {
+     "page_id": "4002",
+     "title": "INC-231 postmortem: double settlement to Zenith",
+     "kind": "postmortem",
+     "updated_at": "2026-01-14T18:00:00Z",
+     "age_days": 280,
+     "author": "Priya Raman",
+     "author_id": "E1014",
+     "editor_id": "E1014",
+     "author_status": "leaving",
+     "score": 0.3,
+     "body": "# INC-231 postmortem: double settlement to Zenith\n\nSystem: Settlement Batch\n\nRoot cause: settlement batch rerun with --force bypassed the recon idempotency guard. Fix: --force requires a recon checkpoint id.\n",
+     "query_id": "q041"
+    }
+   ],
+   "exclusive_access": [],
+   "chores": [],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "slack:slack_answer:platform/1768736648.000000",
+    "slack:slack_answer:platform/1772105783.000000",
+    "slack:slack_answer:platform/1779786302.000000",
+    "slack:slack_answer:platform/1785332184.000000",
+    "slack:slack_answer:platform/1790593327.000000"
+   ],
+   "confidence": 0.6,
+   "status": "verified",
+   "history": [
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "covered",
+     "share": 0.0,
+     "backup": 0.234,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "needs corroboration: 100% of their footprint here is conversation, which this pass did not count"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.065,
+     "backup": 0.215,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "critic:final",
+     "notes": [
+      "label holds across 3 sources: github, jira, slack"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.065,
+     "backup": 0.215,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "priority": 0.084,
+   "escalated": false,
+   "successors": [],
+   "reason": ""
+  },
+  {
+   "system": "ci-cd",
+   "name": "CI/CD Pipeline",
+   "kind": "system",
+   "tier": 3,
+   "team": "Platform",
+   "label": "covered",
+   "provisional_label": "covered",
+   "share": 0.298,
+   "backup": 0.702,
+   "backups": [
+    {
+     "person": "E1002",
+     "name": "Lucas Moreau",
+     "share": 0.702,
+     "last_at": "2026-10-22T04:58:43Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    }
+   ],
+   "by_source": {
+    "github": {
+     "target": 29.42,
+     "others": 51.67,
+     "unattributed": 0.0
+    },
+    "jira": {
+     "target": 3.85,
+     "others": 26.89,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "github",
+    "jira"
+   ],
+   "footprint": {
+    "github": 23.0,
+    "jira": 3.8540298329442066,
+    "slack": 11.854571341415088
+   },
+   "doc_coverage": 0.0,
+   "docs": [],
+   "exclusive_access": [],
+   "chores": [],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "github:commit:kwatanabe@ci-cd",
+    "github:review:pr1427:kwatanabe",
+    "github:review:pr1428:kwatanabe",
+    "github:review:pr1429:kwatanabe",
+    "github:review:pr1430:kwatanabe",
+    "github:review:pr1431:kwatanabe",
+    "github:review:pr1432:kwatanabe",
+    "github:review:pr1433:kwatanabe",
+    "github:review:pr1434:kwatanabe",
+    "github:review:pr1435:kwatanabe",
+    "github:review:pr1436:kwatanabe",
+    "github:review:pr1437:kwatanabe",
+    "github:review:pr1438:kwatanabe",
+    "github:review:pr1439:kwatanabe",
+    "github:review:pr1440:kwatanabe",
+    "github:review:pr1441:kwatanabe",
+    "github:review:pr1442:kwatanabe",
+    "github:review:pr1443:kwatanabe",
+    "jira:issue_done:3b5c94fd45cea2c1d92afa60@ci-cd:Done"
+   ],
+   "confidence": 0.75,
+   "status": "accepted",
+   "history": [
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "covered",
+     "share": 0.298,
+     "backup": 0.702,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "covered on systems of record and no conversational footprint; accepted without further queries"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.298,
+     "backup": 0.702,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.298,
+     "backup": 0.702,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    }
+   ],
+   "priority": 0.038,
+   "escalated": false,
+   "successors": [],
+   "reason": ""
+  },
+  {
+   "system": "payments-gateway",
+   "name": "Payments Gateway",
+   "kind": "system",
+   "tier": 1,
+   "team": "Payments",
+   "label": "covered",
+   "provisional_label": "covered",
+   "share": 0.027,
+   "backup": 0.457,
+   "backups": [
+    {
+     "person": "E1013",
+     "name": "Arjun Mehta",
+     "share": 0.457,
+     "last_at": "2026-10-22T12:36:56Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1005",
+     "name": "Meera Iyer",
+     "share": 0.37,
+     "last_at": "2026-10-18T12:02:02Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1006",
+     "name": "Nisha Kapoor",
+     "share": 0.037,
+     "last_at": "2026-10-22T06:28:18Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "person": "E1010",
+     "name": "Rahul Verma",
+     "share": 0.031,
+     "last_at": "2026-08-02T05:22:56Z",
+     "stale": false,
+     "sources": [
+      "github",
+      "slack"
+     ]
+    }
+   ],
+   "by_source": {
+    "github": {
+     "target": 2.32,
+     "others": 149.1,
+     "unattributed": 0.0
+    },
+    "jira": {
+     "target": 1.26,
+     "others": 47.81,
+     "unattributed": 1.82
+    },
+    "slack": {
+     "target": 4.49,
+     "others": 89.56,
+     "unattributed": 0.0
+    }
+   },
+   "sources_used": [
+    "github",
+    "jira",
+    "slack"
+   ],
+   "footprint": {
+    "github": 1.2240535433046553,
+    "jira": 1.2640332431458032,
+    "slack": 3.7826460279524987
+   },
+   "doc_coverage": 1.0,
+   "docs": [
+    {
+     "page_id": "4003",
+     "title": "Payments Gateway runbook",
+     "kind": "runbook",
+     "updated_at": "2026-07-19T18:00:00Z",
+     "age_days": 94,
+     "author": "Arjun Mehta",
+     "author_id": "E1013",
+     "editor_id": "E1014",
+     "author_status": "active",
+     "score": 1.0,
+     "body": "# Payments Gateway runbook\n\nSystem: Payments Gateway\n\nRouting weights live in gateway/routing.yaml. Acquirer B rate limits at 300 rps per merchant. On-call checks the acquirer status page first.\n",
+     "query_id": "q041"
+    },
+    {
+     "page_id": "4004",
+     "title": "Gateway architecture overview",
+     "kind": "overview",
+     "updated_at": "2026-03-09T18:00:00Z",
+     "age_days": 226,
+     "author": "Arjun Mehta",
+     "author_id": "E1013",
+     "editor_id": "E1013",
+     "author_status": "active",
+     "score": 0.5,
+     "body": "# Gateway architecture overview\n\nSystem: Payments Gateway\n\nThe gateway routes payments to acquirers by weight and handles UPI callbacks asynchronously.\n",
+     "query_id": "q041"
+    }
+   ],
+   "exclusive_access": [],
+   "chores": [],
+   "tacit": [],
+   "conflicts": [],
+   "evidence_ids": [
+    "github:commit:kwatanabe@payments-gateway",
+    "github:review:pr1135:kwatanabe",
+    "github:review:pr1143:kwatanabe",
+    "github:review:pr1146:kwatanabe",
+    "jira:issue_done:3b5c94fd45cea2c1d92afa60@payments-gateway:Done",
+    "slack:slack_answer:payments/1762249299.000000",
+    "slack:slack_answer:payments/1763100819.000000",
+    "slack:slack_answer:payments/1768802809.000000",
+    "slack:slack_answer:payments/1782039961.000000"
+   ],
+   "confidence": 0.9,
+   "status": "verified",
+   "history": [
+    {
+     "round": 2,
+     "stage": "provisional",
+     "label": "covered",
+     "share": 0.018,
+     "backup": 0.461,
+     "sources": [
+      "github",
+      "jira"
+     ]
+    },
+    {
+     "round": 2,
+     "stage": "critic:provisional",
+     "notes": [
+      "needs corroboration: 60% of their footprint here is conversation, which this pass did not count"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.027,
+     "backup": 0.457,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    },
+    {
+     "round": 3,
+     "stage": "critic:final",
+     "notes": [
+      "label holds across 3 sources: github, jira, slack"
+     ]
+    },
+    {
+     "round": 4,
+     "stage": "corroborated",
+     "label": "covered",
+     "share": 0.027,
+     "backup": 0.457,
+     "sources": [
+      "github",
+      "jira",
+      "slack"
+     ]
+    }
+   ],
+   "priority": -0.016,
+   "escalated": false,
+   "successors": [],
+   "reason": ""
+  }
+ ],
+ "requests": [
+  {
+   "id": "r01",
+   "by": "Critic",
+   "kind": "corroborate",
+   "system": "kubernetes",
+   "detail": "at risk on commits and tickets alone",
+   "payload": {},
+   "status": "done"
+  },
+  {
+   "id": "r02",
+   "by": "Critic",
+   "kind": "corroborate",
+   "system": "observability",
+   "detail": "critical on commits and tickets alone",
+   "payload": {},
+   "status": "done"
+  },
+  {
+   "id": "r03",
+   "by": "Critic",
+   "kind": "corroborate",
+   "system": "payments-gateway",
+   "detail": "60% of their footprint here is conversation, which this pass did not count",
+   "payload": {},
+   "status": "done"
+  },
+  {
+   "id": "r04",
+   "by": "Critic",
+   "kind": "corroborate",
+   "system": "settlement-batch",
+   "detail": "100% of their footprint here is conversation, which this pass did not count",
+   "payload": {},
+   "status": "done"
+  },
+  {
+   "id": "r05",
+   "by": "Critic",
+   "kind": "tacit",
+   "system": "observability",
+   "detail": "extract what they actually know before the handover",
+   "payload": {},
+   "status": "done"
+  }
+ ],
+ "escalations": [],
+ "queries": [
+  {
+   "id": "q001",
+   "agent": "Cartographer",
+   "purpose": "Load the service catalog",
+   "sql": "SELECT system_id, name, kind, owner_team, tier, repo_path, slack_channel, jira_component, pagerduty_service, aliases, description FROM github.service_catalog",
+   "engine": "local",
+   "rows": 20,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q002",
+   "agent": "Cartographer",
+   "purpose": "Profile docs.pages",
+   "sql": "SELECT COUNT(*) AS n, MIN(created_at) AS first_at, MAX(created_at) AS last_at FROM docs.pages",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q003",
+   "agent": "Cartographer",
+   "purpose": "Profile github.commit_files",
+   "sql": "SELECT COUNT(*) AS n FROM github.commit_files",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q004",
+   "agent": "Cartographer",
+   "purpose": "Profile github.commits",
+   "sql": "SELECT COUNT(*) AS n, MIN(committed_at) AS first_at, MAX(committed_at) AS last_at FROM github.commits",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.2,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q005",
+   "agent": "Cartographer",
+   "purpose": "Profile github.pull_requests",
+   "sql": "SELECT COUNT(*) AS n, MIN(created_at) AS first_at, MAX(created_at) AS last_at FROM github.pull_requests",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q006",
+   "agent": "Cartographer",
+   "purpose": "Profile github.service_catalog",
+   "sql": "SELECT COUNT(*) AS n FROM github.service_catalog",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q007",
+   "agent": "Cartographer",
+   "purpose": "Profile github.users",
+   "sql": "SELECT COUNT(*) AS n FROM github.users",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q008",
+   "agent": "Cartographer",
+   "purpose": "Profile hr_pg.access_grants",
+   "sql": "SELECT COUNT(*) AS n, MIN(granted_at) AS first_at, MAX(granted_at) AS last_at FROM hr_pg.access_grants",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q009",
+   "agent": "Cartographer",
+   "purpose": "Profile hr_pg.departures",
+   "sql": "SELECT COUNT(*) AS n FROM hr_pg.departures",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q010",
+   "agent": "Cartographer",
+   "purpose": "Profile hr_pg.employees_directory",
+   "sql": "SELECT COUNT(*) AS n FROM hr_pg.employees_directory",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q011",
+   "agent": "Cartographer",
+   "purpose": "Profile jira.issues",
+   "sql": "SELECT COUNT(*) AS n, MIN(created) AS first_at, MAX(created) AS last_at FROM jira.issues",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.2,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q012",
+   "agent": "Cartographer",
+   "purpose": "Profile jira.users",
+   "sql": "SELECT COUNT(*) AS n FROM jira.users",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q013",
+   "agent": "Cartographer",
+   "purpose": "Profile slack.channels",
+   "sql": "SELECT COUNT(*) AS n FROM slack.channels",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q014",
+   "agent": "Cartographer",
+   "purpose": "Profile slack.messages",
+   "sql": "SELECT COUNT(*) AS n, MIN(created_at) AS first_at, MAX(created_at) AS last_at FROM slack.messages",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.6,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q015",
+   "agent": "Cartographer",
+   "purpose": "Profile slack.users",
+   "sql": "SELECT COUNT(*) AS n FROM slack.users",
+   "engine": "local",
+   "rows": 1,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q016",
+   "agent": "Resolver",
+   "purpose": "Load the governed HR directory",
+   "sql": "SELECT employee_id, full_name, preferred_name, work_email, title, team, team_id, manager_id, employment_type, status, last_day FROM hr_pg.employees_directory",
+   "engine": "local",
+   "rows": 18,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q017",
+   "agent": "Resolver",
+   "purpose": "Who is leaving (HR departures)",
+   "sql": "SELECT d.employee_id AS employee_id, d.last_day AS last_day, e.full_name AS full_name, e.status AS status FROM hr_pg.departures d JOIN hr_pg.employees_directory e ON e.employee_id = d.employee_id",
+   "engine": "local",
+   "rows": 3,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q018",
+   "agent": "Resolver",
+   "purpose": "Load github accounts",
+   "sql": "SELECT login, name, account_type FROM github.users",
+   "engine": "local",
+   "rows": 19,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q019",
+   "agent": "Resolver",
+   "purpose": "Load jira accounts",
+   "sql": "SELECT account_id, display_name, email, active FROM jira.users",
+   "engine": "local",
+   "rows": 18,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q020",
+   "agent": "Resolver",
+   "purpose": "Load slack accounts",
+   "sql": "SELECT user_id, name, real_name, display_name, email, deleted FROM slack.users",
+   "engine": "local",
+   "rows": 18,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q021",
+   "agent": "Resolver",
+   "purpose": "Federated join HR x jira on email",
+   "sql": "SELECT e.employee_id AS employee_id, u.account_id AS account FROM hr_pg.employees_directory e JOIN jira.users u ON lower(e.work_email) = lower(u.email)",
+   "engine": "local",
+   "rows": 8,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q022",
+   "agent": "Resolver",
+   "purpose": "Federated join HR x slack on email",
+   "sql": "SELECT e.employee_id AS employee_id, u.user_id AS account FROM hr_pg.employees_directory e JOIN slack.users u ON lower(e.work_email) = lower(u.email)",
+   "engine": "local",
+   "rows": 17,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q023",
+   "agent": "Resolver",
+   "purpose": "Federated join HR x GitHub commit authors on email",
+   "sql": "SELECT e.employee_id AS employee_id, c.author_login AS account, COUNT(*) AS n FROM github.commits c JOIN hr_pg.employees_directory e ON lower(c.author_email) = lower(e.work_email) GROUP BY e.employee_id, c.author_login",
+   "engine": "local",
+   "rows": 17,
+   "ms": 8.7,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q024",
+   "agent": "Resolver",
+   "purpose": "Commit author names per login",
+   "sql": "SELECT author_login AS login, author_name AS name, COUNT(*) AS n FROM github.commits GROUP BY author_login, author_name",
+   "engine": "local",
+   "rows": 34,
+   "ms": 0.7,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q025",
+   "agent": "Resolver",
+   "purpose": "Which identity namespace does docs.pages.author_id use?",
+   "sql": "SELECT DISTINCT author_id AS v FROM docs.pages",
+   "engine": "local",
+   "rows": 15,
+   "ms": 0.1,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q026",
+   "agent": "Resolver",
+   "purpose": "Which identity namespace does hr_pg.access_grants.employee_id use?",
+   "sql": "SELECT DISTINCT employee_id AS v FROM hr_pg.access_grants",
+   "engine": "local",
+   "rows": 14,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q027",
+   "agent": "Resolver",
+   "purpose": "Which identity namespace does hr_pg.departures.employee_id use?",
+   "sql": "SELECT DISTINCT employee_id AS v FROM hr_pg.departures",
+   "engine": "local",
+   "rows": 3,
+   "ms": 0.0,
+   "round": 0,
+   "error": ""
+  },
+  {
+   "id": "q028",
+   "agent": "Investigator",
+   "purpose": "Kenji Watanabe's commits by system (12 months)",
+   "sql": "SELECT sc.system_id AS system, COUNT(DISTINCT c.sha) AS n, MAX(c.committed_at) AS last_at FROM github.commits c JOIN github.commit_files f ON f.sha = c.sha JOIN github.service_catalog sc ON substr(f.path, 1, length(sc.repo_path)) = sc.repo_path WHERE c.author_login IN ('kwatanabe') AND c.committed_at >= '2025-10-22' GROUP BY sc.system_id",
+   "engine": "local",
+   "rows": 4,
+   "ms": 5.4,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q028",
+   "agent": "Investigator",
+   "purpose": "Privileged access held by Kenji Watanabe",
+   "sql": "SELECT resource, level, granted_at FROM hr_pg.access_grants WHERE employee_id = 'E1016'",
+   "engine": "local",
+   "rows": 3,
+   "ms": 5.5,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q030",
+   "agent": "Investigator",
+   "purpose": "Who else holds the same access (federated: grants x directory)",
+   "sql": "SELECT g.resource AS resource, g.level AS level, g.employee_id AS employee_id, e.full_name AS full_name, e.status AS status FROM hr_pg.access_grants g JOIN hr_pg.employees_directory e ON e.employee_id = g.employee_id WHERE g.resource IN ('aws-prod-admin', 'grafana-admin', 'vault-admin') AND g.employee_id <> 'E1016'",
+   "engine": "local",
+   "rows": 2,
+   "ms": 0.2,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q029",
+   "agent": "Investigator",
+   "purpose": "Kenji Watanabe's Jira work by component",
+   "sql": "SELECT component AS system, status, COUNT(*) AS n, MAX(updated) AS last_at FROM jira.issues WHERE assignee_id IN ('3b5c94fd45cea2c1d92afa60') AND created >= '2025-10-22' GROUP BY component, status",
+   "engine": "local",
+   "rows": 4,
+   "ms": 1.4,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q032",
+   "agent": "Investigator",
+   "purpose": "Kenji Watanabe's Slack thread answers",
+   "sql": "SELECT ts, thread_ts, channel_name, text, created_at FROM slack.messages WHERE is_reply = 1 AND user_id IN ('U05E8II49K') AND created_at >= '2025-10-22'",
+   "engine": "local",
+   "rows": 82,
+   "ms": 0.6,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q033",
+   "agent": "Investigator",
+   "purpose": "Thread questions for 82 answers",
+   "sql": "SELECT ts, user_id, text FROM slack.messages WHERE is_reply = 0 AND ts IN ('1761389049.000000', '1761457343.000000', '1761900001.000000', '1762240064.000000', '1762244199.000000', '1762940245.000000', '1763098419.000000', '1763445560.000000', '1764665658.000000', '1767158858.000000', '1767174034.000000', '1767243613.000000', '1767506561.000000', '1767935828.000000', '1768736228.000000', '1768800829.000000', '1768972624.000000', '1769154461.000000', '1769240620.000000', '1769923436.000000', '1770789507.000000', '1772101523.000000', '1772437084.000000', '1772860315.000000', '1773041888.000000', '1773315381.000000', '1773547462.000000', '1774586674.000000', '1774701917.000000', '1774957388.000000', '1775987021.000000', '1775989974.000000', '1775999742.000000', '1776163167.000000', '1776241053.000000', '1776431523.000000', '1776596210.000000', '1776692604.000000', '1777015474.000000', '1777090488.000000', '1777115525.000000', '1777271214.000000', '1777532625.000000', '1777537442.000000', '1778304147.000000', '1779338669.000000', '1779779765.000000', '1779785762.000000', '1780050698.000000', '1780466159.000000', '1780553525.000000', '1780566972.000000', '1780806913.000000', '1781245079.000000', '1781333592.000000', '1781784300.000000', '1782039601.000000', '1782103051.000000', '1783332347.000000', '1783604671.000000', '1784037595.000000', '1784806934.000000', '1784811560.000000', '1785215165.000000', '1785236729.000000', '1785331764.000000', '1785757284.000000', '1787218899.000000', '1787471753.000000', '1787478487.000000', '1788173415.000000', '1790240103.000000', '1790591707.000000', '1790763490.000000', '1791027016.000000', '1791193418.000000', '1791358404.000000', '1791459593.000000', '1791553196.000000', '1791627092.000000', '1791634858.000000', '1791797967.000000')",
+   "engine": "local",
+   "rows": 82,
+   "ms": 0.6,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q034",
+   "agent": "Investigator",
+   "purpose": "Recurring chores in the last 4 months",
+   "sql": "SELECT issue_key, component, summary, assignee_id, status, created FROM jira.issues WHERE labels LIKE '%recurring%' AND created >= '2026-06-24'",
+   "engine": "local",
+   "rows": 20,
+   "ms": 0.3,
+   "round": 1,
+   "error": ""
+  },
+  {
+   "id": "q035",
+   "agent": "Investigator",
+   "purpose": "Commit authorship for 6 systems (everyone)",
+   "sql": "SELECT sc.system_id AS system, c.author_login AS login, COUNT(DISTINCT c.sha) AS n, MAX(c.committed_at) AS last_at FROM github.commits c JOIN github.commit_files f ON f.sha = c.sha JOIN github.service_catalog sc ON substr(f.path, 1, length(sc.repo_path)) = sc.repo_path WHERE sc.system_id IN ('kubernetes', 'observability', 'ci-cd', 'settlement-batch', 'payments-gateway', 'auth-service') AND c.committed_at >= '2025-10-22' GROUP BY sc.system_id, c.author_login",
+   "engine": "local",
+   "rows": 20,
+   "ms": 11.4,
+   "round": 2,
+   "error": ""
+  },
+  {
+   "id": "q035",
+   "agent": "Investigator",
+   "purpose": "Pull-request reviewers on those systems",
+   "sql": "SELECT number, author_login, reviewers, base_path, merged_at FROM github.pull_requests WHERE base_path IN ('services/kubernetes/', 'services/observability/', 'services/ci-cd/', 'services/settlement-batch/', 'services/payments-gateway/', 'services/auth-service/') AND merged_at >= '2025-10-22'",
+   "engine": "local",
+   "rows": 183,
+   "ms": 15.0,
+   "round": 2,
+   "error": ""
+  },
+  {
+   "id": "q035",
+   "agent": "Investigator",
+   "purpose": "Jira work per component and assignee (6 systems)",
+   "sql": "SELECT component AS system, assignee_id AS account, status, COUNT(*) AS n, MAX(updated) AS last_at FROM jira.issues WHERE component IN ('kubernetes', 'observability', 'ci-cd', 'settlement-batch', 'payments-gateway', 'auth-service') AND created >= '2025-10-22' AND assignee_id IS NOT NULL GROUP BY component, assignee_id, status",
+   "engine": "local",
+   "rows": 24,
+   "ms": 12.5,
+   "round": 2,
+   "error": ""
+  },
+  {
+   "id": "q038",
+   "agent": "Investigator",
+   "purpose": "Slack thread answers in #payments, #platform",
+   "sql": "SELECT ts, thread_ts, channel_name, user_id, text, created_at FROM slack.messages WHERE is_reply = 1 AND channel_name IN ('payments', 'platform') AND created_at >= '2025-10-22'",
+   "engine": "local",
+   "rows": 642,
+   "ms": 2.3,
+   "round": 3,
+   "error": ""
+  },
+  {
+   "id": "q039",
+   "agent": "Investigator",
+   "purpose": "Thread questions for 300 answers",
+   "sql": "SELECT ts, user_id, text FROM slack.messages WHERE is_reply = 0 AND ts IN ('1761213621.000000', '1761310205.000000', '1761380449.000000', '1761389049.000000', '1761456406.000000', '1761457343.000000', '1761551615.000000', '1761570551.000000', '1761572529.000000', '1761628687.000000', '1761631799.000000', '1761652089.000000', '1761712917.000000', '1761729456.000000', '1761802956.000000', '1761891010.000000', '1761900001.000000', '1761907125.000000', '1761912859.000000', '1761977518.000000', '1762081963.000000', '1762084059.000000', '1762085791.000000', '1762156211.000000', '1762231940.000000', '1762240064.000000', '1762244199.000000', '1762430357.000000', '1762501267.000000', '1762508026.000000', '1762695051.000000', '1762775332.000000', '1762860461.000000', '1762861249.000000', '1762863749.000000', '1762922415.000000', '1762927911.000000', '1762934057.000000', '1762940245.000000', '1763016979.000000', '1763098419.000000', '1763100595.000000', '1763203170.000000', '1763279816.000000', '1763298268.000000', '1763355358.000000', '1763371868.000000', '1763386602.000000', '1763445560.000000', '1763455052.000000', '1763470063.000000', '1763546224.000000', '1763617066.000000', '1763715904.000000', '1763717363.000000', '1763786526.000000', '1763790049.000000', '1763815185.000000', '1763819661.000000', '1763879994.000000', '1763963685.000000', '1763972308.000000', '1763974450.000000', '1763975277.000000', '1763982496.000000', '1764131534.000000', '1764143279.000000', '1764145826.000000', '1764242015.000000', '1764247303.000000', '1764395599.000000', '1764398765.000000', '1764418974.000000', '1764480830.000000', '1764482956.000000', '1764492042.000000', '1764665658.000000', '1764764019.000000', '1764909332.000000', '1764931964.000000', '1764937014.000000', '1765001294.000000', '1765018802.000000', '1765197832.000000', '1765270948.000000', '1765280802.000000', '1765344169.000000', '1765437576.000000', '1765452504.000000', '1765606451.000000', '1765611024.000000', '1765876284.000000', '1765889248.000000', '1766125310.000000', '1766141298.000000', '1766145741.000000', '1766151623.000000', '1766316009.000000', '1766324089.000000', '1766379702.000000', '1766390100.000000', '1766396056.000000', '1766398240.000000', '1766400776.000000', '1766474081.000000', '1766554621.000000', '1766579096.000000', '1766643854.000000', '1766652604.000000', '1766742732.000000', '1766841300.000000', '1766910956.000000', '1766984152.000000', '1767102818.000000', '1767158858.000000', '1767166089.000000', '1767166810.000000', '1767174034.000000', '1767180542.000000', '1767185188.000000', '1767243613.000000', '1767269991.000000', '1767330645.000000', '1767350268.000000', '1767420577.000000', '1767431675.000000', '1767506561.000000', '1767511681.000000', '1767619896.000000', '1767620430.000000', '1767701332.000000', '1767864318.000000', '1767932112.000000', '1767935828.000000', '1768041997.000000', '1768104595.000000', '1768132700.000000', '1768213022.000000', '1768221320.000000', '1768312497.000000', '1768561881.000000', '1768563540.000000', '1768567556.000000', '1768571080.000000', '1768622692.000000', '1768637786.000000', '1768736228.000000', '1768799671.000000', '1768800829.000000', '1768817331.000000', '1768890344.000000', '1768895061.000000', '1768972624.000000', '1769079100.000000', '1769083947.000000', '1769154461.000000', '1769164803.000000', '1769240620.000000', '1769249574.000000', '1769326796.000000', '1769493147.000000', '1769521301.000000', '1769590818.000000', '1769752353.000000', '1769780321.000000', '1769855187.000000', '1769923436.000000', '1770182168.000000', '1770194085.000000', '1770281013.000000', '1770472001.000000', '1770553126.000000', '1770643179.000000', '1770720171.000000', '1770784036.000000', '1770789507.000000', '1770799813.000000', '1770988014.000000', '1771143250.000000', '1771149801.000000', '1771237869.000000', '1771307057.000000', '1771317381.000000', '1771321292.000000', '1771419527.000000', '1771564448.000000', '1771571256.000000', '1771755236.000000', '1771844348.000000', '1771846809.000000', '1771941528.000000', '1772003130.000000', '1772014368.000000', '1772092526.000000', '1772101523.000000', '1772174763.000000', '1772269374.000000', '1772353983.000000', '1772437084.000000', '1772456172.000000', '1772517817.000000', '1772613922.000000', '1772696392.000000', '1772697196.000000', '1772701846.000000', '1772706532.000000', '1772797502.000000', '1772797627.000000', '1772860315.000000', '1772875632.000000', '1773038743.000000', '1773041888.000000', '1773060626.000000', '1773125383.000000', '1773315381.000000', '1773316134.000000', '1773323360.000000', '1773394799.000000', '1773396923.000000', '1773547462.000000', '1773577914.000000', '1773652737.000000', '1773722384.000000', '1773750665.000000', '1773806520.000000', '1773895983.000000', '1773902561.000000', '1773905323.000000', '1773920376.000000', '1773990029.000000', '1774152081.000000', '1774332367.000000', '1774337820.000000', '1774419276.000000', '1774507623.000000', '1774586674.000000', '1774615332.000000', '1774701917.000000', '1774766963.000000', '1774953167.000000', '1774957204.000000', '1774957388.000000', '1775024107.000000', '1775050242.000000', '1775110858.000000', '1775127681.000000', '1775137231.000000', '1775310480.000000', '1775395363.000000', '1775623186.000000', '1775655343.000000', '1775737098.000000', '1775969356.000000', '1775987021.000000', '1775989974.000000', '1775993589.000000', '1775999742.000000', '1776148133.000000', '1776163167.000000', '1776241053.000000', '1776247481.000000', '1776252752.000000', '1776324673.000000', '1776333182.000000', '1776333924.000000', '1776430411.000000', '1776431523.000000', '1776511647.000000', '1776585010.000000', '1776594545.000000', '1776596210.000000', '1776601005.000000', '1776668279.000000', '1776681891.000000', '1776692604.000000', '1776757218.000000', '1776762080.000000', '1776842328.000000', '1776934447.000000', '1777010052.000000', '1777015474.000000', '1777090488.000000', '1777103875.000000', '1777115525.000000', '1777122443.000000', '1777179910.000000', '1777193633.000000', '1777196854.000000', '1777271214.000000', '1777279623.000000', '1777470695.000000', '1777532625.000000', '1777537442.000000', '1777552533.000000', '1777555455.000000', '1777621422.000000', '1777810838.000000', '1777812127.000000', '1777900277.000000', '1778047787.000000')",
+   "engine": "local",
+   "rows": 300,
+   "ms": 1.2,
+   "round": 3,
+   "error": ""
+  },
+  {
+   "id": "q040",
+   "agent": "Investigator",
+   "purpose": "Thread questions for 256 answers",
+   "sql": "SELECT ts, user_id, text FROM slack.messages WHERE is_reply = 0 AND ts IN ('1778053899.000000', '1778131560.000000', '1778221420.000000', '1778236225.000000', '1778304147.000000', '1778418316.000000', '1778488292.000000', '1778498463.000000', '1778499746.000000', '1778505885.000000', '1778752017.000000', '1778761527.000000', '1778763212.000000', '1778841888.000000', '1778843239.000000', '1778920437.000000', '1779017233.000000', '1779025139.000000', '1779170188.000000', '1779257971.000000', '1779271764.000000', '1779338669.000000', '1779346339.000000', '1779429886.000000', '1779439215.000000', '1779453618.000000', '1779618218.000000', '1779779765.000000', '1779785762.000000', '1779960915.000000', '1779963356.000000', '1779970403.000000', '1780041869.000000', '1780050698.000000', '1780201332.000000', '1780230682.000000', '1780290014.000000', '1780399528.000000', '1780407186.000000', '1780459943.000000', '1780466159.000000', '1780553525.000000', '1780558359.000000', '1780566972.000000', '1780640110.000000', '1780654106.000000', '1780747022.000000', '1780806913.000000', '1780899852.000000', '1780989986.000000', '1781010357.000000', '1781070674.000000', '1781175493.000000', '1781177428.000000', '1781180241.000000', '1781245079.000000', '1781333592.000000', '1781334135.000000', '1781433395.000000', '1781525329.000000', '1781695738.000000', '1781781659.000000', '1781784300.000000', '1781843928.000000', '1781857868.000000', '1781872803.000000', '1782038734.000000', '1782039601.000000', '1782103051.000000', '1782201781.000000', '1782275073.000000', '1782308070.000000', '1782373387.000000', '1782631701.000000', '1782646722.000000', '1782721491.000000', '1782725360.000000', '1782730470.000000', '1782816614.000000', '1782890433.000000', '1782999935.000000', '1783154319.000000', '1783236158.000000', '1783314347.000000', '1783318189.000000', '1783332347.000000', '1783489370.000000', '1783509639.000000', '1783575399.000000', '1783604671.000000', '1783665658.000000', '1783686248.000000', '1783767635.000000', '1783837326.000000', '1783852210.000000', '1783923905.000000', '1783931508.000000', '1783935295.000000', '1784010942.000000', '1784023947.000000', '1784027770.000000', '1784035255.000000', '1784037595.000000', '1784091765.000000', '1784096115.000000', '1784098802.000000', '1784179387.000000', '1784180882.000000', '1784205388.000000', '1784209947.000000', '1784265429.000000', '1784286711.000000', '1784293097.000000', '1784371090.000000', '1784549661.000000', '1784624826.000000', '1784629394.000000', '1784693515.000000', '1784726852.000000', '1784786104.000000', '1784787875.000000', '1784806934.000000', '1784811560.000000', '1784887358.000000', '1784894814.000000', '1784953115.000000', '1784965862.000000', '1785215165.000000', '1785215251.000000', '1785232204.000000', '1785236729.000000', '1785315344.000000', '1785321328.000000', '1785331764.000000', '1785415599.000000', '1785419380.000000', '1785486179.000000', '1785657329.000000', '1785662531.000000', '1785757284.000000', '1785816517.000000', '1785828613.000000', '1785846434.000000', '1785907023.000000', '1785913935.000000', '1785916773.000000', '1785919732.000000', '1785935041.000000', '1785995532.000000', '1785997768.000000', '1786082846.000000', '1786092983.000000', '1786185452.000000', '1786186100.000000', '1786338194.000000', '1786431810.000000', '1786510314.000000', '1786520112.000000', '1786536502.000000', '1786543193.000000', '1786799383.000000', '1786857757.000000', '1786951093.000000', '1787114549.000000', '1787128111.000000', '1787208722.000000', '1787218899.000000', '1787319019.000000', '1787387900.000000', '1787390474.000000', '1787459336.000000', '1787462563.000000', '1787464879.000000', '1787471753.000000', '1787478487.000000', '1787566064.000000', '1787653710.000000', '1787739317.000000', '1787749590.000000', '1787993216.000000', '1788010467.000000', '1788077017.000000', '1788173415.000000', '1788174675.000000', '1788178193.000000', '1788241652.000000', '1788409226.000000', '1788505096.000000', '1788685660.000000', '1788697740.000000', '1788778248.000000', '1788856272.000000', '1788953834.000000', '1789042631.000000', '1789101577.000000', '1789132414.000000', '1789203650.000000', '1789281700.000000', '1789359070.000000', '1789362586.000000', '1789448153.000000', '1789542331.000000', '1789720174.000000', '1789732516.000000', '1789798433.000000', '1789805644.000000', '1789808802.000000', '1789890053.000000', '1790050033.000000', '1790061974.000000', '1790068860.000000', '1790074078.000000', '1790140206.000000', '1790240103.000000', '1790506769.000000', '1790585803.000000', '1790591707.000000', '1790661047.000000', '1790672331.000000', '1790680919.000000', '1790683108.000000', '1790685840.000000', '1790745992.000000', '1790763490.000000', '1791027016.000000', '1791091072.000000', '1791100401.000000', '1791104789.000000', '1791177791.000000', '1791193418.000000', '1791270848.000000', '1791358404.000000', '1791366206.000000', '1791366714.000000', '1791459593.000000', '1791553196.000000', '1791617204.000000', '1791627092.000000', '1791634858.000000', '1791695340.000000', '1791700990.000000', '1791719488.000000', '1791797967.000000', '1791804842.000000', '1791967553.000000', '1792063252.000000', '1792151132.000000', '1792156094.000000', '1792391137.000000', '1792480644.000000', '1792490007.000000', '1792572562.000000', '1792573273.000000', '1792642918.000000', '1792644251.000000', '1792648038.000000')",
+   "engine": "local",
+   "rows": 256,
+   "ms": 1.1,
+   "round": 3,
+   "error": ""
+  },
+  {
+   "id": "q041",
+   "agent": "Investigator",
+   "purpose": "Wiki pages: titles, authors, freshness",
+   "sql": "SELECT page_id, title, labels, author_id, last_editor_id, updated_at, body FROM docs.pages",
+   "engine": "local",
+   "rows": 22,
+   "ms": 0.2,
+   "round": 3,
+   "error": ""
+  },
+  {
+   "id": "q042",
+   "agent": "Successor scout",
+   "purpose": "Current open tickets per person (load)",
+   "sql": "SELECT assignee_id AS account, COUNT(*) AS n FROM jira.issues WHERE status <> 'Done' AND assignee_id IS NOT NULL AND created >= '2025-10-22' GROUP BY assignee_id",
+   "engine": "local",
+   "rows": 11,
+   "ms": 0.3,
+   "round": 4,
+   "error": ""
+  }
+ ],
+ "failed_sources": {},
+ "identities": {
+  "E1006": {
+   "jira": [
+    {
+     "account": "8874a52a4de41b8495c9ea00",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "slack": [
+    {
+     "account": "U0OCUZRENU",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "nishak",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ]
+  },
+  "E1017": {
+   "jira": [
+    {
+     "account": "de66ce772ec6176025313734",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "slack": [
+    {
+     "account": "U0K1EYY37Q",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "dokafor",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ]
+  },
+  "E1002": {
+   "jira": [
+    {
+     "account": "da824cac67b1f1a69cda7018",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "slack": [
+    {
+     "account": "U0ZX272HPO",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "lmoreau",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ]
+  },
+  "E1012": {
+   "jira": [
+    {
+     "account": "938fdce61f336fa79b0d5238",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "slack": [
+    {
+     "account": "U0EDOECVE6",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "aishab",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ]
+  },
+  "E1018": {
+   "jira": [
+    {
+     "account": "4a98609d276fdeac1a600218",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "slack": [
+    {
+     "account": "U029GD8AFP",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "rahulvarma-dev",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ]
+  },
+  "E1009": {
+   "jira": [
+    {
+     "account": "01686568d379793701baa950",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "slack": [
+    {
+     "account": "U0KYAYQ3S1",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ]
+  },
+  "E1001": {
+   "jira": [
+    {
+     "account": "4c9876d0d52373b7d456ca55",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "slack": [
+    {
+     "account": "U08DUDD467",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "tbecker",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ]
+  },
+  "E1004": {
+   "jira": [
+    {
+     "account": "54760626881d9ef209388701",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "slack": [
+    {
+     "account": "U0EPZHPCF0",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "vnair",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ]
+  },
+  "E1014": {
+   "slack": [
+    {
+     "account": "U0M80O2RAK",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "praman-acme",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "6a2aaa5459547b4c0547df25",
+     "method": "name/handle match",
+     "confidence": 0.78
+    }
+   ]
+  },
+  "E1013": {
+   "slack": [
+    {
+     "account": "U0FYGWWQC3",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "arjunm",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "fc18a7d2bb193819bccf83b5",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1005": {
+   "slack": [
+    {
+     "account": "U0XMECOSFO",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "meera-i",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "30b64e18fa1e9a4ee2126e80",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1008": {
+   "slack": [
+    {
+     "account": "U0P98Q1ZXO",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "chloe-codes",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "904ae8c3302cc3d59be2ce70",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1007": {
+   "slack": [
+    {
+     "account": "U0S1K3AQ6L",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "sofialq",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "883c8b74759c7453d7be1e35",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1011": {
+   "slack": [
+    {
+     "account": "U0K87AU5BH",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "hassan-ali",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "58b708d91f6938441d7c7181",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1016": {
+   "slack": [
+    {
+     "account": "U05E8II49K",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "kwatanabe",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "3b5c94fd45cea2c1d92afa60",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1003": {
+   "slack": [
+    {
+     "account": "U04P40MGG1",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "ananya-g",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "f81a2e0f14ea357dc2d98a97",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1015": {
+   "slack": [
+    {
+     "account": "U0ZVGPMM82",
+     "method": "email match (federated join)",
+     "confidence": 0.99
+    }
+   ],
+   "github": [
+    {
+     "account": "mrossi",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "jira": [
+    {
+     "account": "6bda6bb184a6635ff34927ed",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  },
+  "E1010": {
+   "github": [
+    {
+     "account": "rverma",
+     "method": "commit email match (federated join)",
+     "confidence": 0.97
+    }
+   ],
+   "slack": [
+    {
+     "account": "U0WNREK8PK",
+     "method": "name/handle match",
+     "confidence": 0.95
+    }
+   ]
+  }
+ },
+ "source_map": {
+  "docs.pages": {
+   "table": "docs.pages",
+   "source": "docs",
+   "kind": "rest",
+   "columns": [
+    "page_id",
+    "space",
+    "title",
+    "labels",
+    "author_id",
+    "last_editor_id",
+    "created_at",
+    "updated_at",
+    "body"
+   ],
+   "roles": {
+    "person": [
+     "author_id",
+     "last_editor_id"
+    ],
+    "time": [
+     "created_at",
+     "updated_at"
+    ],
+    "link": [],
+    "text": [
+     "title",
+     "body"
+    ],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Wiki pages: runbooks, ADRs, how-tos. Authors are Atlassian account ids.",
+   "discovered_via": "sqlite_master",
+   "rows": 22,
+   "first_at": "2024-06-29T18:00:00Z",
+   "last_at": "2026-05-03T18:00:00Z"
+  },
+  "github.commit_files": {
+   "table": "github.commit_files",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "sha",
+    "path",
+    "additions",
+    "deletions"
+   ],
+   "roles": {
+    "person": [],
+    "time": [],
+    "link": [
+     "path"
+    ],
+    "text": [],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Files touched by each commit.",
+   "discovered_via": "sqlite_master",
+   "rows": 3001,
+   "first_at": null,
+   "last_at": null
+  },
+  "github.commits": {
+   "table": "github.commits",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "sha",
+    "author_login",
+    "author_name",
+    "author_email",
+    "committed_at",
+    "message",
+    "pr_number"
+   ],
+   "roles": {
+    "person": [
+     "author_login"
+    ],
+    "time": [
+     "committed_at"
+    ],
+    "link": [],
+    "text": [
+     "message"
+    ],
+    "name": [
+     "author_name"
+    ],
+    "email": [
+     "author_email"
+    ]
+   },
+   "identity": false,
+   "detail": "Commits on the main branch of the platform monorepo.",
+   "discovered_via": "sqlite_master",
+   "rows": 1806,
+   "first_at": "2025-04-30T06:21:14Z",
+   "last_at": "2026-10-22T12:36:56Z"
+  },
+  "github.pull_requests": {
+   "table": "github.pull_requests",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "title",
+    "author_login",
+    "created_at",
+    "merged_at",
+    "state",
+    "reviewers",
+    "base_path",
+    "number"
+   ],
+   "roles": {
+    "person": [
+     "author_login"
+    ],
+    "time": [
+     "created_at",
+     "merged_at"
+    ],
+    "link": [
+     "base_path"
+    ],
+    "text": [
+     "title"
+    ],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Merged pull requests with reviewers.",
+   "discovered_via": "sqlite_master",
+   "rows": 624,
+   "first_at": "2025-04-30T06:21:14Z",
+   "last_at": "2026-10-22T12:36:56Z"
+  },
+  "github.service_catalog": {
+   "table": "github.service_catalog",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "system_id",
+    "name",
+    "kind",
+    "owner_team",
+    "repo_path",
+    "slack_channel",
+    "jira_component",
+    "pagerduty_service",
+    "aliases",
+    "description",
+    "tier"
+   ],
+   "roles": {
+    "person": [],
+    "time": [],
+    "link": [
+     "system_id",
+     "repo_path",
+     "jira_component",
+     "pagerduty_service"
+    ],
+    "text": [
+     "description"
+    ],
+    "name": [
+     "name"
+    ],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Backstage-style service catalog (catalog-info.yaml) linking each system to its repo path, channel and component.",
+   "discovered_via": "sqlite_master",
+   "rows": 20,
+   "first_at": null,
+   "last_at": null
+  },
+  "github.users": {
+   "table": "github.users",
+   "source": "github",
+   "kind": "rest",
+   "columns": [
+    "login",
+    "name",
+    "account_type"
+   ],
+   "roles": {
+    "person": [
+     "login"
+    ],
+    "time": [],
+    "link": [],
+    "text": [],
+    "name": [
+     "name"
+    ],
+    "email": []
+   },
+   "identity": true,
+   "detail": "GitHub org members and bots.",
+   "discovered_via": "sqlite_master",
+   "rows": 19,
+   "first_at": null,
+   "last_at": null
+  },
+  "hr_pg.access_grants": {
+   "table": "hr_pg.access_grants",
+   "source": "hr_pg",
+   "kind": "jdbc",
+   "columns": [
+    "employee_id",
+    "resource",
+    "level",
+    "granted_at"
+   ],
+   "roles": {
+    "person": [
+     "employee_id"
+    ],
+    "time": [
+     "granted_at"
+    ],
+    "link": [
+     "resource"
+    ],
+    "text": [],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Privileged access by employee (admin consoles, keys, escalation lines).",
+   "discovered_via": "sqlite_master",
+   "rows": 19,
+   "first_at": "2023-12-17",
+   "last_at": "2025-04-11"
+  },
+  "hr_pg.departures": {
+   "table": "hr_pg.departures",
+   "source": "hr_pg",
+   "kind": "jdbc",
+   "columns": [
+    "employee_id",
+    "notice_date",
+    "last_day",
+    "reason_category",
+    "backfill_status"
+   ],
+   "roles": {
+    "person": [
+     "employee_id"
+    ],
+    "time": [],
+    "link": [],
+    "text": [],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Notice periods and last days.",
+   "discovered_via": "sqlite_master",
+   "rows": 3,
+   "first_at": null,
+   "last_at": null
+  },
+  "hr_pg.employees_directory": {
+   "table": "hr_pg.employees_directory",
+   "source": "hr_pg",
+   "kind": "jdbc",
+   "columns": [
+    "employee_id",
+    "full_name",
+    "preferred_name",
+    "work_email",
+    "title",
+    "team",
+    "team_id",
+    "manager_id",
+    "employment_type",
+    "status",
+    "start_date",
+    "last_day",
+    "location"
+   ],
+   "roles": {
+    "person": [
+     "employee_id"
+    ],
+    "time": [],
+    "link": [],
+    "text": [
+     "title"
+    ],
+    "name": [
+     "full_name",
+     "preferred_name"
+    ],
+    "email": [
+     "work_email"
+    ]
+   },
+   "identity": true,
+   "detail": "Governed employee directory (no compensation or personal data).",
+   "discovered_via": "sqlite_master",
+   "rows": 18,
+   "first_at": null,
+   "last_at": null
+  },
+  "jira.issues": {
+   "table": "jira.issues",
+   "source": "jira",
+   "kind": "rest",
+   "columns": [
+    "issue_key",
+    "project",
+    "component",
+    "issue_type",
+    "summary",
+    "description",
+    "status",
+    "labels",
+    "assignee_id",
+    "reporter_id",
+    "created",
+    "updated",
+    "resolved"
+   ],
+   "roles": {
+    "person": [
+     "assignee_id"
+    ],
+    "time": [
+     "created"
+    ],
+    "link": [
+     "component"
+    ],
+    "text": [
+     "summary",
+     "description"
+    ],
+    "name": [],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Jira issues across all projects.",
+   "discovered_via": "sqlite_master",
+   "rows": 1133,
+   "first_at": "2025-04-30T08:17:24Z",
+   "last_at": "2026-10-22T08:48:20Z"
+  },
+  "jira.users": {
+   "table": "jira.users",
+   "source": "jira",
+   "kind": "rest",
+   "columns": [
+    "account_id",
+    "display_name",
+    "email",
+    "time_zone",
+    "active"
+   ],
+   "roles": {
+    "person": [
+     "account_id"
+    ],
+    "time": [],
+    "link": [],
+    "text": [],
+    "name": [
+     "display_name"
+    ],
+    "email": [
+     "email"
+    ]
+   },
+   "identity": true,
+   "detail": "Atlassian accounts.",
+   "discovered_via": "sqlite_master",
+   "rows": 18,
+   "first_at": null,
+   "last_at": null
+  },
+  "slack.channels": {
+   "table": "slack.channels",
+   "source": "slack",
+   "kind": "rest",
+   "columns": [
+    "channel_id",
+    "name",
+    "is_archived"
+   ],
+   "roles": {
+    "person": [],
+    "time": [],
+    "link": [],
+    "text": [],
+    "name": [
+     "name"
+    ],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Slack channels.",
+   "discovered_via": "sqlite_master",
+   "rows": 7,
+   "first_at": null,
+   "last_at": null
+  },
+  "slack.messages": {
+   "table": "slack.messages",
+   "source": "slack",
+   "kind": "rest",
+   "columns": [
+    "ts",
+    "thread_ts",
+    "channel",
+    "channel_name",
+    "text",
+    "created_at",
+    "parent_user",
+    "is_reply",
+    "reply_count",
+    "user_id"
+   ],
+   "roles": {
+    "person": [
+     "user_id"
+    ],
+    "time": [
+     "created_at",
+     "ts",
+     "thread_ts"
+    ],
+    "link": [
+     "channel_name"
+    ],
+    "text": [
+     "text"
+    ],
+    "name": [
+     "channel_name"
+    ],
+    "email": []
+   },
+   "identity": false,
+   "detail": "Messages and thread replies across public channels.",
+   "discovered_via": "sqlite_master",
+   "rows": 3308,
+   "first_at": "2025-04-30T04:43:08Z",
+   "last_at": "2026-10-22T06:28:18Z"
+  },
+  "slack.users": {
+   "table": "slack.users",
+   "source": "slack",
+   "kind": "rest",
+   "columns": [
+    "user_id",
+    "name",
+    "real_name",
+    "display_name",
+    "email",
+    "title",
+    "deleted"
+   ],
+   "roles": {
+    "person": [
+     "user_id"
+    ],
+    "time": [],
+    "link": [],
+    "text": [
+     "title"
+    ],
+    "name": [
+     "name",
+     "real_name",
+     "display_name"
+    ],
+    "email": [
+     "email"
+    ]
+   },
+   "identity": true,
+   "detail": "Slack workspace members.",
+   "discovered_via": "sqlite_master",
+   "rows": 18,
+   "first_at": null,
+   "last_at": null
+  },
+  "_namespaces": {
+   "docs": "jira"
+  }
+ },
+ "memory_log": [
+  {
+   "id": "mem-33",
+   "content": "Kubernetes Platform: Cluster upgrade runbook -> Upgrade order: system pool, payments, batch.",
+   "source": "docs:4013",
+   "tags": [
+    "system:kubernetes",
+    "kind:doc"
+   ]
+  },
+  {
+   "id": "mem-34",
+   "content": "Kubernetes Platform: Cluster upgrade runbook -> Scale batch pool to 6 nodes before month-end.",
+   "source": "docs:4013",
+   "tags": [
+    "system:kubernetes",
+    "kind:doc"
+   ]
+  },
+  {
+   "id": "mem-35",
+   "content": "Kubernetes Platform: Break-glass access -> Use the aws-prod-admin break-glass role; it pages platform on-call.",
+   "source": "docs:4014",
+   "tags": [
+    "system:kubernetes",
+    "kind:doc"
+   ]
+  },
+  {
+   "id": "mem-36",
+   "content": "Verified finding: if Kenji Watanabe leaves, Kubernetes Platform is at risk. Strongest remaining backup: Lucas Moreau. Critic status: verified.",
+   "source": "lastday:run:7cf138f5d8",
+   "tags": [
+    "system:kubernetes",
+    "person:E1016",
+    "kind:verdict"
+   ]
+  },
+  {
+   "id": "mem-37",
+   "content": "Observability: Which alerts page at night? -> Only tier 1 SLO burn alerts page. Everything else goes to the morning digest.",
+   "source": "slack:#platform/1764666678.000000",
+   "tags": [
+    "system:observability",
+    "person:E1016",
+    "kind:tacit"
+   ]
+  },
+  {
+   "id": "mem-38",
+   "content": "Observability: Grafana dashboards missing after migration -> They're provisioned from the observability repo, re-run the provisioning job.",
+   "source": "slack:#platform/1761901381.000000",
+   "tags": [
+    "system:observability",
+    "person:E1016",
+    "kind:tacit"
+   ]
+  },
+  {
+   "id": "mem-39",
+   "content": "Observability: Alerting policy -> Only tier 1 SLO burn alerts page at night.",
+   "source": "docs:4016",
+   "tags": [
+    "system:observability",
+    "kind:doc"
+   ]
+  },
+  {
+   "id": "mem-40",
+   "content": "Verified finding: if Kenji Watanabe leaves, Observability is critical. Strongest remaining backup: Lucas Moreau. Critic status: verified.",
+   "source": "lastday:run:7cf138f5d8",
+   "tags": [
+    "system:observability",
+    "person:E1016",
+    "kind:verdict"
+   ]
+  }
+ ],
+ "outputs": {
+  "prior": {},
+  "plan": [
+   "Footprint: find every system Kenji Watanabe shows up in across 7 probes",
+   "Ownership: who else works on those systems, from systems of record (commits, reviews, tickets)",
+   "Critique: the Critic decides which labels need corroboration before anyone acts on them",
+   "Corroboration: conversation, incidents and docs only where the Critic asked",
+   "Risk and successors, then the handover plan and exit interview"
+  ],
+  "footprint": {
+   "ci-cd": {
+    "github": 23.0,
+    "jira": 3.8540298329442066,
+    "slack": 11.854571341415088
+   },
+   "kubernetes": {
+    "github": 76.77793610676336,
+    "jira": 28.942964448568855,
+    "slack": 38.56452889645551
+   },
+   "observability": {
+    "github": 51.11663052094938,
+    "jira": 17.25366064408155,
+    "slack": 27.451394818288783
+   },
+   "payments-gateway": {
+    "github": 1.2240535433046553,
+    "jira": 1.2640332431458032,
+    "slack": 3.7826460279524987
+   },
+   "month-end-close": {
+    "slack": 5.601741435072839
+   },
+   "settlement-batch": {
+    "slack": 6.654935895040192
+   }
+  },
+  "handover": {
+   "title": "Handover plan: Kenji Watanabe",
+   "headline": "Kenji Watanabe leaves in 37 days (28 Nov 2026). 1 critical and 1 at-risk areas need a handover; 4 areas are already covered by others.",
+   "days_left": 37,
+   "last_day": "2026-11-28",
+   "areas": [
+    {
+     "system": "observability",
+     "name": "Observability",
+     "label": "critical",
+     "tier": 2,
+     "share": 0.735,
+     "backup": 0.265,
+     "status": "verified",
+     "confidence": 0.9,
+     "priority": 0.604,
+     "why": "Kenji holds 74% of the evidence-weighted knowledge of Observability (tier 2); the strongest remaining person holds 26%. Backups: Lucas Moreau 26%. Sources: github, jira, slack.",
+     "knows": [
+      {
+       "text": "Only tier 1 SLO burn alerts page. Everything else goes to the morning digest.",
+       "context": "asked by Rahul Verma in #platform on 02 Dec 2025",
+       "cite": "slack:slack_answer:platform/1764666678.000000",
+       "memory_id": "mem-37"
+      },
+      {
+       "text": "They're provisioned from the observability repo, re-run the provisioning job.",
+       "context": "asked by Aisha Bello in #platform on 31 Oct 2025",
+       "cite": "slack:slack_answer:platform/1761901381.000000",
+       "memory_id": "mem-38"
+      }
+     ],
+     "chores": [],
+     "access": [
+      {
+       "resource": "grafana-admin",
+       "level": "admin",
+       "system": "observability",
+       "mapped_by": "keyword",
+       "other_holders": [],
+       "exclusive": true,
+       "query_id": "q028"
+      }
+     ],
+     "docs_to_fix": [
+      {
+       "page_id": "4016",
+       "title": "Alerting policy",
+       "issue": "last updated 10 months ago; author Kenji Watanabe has notice"
+      }
+     ],
+     "successor": {
+      "person": "E1002",
+      "name": "Lucas Moreau",
+      "title": "Platform Engineer",
+      "score": 0.713,
+      "reasons": [
+       "26% of the Observability activity",
+       "Kenji answered their Observability questions 3 times",
+       "on the owning team (Platform)",
+       "works on neighbouring systems",
+       "2 open tickets"
+      ]
+     },
+     "other_candidates": [
+      {
+       "person": "E1012",
+       "name": "Aisha Bello",
+       "title": "Security Engineer",
+       "score": 0.398,
+       "reasons": [
+        "Kenji answered their Observability questions 7 times",
+        "on the owning team (Platform)",
+        "works on neighbouring systems",
+        "4 open tickets"
+       ]
+      },
+      {
+       "person": "E1011",
+       "name": "Hassan Ali",
+       "title": "Engineer",
+       "score": 0.18,
+       "reasons": [
+        "Kenji answered their Observability questions 1 time",
+        "works on neighbouring systems",
+        "2 open tickets"
+       ]
+      }
+     ],
+     "checklist": [
+      "Pair Lucas Moreau with Kenji on Observability for the next 10 working days",
+      "Transfer grafana-admin (admin) to Lucas Moreau; nobody else holds it",
+      "Write the Observability runbook from the tacit answers below, reviewed by Kenji",
+      "Fix wiki page 'Alerting policy': last updated 10 months ago; author Kenji Watanabe has notice",
+      "Answer the exit-interview questions for this area"
+     ],
+     "citations": [
+      "docs:doc:4016",
+      "github:commit:kwatanabe@observability",
+      "github:review:pr1465:kwatanabe",
+      "github:review:pr1466:kwatanabe",
+      "github:review:pr1467:kwatanabe",
+      "github:review:pr1468:kwatanabe",
+      "github:review:pr1469:kwatanabe",
+      "hr_pg:access:grafana-admin",
+      "jira:issue_done:3b5c94fd45cea2c1d92afa60@observability:Done",
+      "slack:slack_answer:platform/1761901381.000000",
+      "slack:slack_answer:platform/1763451020.000000",
+      "slack:slack_answer:platform/1764666678.000000"
+     ],
+     "history": [
+      {
+       "round": 1,
+       "stage": "init",
+       "label": "covered",
+       "share": 0.0,
+       "backup": 0.0,
+       "sources": []
+      },
+      {
+       "round": 2,
+       "stage": "provisional",
+       "label": "critical",
+       "share": 0.749,
+       "backup": 0.251,
+       "sources": [
+        "github",
+        "jira"
+       ]
+      },
+      {
+       "round": 2,
+       "stage": "critic:provisional",
+       "notes": [
+        "needs corroboration: critical on commits and tickets alone"
+       ]
+      },
+      {
+       "round": 3,
+       "stage": "corroborated",
+       "label": "critical",
+       "share": 0.735,
+       "backup": 0.265,
+       "sources": [
+        "github",
+        "jira",
+        "slack"
+       ]
+      },
+      {
+       "round": 3,
+       "stage": "critic:final",
+       "notes": [
+        "label holds across 3 sources: github, jira, slack"
+       ]
+      },
+      {
+       "round": 4,
+       "stage": "corroborated",
+       "label": "critical",
+       "share": 0.735,
+       "backup": 0.265,
+       "sources": [
+        "github",
+        "jira",
+        "slack"
+       ]
+      }
+     ],
+     "escalated": false
+    },
+    {
+     "system": "kubernetes",
+     "name": "Kubernetes Platform",
+     "label": "at_risk",
+     "tier": 1,
+     "share": 0.633,
+     "backup": 0.319,
+     "status": "verified",
+     "confidence": 0.9,
+     "priority": 0.47,
+     "why": "Kenji holds 63% of the evidence-weighted knowledge of Kubernetes Platform (tier 1); the strongest remaining person holds 32%. Backups: Lucas Moreau 32%, Aisha Bello 5%. Sources: github, jira, slack.",
+     "knows": [],
+     "chores": [
+      {
+       "summary": "Scale batch node pool before month-end",
+       "issue_key": "PLAT-368",
+       "owner": "Kenji Watanabe",
+       "owner_id": "E1016",
+       "status": "Done",
+       "state": "stops when they leave",
+       "last_created": "2026-09-23T18:00:00Z",
+       "query_id": "q034"
+      }
+     ],
+     "access": [],
+     "docs_to_fix": [],
+     "successor": {
+      "person": "E1002",
+      "name": "Lucas Moreau",
+      "title": "Platform Engineer",
+      "score": 0.856,
+      "reasons": [
+       "32% of the Kubernetes Platform activity",
+       "Kenji answered their Kubernetes Platform questions 9 times",
+       "on the owning team (Platform)",
+       "works on neighbouring systems",
+       "2 open tickets"
+      ]
+     },
+     "other_candidates": [
+      {
+       "person": "E1012",
+       "name": "Aisha Bello",
+       "title": "Security Engineer",
+       "score": 0.358,
+       "reasons": [
+        "5% of the Kubernetes Platform activity",
+        "Kenji answered their Kubernetes Platform questions 1 time",
+        "on the owning team (Platform)",
+        "works on neighbouring systems",
+        "4 open tickets"
+       ]
+      },
+      {
+       "person": "E1011",
+       "name": "Hassan Ali",
+       "title": "Engineer",
+       "score": 0.176,
+       "reasons": [
+        "Kenji answered their Kubernetes Platform questions 1 time",
+        "works on neighbouring systems",
+        "2 open tickets"
+       ]
+      }
+     ],
+     "checklist": [
+      "Pair Lucas Moreau with Kenji on Kubernetes Platform for the next 10 working days",
+      "Reassign recurring chore 'Scale batch node pool before month-end' (PLAT-368)",
+      "Answer the exit-interview questions for this area"
+     ],
+     "citations": [
+      "github:commit:kwatanabe@kubernetes",
+      "github:review:pr1448:kwatanabe",
+      "github:review:pr1449:kwatanabe",
+      "github:review:pr1450:kwatanabe",
+      "github:review:pr1451:kwatanabe",
+      "github:review:pr1452:kwatanabe",
+      "github:review:pr1453:kwatanabe",
+      "github:review:pr1454:kwatanabe",
+      "github:review:pr1455:kwatanabe",
+      "github:review:pr1456:kwatanabe",
+      "github:review:pr1457:kwatanabe",
+      "github:review:pr1458:kwatanabe",
+      "jira:chore:PLAT-368"
+     ],
+     "history": [
+      {
+       "round": 1,
+       "stage": "init",
+       "label": "covered",
+       "share": 0.0,
+       "backup": 0.0,
+       "sources": []
+      },
+      {
+       "round": 2,
+       "stage": "provisional",
+       "label": "at_risk",
+       "share": 0.618,
+       "backup": 0.33,
+       "sources": [
+        "github",
+        "jira"
+       ]
+      },
+      {
+       "round": 2,
+       "stage": "critic:provisional",
+       "notes": [
+        "needs corroboration: at risk on commits and tickets alone"
+       ]
+      },
+      {
+       "round": 3,
+       "stage": "corroborated",
+       "label": "at_risk",
+       "share": 0.633,
+       "backup": 0.319,
+       "sources": [
+        "github",
+        "jira",
+        "slack"
+       ]
+      },
+      {
+       "round": 3,
+       "stage": "critic:final",
+       "notes": [
+        "label holds across 3 sources: github, jira, slack"
+       ]
+      },
+      {
+       "round": 4,
+       "stage": "corroborated",
+       "label": "at_risk",
+       "share": 0.633,
+       "backup": 0.319,
+       "sources": [
+        "github",
+        "jira",
+        "slack"
+       ]
+      }
+     ],
+     "escalated": false
+    }
+   ],
+   "covered": [
+    {
+     "system": "auth-service",
+     "name": "Auth Service",
+     "share": 0.0,
+     "backup": 0.689,
+     "backups": [
+      "Aisha Bello",
+      "Hassan Ali"
+     ],
+     "status": "accepted"
+    },
+    {
+     "system": "ci-cd",
+     "name": "CI/CD Pipeline",
+     "share": 0.298,
+     "backup": 0.702,
+     "backups": [
+      "Lucas Moreau"
+     ],
+     "status": "accepted"
+    },
+    {
+     "system": "settlement-batch",
+     "name": "Settlement Batch",
+     "share": 0.065,
+     "backup": 0.215,
+     "backups": [
+      "Rahul Verma",
+      "Lucas Moreau"
+     ],
+     "status": "verified"
+    },
+    {
+     "system": "payments-gateway",
+     "name": "Payments Gateway",
+     "share": 0.027,
+     "backup": 0.457,
+     "backups": [
+      "Arjun Mehta",
+      "Meera Iyer"
+     ],
+     "status": "verified"
+    }
+   ],
+   "escalations": [],
+   "llm": "offline templates (no LLM key)",
+   "markdown": "# Handover plan: Kenji Watanabe\n\nKenji Watanabe leaves in 37 days (28 Nov 2026). 1 critical and 1 at-risk areas need a handover; 4 areas are already covered by others.\n\n## Observability: critical\n\nKenji holds 74% of the evidence-weighted knowledge of Observability (tier 2); the strongest remaining person holds 26%. Backups: Lucas Moreau 26%. Sources: github, jira, slack.\n\n**What they know that is not written down**\n\n- Only tier 1 SLO burn alerts page. Everything else goes to the morning digest. _( asked by Rahul Verma in #platform on 02 Dec 2025 )_\n- They're provisioned from the observability repo, re-run the provisioning job. _( asked by Aisha Bello in #platform on 31 Oct 2025 )_\n\n**Recommended successor:** Lucas Moreau: 26% of the Observability activity; Kenji answered their Observability questions 3 times; on the owning team (Platform); works on neighbouring systems; 2 open tickets\n\n**Checklist**\n\n- [ ] Pair Lucas Moreau with Kenji on Observability for the next 10 working days\n- [ ] Transfer grafana-admin (admin) to Lucas Moreau; nobody else holds it\n- [ ] Write the Observability runbook from the tacit answers below, reviewed by Kenji\n- [ ] Fix wiki page 'Alerting policy': last updated 10 months ago; author Kenji Watanabe has notice\n- [ ] Answer the exit-interview questions for this area\n\n<sub>Evidence: docs:doc:4016, github:commit:kwatanabe@observability, github:review:pr1465:kwatanabe, github:review:pr1466:kwatanabe, github:review:pr1467:kwatanabe, github:review:pr1468:kwatanabe, github:review:pr1469:kwatanabe, hr_pg:access:grafana-admin ... \u00b7 confidence 90% \u00b7 Critic: verified</sub>\n\n## Kubernetes Platform: at risk\n\nKenji holds 63% of the evidence-weighted knowledge of Kubernetes Platform (tier 1); the strongest remaining person holds 32%. Backups: Lucas Moreau 32%, Aisha Bello 5%. Sources: github, jira, slack.\n\n**Recommended successor:** Lucas Moreau: 32% of the Kubernetes Platform activity; Kenji answered their Kubernetes Platform questions 9 times; on the owning team (Platform); works on neighbouring systems; 2 open tickets\n\n**Checklist**\n\n- [ ] Pair Lucas Moreau with Kenji on Kubernetes Platform for the next 10 working days\n- [ ] Reassign recurring chore 'Scale batch node pool before month-end' (PLAT-368)\n- [ ] Answer the exit-interview questions for this area\n\n<sub>Evidence: github:commit:kwatanabe@kubernetes, github:review:pr1448:kwatanabe, github:review:pr1449:kwatanabe, github:review:pr1450:kwatanabe, github:review:pr1451:kwatanabe, github:review:pr1452:kwatanabe, github:review:pr1453:kwatanabe, github:review:pr1454:kwatanabe ... \u00b7 confidence 90% \u00b7 Critic: verified</sub>\n\n## Already covered\n\n- Auth Service: backups Aisha Bello, Hassan Ali\n- CI/CD Pipeline: backups Lucas Moreau\n- Settlement Batch: backups Rahul Verma, Lucas Moreau\n- Payments Gateway: backups Arjun Mehta, Meera Iyer\n"
+  },
+  "interview": {
+   "person": "Kenji Watanabe",
+   "questions": [
+    {
+     "id": "observability:1",
+     "system": "observability",
+     "area": "Observability",
+     "label": "critical",
+     "text": "You answered 21 questions about Observability in #platform this year; everyone else combined answered 9. What are the three things people keep asking, and where should the answers live?",
+     "cites": [
+      "slack:slack_answer:platform/1761901381.000000",
+      "slack:slack_answer:platform/1763451020.000000",
+      "slack:slack_answer:platform/1764666678.000000",
+      "slack:slack_answer:platform/1770791967.000000",
+      "slack:slack_answer:platform/1772442484.000000"
+     ]
+    },
+    {
+     "id": "observability:2",
+     "system": "observability",
+     "area": "Observability",
+     "label": "critical",
+     "text": "On 02 Dec 2025 you told Rahul Verma: \"Only tier 1 SLO burn alerts page. Everything else goes to the morning digest.\" Is that still true, and what breaks if someone gets it wrong?",
+     "cites": [
+      "slack:slack_answer:platform/1764666678.000000"
+     ]
+    },
+    {
+     "id": "observability:3",
+     "system": "observability",
+     "area": "Observability",
+     "label": "critical",
+     "text": "You are the only one holding grafana-admin (admin). Is anything tied to your personal accounts or devices, and who should hold it next?",
+     "cites": [
+      "hr_pg:access:grafana-admin"
+     ]
+    },
+    {
+     "id": "observability:4",
+     "system": "observability",
+     "area": "Observability",
+     "label": "critical",
+     "text": "There is no current runbook for Observability. If it broke at 3am after you left, what should the on-call check first, second and third?",
+     "cites": []
+    },
+    {
+     "id": "kubernetes:5",
+     "system": "kubernetes",
+     "area": "Kubernetes Platform",
+     "label": "at_risk",
+     "text": "You answered 30 questions about Kubernetes Platform in #platform this year; everyone else combined answered 13. What are the three things people keep asking, and where should the answers live?",
+     "cites": [
+      "slack:slack_answer:platform/1761393009.000000",
+      "slack:slack_answer:platform/1762245464.000000",
+      "slack:slack_answer:platform/1762940785.000000",
+      "slack:slack_answer:platform/1767244513.000000",
+      "slack:slack_answer:platform/1767937448.000000"
+     ]
+    },
+    {
+     "id": "kubernetes:6",
+     "system": "kubernetes",
+     "area": "Kubernetes Platform",
+     "label": "at_risk",
+     "text": "You run 'Scale batch node pool before month-end' every month-end (PLAT-368). Walk us through the steps, including anything you do outside the ticket.",
+     "cites": [
+      "jira:chore:PLAT-368"
+     ]
+    }
+   ]
+  },
+  "citation_problems": [],
+  "handed_over": {}
+ },
+ "evidence_count": 116,
+ "evidence": {
+  "hr_pg:access:aws-prod-admin": {
+   "id": "hr_pg:access:aws-prod-admin",
+   "source": "hr_pg",
+   "kind": "access",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "aws-prod-admin",
+   "title": "admin on aws-prod-admin",
+   "at": "2024-05-04",
+   "weight": 1.0,
+   "query_id": "q028",
+   "url": ""
+  },
+  "hr_pg:access:grafana-admin": {
+   "id": "hr_pg:access:grafana-admin",
+   "source": "hr_pg",
+   "kind": "access",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "grafana-admin",
+   "title": "admin on grafana-admin",
+   "at": "2024-07-24",
+   "weight": 1.0,
+   "query_id": "q028",
+   "url": ""
+  },
+  "hr_pg:access:vault-admin": {
+   "id": "hr_pg:access:vault-admin",
+   "source": "hr_pg",
+   "kind": "access",
+   "system": "auth-service",
+   "person": "E1016",
+   "ref": "vault-admin",
+   "title": "admin on vault-admin",
+   "at": "2025-02-08",
+   "weight": 1.0,
+   "query_id": "q028",
+   "url": ""
+  },
+  "jira:chore:PAY-526": {
+   "id": "jira:chore:PAY-526",
+   "source": "jira",
+   "kind": "chore",
+   "system": "bank-sftp",
+   "person": null,
+   "ref": "PAY-526",
+   "title": "[Recurring] Rotate Unity Bank SFTP key",
+   "at": "2026-09-23T18:00:00Z",
+   "weight": 1.5,
+   "query_id": "q034",
+   "url": ""
+  },
+  "jira:chore:PLAT-368": {
+   "id": "jira:chore:PLAT-368",
+   "source": "jira",
+   "kind": "chore",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "PLAT-368",
+   "title": "[Recurring] Scale batch node pool before month-end",
+   "at": "2026-09-23T18:00:00Z",
+   "weight": 1.5,
+   "query_id": "q034",
+   "url": ""
+  },
+  "github:commit:kwatanabe@ci-cd": {
+   "id": "github:commit:kwatanabe@ci-cd",
+   "source": "github",
+   "kind": "commit",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "kwatanabe@ci-cd",
+   "title": "23 commits to ci-cd by kwatanabe",
+   "at": "2026-10-22T04:58:43Z",
+   "weight": 23.0,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:commit:kwatanabe@kubernetes": {
+   "id": "github:commit:kwatanabe@kubernetes",
+   "source": "github",
+   "kind": "commit",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "kwatanabe@kubernetes",
+   "title": "77 commits to kubernetes by kwatanabe",
+   "at": "2026-10-20T12:22:10Z",
+   "weight": 76.778,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:commit:kwatanabe@observability": {
+   "id": "github:commit:kwatanabe@observability",
+   "source": "github",
+   "kind": "commit",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "kwatanabe@observability",
+   "title": "54 commits to observability by kwatanabe",
+   "at": "2026-10-02T08:38:09Z",
+   "weight": 51.117,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:commit:kwatanabe@payments-gateway": {
+   "id": "github:commit:kwatanabe@payments-gateway",
+   "source": "github",
+   "kind": "commit",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "kwatanabe@payments-gateway",
+   "title": "2 commits to payments-gateway by kwatanabe",
+   "at": "2026-05-04T08:54:56Z",
+   "weight": 1.224,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1135:kwatanabe": {
+   "id": "github:review:pr1135:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "pr1135:kwatanabe",
+   "title": "Reviewed PR #1135",
+   "at": "2026-01-01T05:14:59Z",
+   "weight": 0.257,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1143:kwatanabe": {
+   "id": "github:review:pr1143:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "pr1143:kwatanabe",
+   "title": "Reviewed PR #1143",
+   "at": "2026-05-11T06:24:08Z",
+   "weight": 0.375,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1146:kwatanabe": {
+   "id": "github:review:pr1146:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "pr1146:kwatanabe",
+   "title": "Reviewed PR #1146",
+   "at": "2026-07-24T13:33:07Z",
+   "weight": 0.464,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1427:kwatanabe": {
+   "id": "github:review:pr1427:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1427:kwatanabe",
+   "title": "Reviewed PR #1427",
+   "at": "2025-12-01T09:36:49Z",
+   "weight": 0.235,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1428:kwatanabe": {
+   "id": "github:review:pr1428:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1428:kwatanabe",
+   "title": "Reviewed PR #1428",
+   "at": "2026-01-05T09:43:42Z",
+   "weight": 0.26,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1429:kwatanabe": {
+   "id": "github:review:pr1429:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1429:kwatanabe",
+   "title": "Reviewed PR #1429",
+   "at": "2026-01-22T12:03:13Z",
+   "weight": 0.274,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1430:kwatanabe": {
+   "id": "github:review:pr1430:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1430:kwatanabe",
+   "title": "Reviewed PR #1430",
+   "at": "2026-02-06T05:26:44Z",
+   "weight": 0.286,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1431:kwatanabe": {
+   "id": "github:review:pr1431:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1431:kwatanabe",
+   "title": "Reviewed PR #1431",
+   "at": "2026-02-23T04:01:03Z",
+   "weight": 0.3,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1432:kwatanabe": {
+   "id": "github:review:pr1432:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1432:kwatanabe",
+   "title": "Reviewed PR #1432",
+   "at": "2026-03-06T10:36:09Z",
+   "weight": 0.31,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1433:kwatanabe": {
+   "id": "github:review:pr1433:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1433:kwatanabe",
+   "title": "Reviewed PR #1433",
+   "at": "2026-04-04T13:17:51Z",
+   "weight": 0.337,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1434:kwatanabe": {
+   "id": "github:review:pr1434:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1434:kwatanabe",
+   "title": "Reviewed PR #1434",
+   "at": "2026-04-08T13:42:01Z",
+   "weight": 0.341,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1435:kwatanabe": {
+   "id": "github:review:pr1435:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1435:kwatanabe",
+   "title": "Reviewed PR #1435",
+   "at": "2026-04-19T06:32:42Z",
+   "weight": 0.352,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1436:kwatanabe": {
+   "id": "github:review:pr1436:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1436:kwatanabe",
+   "title": "Reviewed PR #1436",
+   "at": "2026-04-23T09:12:22Z",
+   "weight": 0.356,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1437:kwatanabe": {
+   "id": "github:review:pr1437:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1437:kwatanabe",
+   "title": "Reviewed PR #1437",
+   "at": "2026-05-17T07:38:37Z",
+   "weight": 0.381,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1438:kwatanabe": {
+   "id": "github:review:pr1438:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1438:kwatanabe",
+   "title": "Reviewed PR #1438",
+   "at": "2026-06-10T13:24:47Z",
+   "weight": 0.409,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1439:kwatanabe": {
+   "id": "github:review:pr1439:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1439:kwatanabe",
+   "title": "Reviewed PR #1439",
+   "at": "2026-07-12T12:39:34Z",
+   "weight": 0.448,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1440:kwatanabe": {
+   "id": "github:review:pr1440:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1440:kwatanabe",
+   "title": "Reviewed PR #1440",
+   "at": "2026-07-31T08:49:19Z",
+   "weight": 0.473,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1441:kwatanabe": {
+   "id": "github:review:pr1441:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1441:kwatanabe",
+   "title": "Reviewed PR #1441",
+   "at": "2026-09-02T12:22:23Z",
+   "weight": 0.521,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1442:kwatanabe": {
+   "id": "github:review:pr1442:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1442:kwatanabe",
+   "title": "Reviewed PR #1442",
+   "at": "2026-09-22T06:11:43Z",
+   "weight": 0.552,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1443:kwatanabe": {
+   "id": "github:review:pr1443:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "pr1443:kwatanabe",
+   "title": "Reviewed PR #1443",
+   "at": "2026-10-15T06:47:43Z",
+   "weight": 0.59,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1448:kwatanabe": {
+   "id": "github:review:pr1448:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1448:kwatanabe",
+   "title": "Reviewed PR #1448",
+   "at": "2025-10-26T11:44:24Z",
+   "weight": 0.212,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1449:kwatanabe": {
+   "id": "github:review:pr1449:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1449:kwatanabe",
+   "title": "Reviewed PR #1449",
+   "at": "2025-11-20T06:21:39Z",
+   "weight": 0.228,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1450:kwatanabe": {
+   "id": "github:review:pr1450:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1450:kwatanabe",
+   "title": "Reviewed PR #1450",
+   "at": "2025-12-27T09:02:57Z",
+   "weight": 0.254,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1451:kwatanabe": {
+   "id": "github:review:pr1451:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1451:kwatanabe",
+   "title": "Reviewed PR #1451",
+   "at": "2026-01-22T13:38:21Z",
+   "weight": 0.274,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1452:kwatanabe": {
+   "id": "github:review:pr1452:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1452:kwatanabe",
+   "title": "Reviewed PR #1452",
+   "at": "2026-02-10T12:12:11Z",
+   "weight": 0.289,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1453:kwatanabe": {
+   "id": "github:review:pr1453:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1453:kwatanabe",
+   "title": "Reviewed PR #1453",
+   "at": "2026-02-28T12:28:14Z",
+   "weight": 0.304,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1454:kwatanabe": {
+   "id": "github:review:pr1454:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1454:kwatanabe",
+   "title": "Reviewed PR #1454",
+   "at": "2026-04-15T05:55:13Z",
+   "weight": 0.348,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1455:kwatanabe": {
+   "id": "github:review:pr1455:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1455:kwatanabe",
+   "title": "Reviewed PR #1455",
+   "at": "2026-05-12T12:54:39Z",
+   "weight": 0.376,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1456:kwatanabe": {
+   "id": "github:review:pr1456:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1456:kwatanabe",
+   "title": "Reviewed PR #1456",
+   "at": "2026-07-23T09:50:27Z",
+   "weight": 0.463,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1457:kwatanabe": {
+   "id": "github:review:pr1457:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1457:kwatanabe",
+   "title": "Reviewed PR #1457",
+   "at": "2026-09-04T10:27:12Z",
+   "weight": 0.524,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1458:kwatanabe": {
+   "id": "github:review:pr1458:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1458:kwatanabe",
+   "title": "Reviewed PR #1458",
+   "at": "2026-09-24T04:20:03Z",
+   "weight": 0.555,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1465:kwatanabe": {
+   "id": "github:review:pr1465:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "pr1465:kwatanabe",
+   "title": "Reviewed PR #1465",
+   "at": "2025-10-26T11:59:09Z",
+   "weight": 0.212,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1466:kwatanabe": {
+   "id": "github:review:pr1466:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "pr1466:kwatanabe",
+   "title": "Reviewed PR #1466",
+   "at": "2026-02-03T05:28:04Z",
+   "weight": 0.283,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1467:kwatanabe": {
+   "id": "github:review:pr1467:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "pr1467:kwatanabe",
+   "title": "Reviewed PR #1467",
+   "at": "2026-03-15T10:53:22Z",
+   "weight": 0.318,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1468:kwatanabe": {
+   "id": "github:review:pr1468:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "pr1468:kwatanabe",
+   "title": "Reviewed PR #1468",
+   "at": "2026-05-04T12:50:45Z",
+   "weight": 0.367,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1469:kwatanabe": {
+   "id": "github:review:pr1469:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "pr1469:kwatanabe",
+   "title": "Reviewed PR #1469",
+   "at": "2026-09-08T08:54:21Z",
+   "weight": 0.53,
+   "query_id": "q035",
+   "url": ""
+  },
+  "github:review:pr1495:kwatanabe": {
+   "id": "github:review:pr1495:kwatanabe",
+   "source": "github",
+   "kind": "review",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "pr1495:kwatanabe",
+   "title": "Reviewed PR #1495",
+   "at": "2026-09-08T06:00:44Z",
+   "weight": 0.53,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_done:3b5c94fd45cea2c1d92afa60@ci-cd:Done": {
+   "id": "jira:issue_done:3b5c94fd45cea2c1d92afa60@ci-cd:Done",
+   "source": "jira",
+   "kind": "issue_done",
+   "system": "ci-cd",
+   "person": "E1016",
+   "ref": "3b5c94fd45cea2c1d92afa60@ci-cd:Done",
+   "title": "4 Done issues on ci-cd",
+   "at": "2026-08-06T10:20:03Z",
+   "weight": 3.854,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_done:3b5c94fd45cea2c1d92afa60@kubernetes:Done": {
+   "id": "jira:issue_done:3b5c94fd45cea2c1d92afa60@kubernetes:Done",
+   "source": "jira",
+   "kind": "issue_done",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "3b5c94fd45cea2c1d92afa60@kubernetes:Done",
+   "title": "26 Done issues on kubernetes",
+   "at": "2026-09-25T18:00:00Z",
+   "weight": 28.943,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_done:3b5c94fd45cea2c1d92afa60@observability:Done": {
+   "id": "jira:issue_done:3b5c94fd45cea2c1d92afa60@observability:Done",
+   "source": "jira",
+   "kind": "issue_done",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "3b5c94fd45cea2c1d92afa60@observability:Done",
+   "title": "17 Done issues on observability",
+   "at": "2026-08-24T04:57:43Z",
+   "weight": 17.254,
+   "query_id": "q035",
+   "url": ""
+  },
+  "jira:issue_done:3b5c94fd45cea2c1d92afa60@payments-gateway:Done": {
+   "id": "jira:issue_done:3b5c94fd45cea2c1d92afa60@payments-gateway:Done",
+   "source": "jira",
+   "kind": "issue_done",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "3b5c94fd45cea2c1d92afa60@payments-gateway:Done",
+   "title": "2 Done issues on payments-gateway",
+   "at": "2026-03-13T05:11:10Z",
+   "weight": 1.264,
+   "query_id": "q035",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1761393009.000000": {
+   "id": "slack:slack_answer:platform/1761393009.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1761393009.000000",
+   "title": "How do we get into prod in an emergency?",
+   "at": "2025-10-25T11:50:09Z",
+   "weight": 1.058,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1761901381.000000": {
+   "id": "slack:slack_answer:platform/1761901381.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1761901381.000000",
+   "title": "<@U05E8II49K> Grafana dashboards missing after migration",
+   "at": "2025-10-31T09:03:01Z",
+   "weight": 1.076,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1762245464.000000": {
+   "id": "slack:slack_answer:platform/1762245464.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1762245464.000000",
+   "title": "Seeing errors in cluster logs, known issue?",
+   "at": "2025-11-04T08:37:44Z",
+   "weight": 0.726,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:payments/1762249299.000000": {
+   "id": "slack:slack_answer:payments/1762249299.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "payments/1762249299.000000",
+   "title": "Who can review my Payments Gateway PR?",
+   "at": "2025-11-04T09:41:39Z",
+   "weight": 0.726,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1762940785.000000": {
+   "id": "slack:slack_answer:platform/1762940785.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1762940785.000000",
+   "title": "Seeing errors in aws logs, known issue?",
+   "at": "2025-11-12T09:46:25Z",
+   "weight": 0.743,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:payments/1763100819.000000": {
+   "id": "slack:slack_answer:payments/1763100819.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "payments/1763100819.000000",
+   "title": "<@U05E8II49K> Quick one about gateway: is there a runbook?",
+   "at": "2025-11-14T06:13:39Z",
+   "weight": 0.747,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1763451020.000000": {
+   "id": "slack:slack_answer:platform/1763451020.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1763451020.000000",
+   "title": "<@U0ZX272HPO> Grafana dashboards missing after migration",
+   "at": "2025-11-18T07:30:20Z",
+   "weight": 0.756,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1764666678.000000": {
+   "id": "slack:slack_answer:platform/1764666678.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1764666678.000000",
+   "title": "<@U05E8II49K> Which alerts page at night?",
+   "at": "2025-12-02T09:11:18Z",
+   "weight": 1.18,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1767244513.000000": {
+   "id": "slack:slack_answer:platform/1767244513.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1767244513.000000",
+   "title": "<@U05E8II49K> Is cluster deploying today?",
+   "at": "2026-01-01T05:15:13Z",
+   "weight": 0.858,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1767937448.000000": {
+   "id": "slack:slack_answer:platform/1767937448.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1767937448.000000",
+   "title": "<@U05E8II49K> Seeing errors in aws logs, known issue?",
+   "at": "2026-01-09T05:44:08Z",
+   "weight": 0.878,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1768736648.000000": {
+   "id": "slack:slack_answer:platform/1768736648.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "settlement-batch",
+   "person": "E1016",
+   "ref": "platform/1768736648.000000",
+   "title": "Node pool upgrade order?",
+   "at": "2026-01-18T11:44:08Z",
+   "weight": 1.352,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:payments/1768802809.000000": {
+   "id": "slack:slack_answer:payments/1768802809.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "payments/1768802809.000000",
+   "title": "Seeing errors in gateway logs, known issue?",
+   "at": "2026-01-19T06:06:49Z",
+   "weight": 0.904,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1769925176.000000": {
+   "id": "slack:slack_answer:platform/1769925176.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1769925176.000000",
+   "title": "How do we get into prod in an emergency?",
+   "at": "2026-02-01T05:52:56Z",
+   "weight": 1.408,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1770791967.000000": {
+   "id": "slack:slack_answer:platform/1770791967.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1770791967.000000",
+   "title": "Anyone know why Observability is slow today?",
+   "at": "2026-02-11T06:39:27Z",
+   "weight": 0.966,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1772105783.000000": {
+   "id": "slack:slack_answer:platform/1772105783.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "settlement-batch",
+   "person": "E1016",
+   "ref": "platform/1772105783.000000",
+   "title": "Node pool upgrade order?",
+   "at": "2026-02-26T11:36:23Z",
+   "weight": 1.513,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1772442484.000000": {
+   "id": "slack:slack_answer:platform/1772442484.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1772442484.000000",
+   "title": "Grafana dashboards missing after migration",
+   "at": "2026-03-02T09:08:04Z",
+   "weight": 1.531,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1772862535.000000": {
+   "id": "slack:slack_answer:platform/1772862535.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1772862535.000000",
+   "title": "Who can review my cluster PR?",
+   "at": "2026-03-07T05:48:55Z",
+   "weight": 1.035,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1773045308.000000": {
+   "id": "slack:slack_answer:platform/1773045308.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1773045308.000000",
+   "title": "How do I test cluster locally?",
+   "at": "2026-03-09T08:35:08Z",
+   "weight": 1.041,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1773316581.000000": {
+   "id": "slack:slack_answer:platform/1773316581.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1773316581.000000",
+   "title": "Which alerts page at night?",
+   "at": "2026-03-12T11:56:21Z",
+   "weight": 1.575,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1773549382.000000": {
+   "id": "slack:slack_answer:platform/1773549382.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1773549382.000000",
+   "title": "<@U05E8II49K> Grafana dashboards missing after migration",
+   "at": "2026-03-15T04:36:22Z",
+   "weight": 1.589,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1774962008.000000": {
+   "id": "slack:slack_answer:platform/1774962008.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1774962008.000000",
+   "title": "<@U05E8II49K> How do I test k8s locally?",
+   "at": "2026-03-31T13:00:08Z",
+   "weight": 1.11,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1775987381.000000": {
+   "id": "slack:slack_answer:platform/1775987381.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1775987381.000000",
+   "title": "<@U05E8II49K> How do I test monitoring locally?",
+   "at": "2026-04-12T09:49:41Z",
+   "weight": 1.149,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1775994114.000000": {
+   "id": "slack:slack_answer:platform/1775994114.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1775994114.000000",
+   "title": "Anyone know why aws is slow today?",
+   "at": "2026-04-12T11:41:54Z",
+   "weight": 1.149,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1776165987.000000": {
+   "id": "slack:slack_answer:platform/1776165987.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1776165987.000000",
+   "title": "<@U05E8II49K> Quick one about cluster: is there a runbook?",
+   "at": "2026-04-14T11:26:27Z",
+   "weight": 1.155,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1776434163.000000": {
+   "id": "slack:slack_answer:platform/1776434163.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1776434163.000000",
+   "title": "<@U05E8II49K> Anyone know why aws is slow today?",
+   "at": "2026-04-17T13:56:03Z",
+   "weight": 1.165,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1776599690.000000": {
+   "id": "slack:slack_answer:platform/1776599690.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1776599690.000000",
+   "title": "Is aws deploying today?",
+   "at": "2026-04-19T11:54:50Z",
+   "weight": 1.172,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1776693744.000000": {
+   "id": "slack:slack_answer:platform/1776693744.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1776693744.000000",
+   "title": "How do I test monitoring locally?",
+   "at": "2026-04-20T14:02:24Z",
+   "weight": 1.176,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1777117085.000000": {
+   "id": "slack:slack_answer:platform/1777117085.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1777117085.000000",
+   "title": "Seeing errors in aws logs, known issue?",
+   "at": "2026-04-25T11:38:05Z",
+   "weight": 1.193,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1777276134.000000": {
+   "id": "slack:slack_answer:platform/1777276134.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1777276134.000000",
+   "title": "How do we get into prod in an emergency?",
+   "at": "2026-04-27T07:48:54Z",
+   "weight": 1.799,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1777534605.000000": {
+   "id": "slack:slack_answer:platform/1777534605.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1777534605.000000",
+   "title": "Which alerts page at night?",
+   "at": "2026-04-30T07:36:45Z",
+   "weight": 1.815,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1778304447.000000": {
+   "id": "slack:slack_answer:platform/1778304447.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1778304447.000000",
+   "title": "<@U05E8II49K> Who can review my k8s PR?",
+   "at": "2026-05-09T05:27:27Z",
+   "weight": 1.242,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1779339209.000000": {
+   "id": "slack:slack_answer:platform/1779339209.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1779339209.000000",
+   "title": "Quick one about Kubernetes Platform: is there a runbook?",
+   "at": "2026-05-21T04:53:29Z",
+   "weight": 1.286,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1779782405.000000": {
+   "id": "slack:slack_answer:platform/1779782405.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1779782405.000000",
+   "title": "Who can review my aws PR?",
+   "at": "2026-05-26T08:00:05Z",
+   "weight": 1.304,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1779786302.000000": {
+   "id": "slack:slack_answer:platform/1779786302.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "settlement-batch",
+   "person": "E1016",
+   "ref": "platform/1779786302.000000",
+   "title": "<@U05E8II49K> Node pool upgrade order?",
+   "at": "2026-05-26T09:05:02Z",
+   "weight": 1.957,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1780468199.000000": {
+   "id": "slack:slack_answer:platform/1780468199.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1780468199.000000",
+   "title": "How do I test k8s locally?",
+   "at": "2026-06-03T06:29:59Z",
+   "weight": 1.335,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1780556285.000000": {
+   "id": "slack:slack_answer:platform/1780556285.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1780556285.000000",
+   "title": "<@U05E8II49K> Grafana dashboards missing after migration",
+   "at": "2026-06-04T06:58:05Z",
+   "weight": 2.008,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1780570872.000000": {
+   "id": "slack:slack_answer:platform/1780570872.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1780570872.000000",
+   "title": "Is Observability deploying today?",
+   "at": "2026-06-04T11:01:12Z",
+   "weight": 1.339,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1780808533.000000": {
+   "id": "slack:slack_answer:platform/1780808533.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1780808533.000000",
+   "title": "<@U05E8II49K> How do I test cluster locally?",
+   "at": "2026-06-07T05:02:13Z",
+   "weight": 1.35,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1781247299.000000": {
+   "id": "slack:slack_answer:platform/1781247299.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1781247299.000000",
+   "title": "<@U05E8II49K> Quick one about grafana: is there a runbook?",
+   "at": "2026-06-12T06:54:59Z",
+   "weight": 1.37,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1781786640.000000": {
+   "id": "slack:slack_answer:platform/1781786640.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1781786640.000000",
+   "title": "<@U05E8II49K> Who can review my grafana PR?",
+   "at": "2026-06-18T12:44:00Z",
+   "weight": 1.394,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:payments/1782039961.000000": {
+   "id": "slack:slack_answer:payments/1782039961.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "payments-gateway",
+   "person": "E1016",
+   "ref": "payments/1782039961.000000",
+   "title": "Gateway 502s from acquirer B",
+   "at": "2026-06-21T11:06:01Z",
+   "weight": 2.109,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1782104791.000000": {
+   "id": "slack:slack_answer:platform/1782104791.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1782104791.000000",
+   "title": "<@U0ZX272HPO> Quick one about cluster: is there a runbook?",
+   "at": "2026-06-22T05:06:31Z",
+   "weight": 1.41,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1783335047.000000": {
+   "id": "slack:slack_answer:platform/1783335047.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1783335047.000000",
+   "title": "Seeing errors in alerts logs, known issue?",
+   "at": "2026-07-06T10:50:47Z",
+   "weight": 1.468,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1783608271.000000": {
+   "id": "slack:slack_answer:platform/1783608271.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1783608271.000000",
+   "title": "Which alerts page at night?",
+   "at": "2026-07-09T14:44:31Z",
+   "weight": 2.222,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1784038255.000000": {
+   "id": "slack:slack_answer:platform/1784038255.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1784038255.000000",
+   "title": "Is k8s deploying today?",
+   "at": "2026-07-14T14:10:55Z",
+   "weight": 1.503,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1784812820.000000": {
+   "id": "slack:slack_answer:platform/1784812820.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1784812820.000000",
+   "title": "Quick one about monitoring: is there a runbook?",
+   "at": "2026-07-23T13:20:20Z",
+   "weight": 1.542,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1785239309.000000": {
+   "id": "slack:slack_answer:platform/1785239309.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1785239309.000000",
+   "title": "How do we get into prod in an emergency?",
+   "at": "2026-07-28T11:48:29Z",
+   "weight": 2.347,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1785332184.000000": {
+   "id": "slack:slack_answer:platform/1785332184.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "settlement-batch",
+   "person": "E1016",
+   "ref": "platform/1785332184.000000",
+   "title": "Node pool upgrade order?",
+   "at": "2026-07-29T13:36:24Z",
+   "weight": 2.354,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1787223219.000000": {
+   "id": "slack:slack_answer:platform/1787223219.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1787223219.000000",
+   "title": "Is Kubernetes Platform deploying today?",
+   "at": "2026-08-20T10:53:39Z",
+   "weight": 1.672,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1787475833.000000": {
+   "id": "slack:slack_answer:platform/1787475833.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1787475833.000000",
+   "title": "Seeing errors in Kubernetes Platform logs, known issue?",
+   "at": "2026-08-23T09:03:53Z",
+   "weight": 1.687,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1787478967.000000": {
+   "id": "slack:slack_answer:platform/1787478967.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1787478967.000000",
+   "title": "Anyone know why Kubernetes Platform is slow today?",
+   "at": "2026-08-23T09:56:07Z",
+   "weight": 1.687,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1788176715.000000": {
+   "id": "slack:slack_answer:platform/1788176715.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1788176715.000000",
+   "title": "Is aws deploying today?",
+   "at": "2026-08-31T11:45:15Z",
+   "weight": 1.726,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1790240763.000000": {
+   "id": "slack:slack_answer:platform/1790240763.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1790240763.000000",
+   "title": "<@U05E8II49K> Anyone know why cluster is slow today?",
+   "at": "2026-09-24T09:06:03Z",
+   "weight": 1.85,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1790593327.000000": {
+   "id": "slack:slack_answer:platform/1790593327.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "settlement-batch",
+   "person": "E1016",
+   "ref": "platform/1790593327.000000",
+   "title": "Node pool upgrade order?",
+   "at": "2026-09-28T11:02:07Z",
+   "weight": 2.807,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1790768290.000000": {
+   "id": "slack:slack_answer:platform/1790768290.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1790768290.000000",
+   "title": "How do I test monitoring locally?",
+   "at": "2026-09-30T11:38:10Z",
+   "weight": 1.882,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1791027976.000000": {
+   "id": "slack:slack_answer:platform/1791027976.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1791027976.000000",
+   "title": "Seeing errors in alerts logs, known issue?",
+   "at": "2026-10-03T11:46:16Z",
+   "weight": 1.899,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1791196898.000000": {
+   "id": "slack:slack_answer:platform/1791196898.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1791196898.000000",
+   "title": "Is monitoring deploying today?",
+   "at": "2026-10-05T10:41:38Z",
+   "weight": 1.91,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1791557156.000000": {
+   "id": "slack:slack_answer:platform/1791557156.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1791557156.000000",
+   "title": "Who can review my cluster PR?",
+   "at": "2026-10-09T14:45:56Z",
+   "weight": 1.932,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1791638278.000000": {
+   "id": "slack:slack_answer:platform/1791638278.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "platform/1791638278.000000",
+   "title": "Anyone know why Observability is slow today?",
+   "at": "2026-10-10T13:17:58Z",
+   "weight": 1.937,
+   "query_id": "q038",
+   "url": ""
+  },
+  "slack:slack_answer:platform/1791798207.000000": {
+   "id": "slack:slack_answer:platform/1791798207.000000",
+   "source": "slack",
+   "kind": "slack_answer",
+   "system": "kubernetes",
+   "person": "E1016",
+   "ref": "platform/1791798207.000000",
+   "title": "<@U05E8II49K> How do we get into prod in an emergency?",
+   "at": "2026-10-12T09:43:27Z",
+   "weight": 2.923,
+   "query_id": "q038",
+   "url": ""
+  },
+  "docs:doc:4002": {
+   "id": "docs:doc:4002",
+   "source": "docs",
+   "kind": "doc",
+   "system": "settlement-batch",
+   "person": "E1014",
+   "ref": "4002",
+   "title": "INC-231 postmortem: double settlement to Zenith",
+   "at": "2026-01-14T18:00:00Z",
+   "weight": 0.3,
+   "query_id": "q041",
+   "url": ""
+  },
+  "docs:doc:4003": {
+   "id": "docs:doc:4003",
+   "source": "docs",
+   "kind": "doc",
+   "system": "payments-gateway",
+   "person": "E1013",
+   "ref": "4003",
+   "title": "Payments Gateway runbook",
+   "at": "2026-07-19T18:00:00Z",
+   "weight": 1.0,
+   "query_id": "q041",
+   "url": ""
+  },
+  "docs:doc:4004": {
+   "id": "docs:doc:4004",
+   "source": "docs",
+   "kind": "doc",
+   "system": "payments-gateway",
+   "person": "E1013",
+   "ref": "4004",
+   "title": "Gateway architecture overview",
+   "at": "2026-03-09T18:00:00Z",
+   "weight": 0.5,
+   "query_id": "q041",
+   "url": ""
+  },
+  "docs:doc:4013": {
+   "id": "docs:doc:4013",
+   "source": "docs",
+   "kind": "doc",
+   "system": "kubernetes",
+   "person": "E1002",
+   "ref": "4013",
+   "title": "Cluster upgrade runbook",
+   "at": "2026-08-15T18:00:00Z",
+   "weight": 1.0,
+   "query_id": "q041",
+   "url": ""
+  },
+  "docs:doc:4014": {
+   "id": "docs:doc:4014",
+   "source": "docs",
+   "kind": "doc",
+   "system": "kubernetes",
+   "person": "E1002",
+   "ref": "4014",
+   "title": "Break-glass access",
+   "at": "2026-06-16T18:00:00Z",
+   "weight": 1.0,
+   "query_id": "q041",
+   "url": ""
+  },
+  "docs:doc:4016": {
+   "id": "docs:doc:4016",
+   "source": "docs",
+   "kind": "doc",
+   "system": "observability",
+   "person": "E1016",
+   "ref": "4016",
+   "title": "Alerting policy",
+   "at": "2025-12-24T18:00:00Z",
+   "weight": 0.25,
+   "query_id": "q041",
+   "url": ""
+  }
+ },
+ "findings": [
+  {
+   "agent": "Resolver",
+   "kind": "identity_ambiguous",
+   "source": "jira",
+   "account": "c126b6cceb65254206442fc6",
+   "candidates": [
+    "E1018",
+    "E1010"
+   ],
+   "names": [
+    "Rahul V",
+    "c126b6cceb65254206442fc6"
+   ]
+  }
+ ],
+ "duration_s": 0.79,
+ "status": "done"
+}

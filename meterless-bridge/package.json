@@ -1,0 +1,15 @@
+{
+  "name": "lastday-meterless-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Serves the Meterless H-MEM and World Model reference engines to Last Day's Python agents.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.7"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "start": "node --experimental-transform-types --no-warnings server.ts"
+  }
+}

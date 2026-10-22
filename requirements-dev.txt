@@ -1,0 +1,4 @@
+-r requirements.txt
+# Optional: the tests are plain unittest and run without these.
+pytest>=8
+playwright>=1.45   # UI screenshots in scripts/screenshots.py

@@ -1,0 +1,21 @@
+# secrets
+.env
+.env.local
+zetaris/sql/generated/
+
+# local state: runs, Meterless memory, logs
+.lastday/
+
+# generated companies (python -m lastday generate rebuilds them in seconds)
+data/seed-*/
+
+# python / node
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+meterless-bridge/node_modules/
+
+# os / editors
+.DS_Store
+*.swp
